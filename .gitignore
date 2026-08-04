@@ -1,0 +1,20 @@
+node_modules/
+dist/
+test-results/
+playwright-report/
+*.local
+
+# Environment and local secrets
+.env
+.env.*
+!.env.example
+
+# Test and tool output
+coverage/
+*.log
+
+# Editor and operating-system metadata
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
