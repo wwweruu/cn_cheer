@@ -18,3 +18,7 @@ coverage/
 .idea/
 .DS_Store
 Thumbs.db
+
+# AI参考图体积过大（382MB），仅保留脚本与清单，图片本地留存可用脚本再生成
+象棋3D参考图/**/*.png
+象棋3D参考图/**/*.jpg

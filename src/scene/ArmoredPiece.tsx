@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useFrame } from "@react-three/fiber";
+import { useGLTF } from "@react-three/drei";
 import {
   CanvasTexture,
   Color,
@@ -9,6 +10,7 @@ import {
   SRGBColorSpace,
 } from "three";
 import { boardToWorld } from "../game/coordinates";
+import { getModelUrl, MODEL_URLS } from "../assets/manifest";
 import type { EffectLevel, MoveRecord, Piece, PieceType } from "../game/types";
 
 interface ArmoredPieceProps {
@@ -265,6 +267,21 @@ function ArmorBody({ piece }: { piece: Piece }) {
   );
 }
 
+/** 二期正式 GLB 棋子：manifest 命中时替换一期程序化造型。
+ *  模型原点在底座底面中心（对应一期 group 内 y=0.02 处），面向 three.js +Z；
+ *  红方在高 rank（+Z 侧），需转向 -Z 面向黑方。 */
+function GlbModel({ url, camp }: { url: string; camp: Piece["camp"] }) {
+  const { scene } = useGLTF(url);
+  const cloned = useMemo(() => scene.clone(true), [scene]);
+  return (
+    <primitive
+      object={cloned}
+      position={[0, 0.02, 0]}
+      rotation={[0, camp === "red" ? Math.PI : 0, 0]}
+    />
+  );
+}
+
 export function ArmoredPiece({
   piece,
   selected,
@@ -277,7 +294,11 @@ export function ArmoredPiece({
   const completionSent = useRef<number | null>(null);
   const animationStart = useRef(0);
   const [hovered, setHovered] = useState(false);
-  const labelTexture = useMemo(() => getLabelTexture(piece), [piece]);
+  const modelUrl = getModelUrl(piece);
+  const labelTexture = useMemo(
+    () => (modelUrl ? null : getLabelTexture(piece)),
+    [piece, modelUrl],
+  );
   const colors = theme[piece.camp];
   const activeMove = move?.piece.id === piece.id ? move : null;
 
@@ -340,30 +361,38 @@ export function ArmoredPiece({
           <meshBasicMaterial color={selected ? colors.ring : "#c8bfa9"} transparent opacity={0.82} />
         </mesh>
       )}
-      <mesh position={[0, 0.17, 0]} castShadow receiveShadow>
-        <cylinderGeometry args={[0.42, 0.46, 0.3, piece.camp === "black" ? 10 : 20]} />
-        <meshStandardMaterial
-          color={colors.dark}
-          metalness={0.46}
-          roughness={0.42}
-          emissive={selected ? new Color(colors.armor) : new Color("#050706")}
-          emissiveIntensity={selected ? 0.24 : 0}
-        />
-      </mesh>
-      <mesh position={[0, 0.34, 0]} rotation={[Math.PI / 2, 0, 0]} castShadow>
-        <torusGeometry args={[0.35, 0.036, 8, piece.camp === "black" ? 10 : 20]} />
-        <meshStandardMaterial color={colors.metal} metalness={0.76} roughness={0.24} />
-      </mesh>
-      <ArmorBody piece={piece} />
-      <mesh position={[0, 0.342, 0.12]} rotation={[-Math.PI / 2, 0, 0]}>
-        <circleGeometry args={[0.205, 36]} />
-        <meshBasicMaterial
-          map={labelTexture}
-          transparent
-          side={DoubleSide}
-          toneMapped={false}
-        />
-      </mesh>
+      {modelUrl ? (
+        <GlbModel url={modelUrl} camp={piece.camp} />
+      ) : (
+        <>
+          <mesh position={[0, 0.17, 0]} castShadow receiveShadow>
+            <cylinderGeometry args={[0.42, 0.46, 0.3, piece.camp === "black" ? 10 : 20]} />
+            <meshStandardMaterial
+              color={colors.dark}
+              metalness={0.46}
+              roughness={0.42}
+              emissive={selected ? new Color(colors.armor) : new Color("#050706")}
+              emissiveIntensity={selected ? 0.24 : 0}
+            />
+          </mesh>
+          <mesh position={[0, 0.34, 0]} rotation={[Math.PI / 2, 0, 0]} castShadow>
+            <torusGeometry args={[0.35, 0.036, 8, piece.camp === "black" ? 10 : 20]} />
+            <meshStandardMaterial color={colors.metal} metalness={0.76} roughness={0.24} />
+          </mesh>
+          <ArmorBody piece={piece} />
+          {labelTexture && (
+            <mesh position={[0, 0.342, 0.12]} rotation={[-Math.PI / 2, 0, 0]}>
+              <circleGeometry args={[0.205, 36]} />
+              <meshBasicMaterial
+                map={labelTexture}
+                transparent
+                side={DoubleSide}
+                toneMapped={false}
+              />
+            </mesh>
+          )}
+        </>
+      )}
       <mesh position={[0, 0.72, 0]} visible={false}>
         <cylinderGeometry args={[0.53, 0.53, 1.65, 12]} />
         <meshBasicMaterial transparent opacity={0} />
@@ -371,3 +400,5 @@ export function ArmoredPiece({
     </group>
   );
 }
+
+MODEL_URLS.forEach((url) => useGLTF.preload(url));
