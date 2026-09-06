@@ -2,23 +2,28 @@
 
 以中国古代铠甲为造型语言的 3D 中国象棋。已接入 14 类带骨骼动作与 PBR 的棋子、连续泥土战场与营地、7 套表面材质和环境贴图，支持本地双人规则、移动和吃子特效、悔棋、重开、镜头模式及画质设置。
 
-战场与棋子动作的早期交付见 [交付报告](docs/asset-reports/PRODUCTION_DELIVERY.md)。用户反馈动作质量问题后，已追加 Meshy 原生生成样板，累计使用 1395/1800 积分，2026-09-06 最新核实账户余额 1720。原生候选、费用与未解决问题见 [样板报告](docs/MESHY_NATIVE_MOTION_SAMPLES.md)；这些候选尚未替换棋局资源。
-
-随后完成一轮本地动作修整：骑手坐标轴、持械约束、兵卒脚踝、循环，以及红黑象独立四足步态。本轮新增 API 费用为 0；[修整报告与后续方案](docs/MESHY_MOTION_REFINEMENT.md)记录了改动、检查口径和剩余问题。
+**1.0.0 已发布**：本地双人 3D 中国象棋正式版，功能范围与已知限制见 [发布说明](docs/RELEASE_1.0.md)。许可证为 **GPL-3.0-or-later**（见 `LICENSE` 与 [THIRD_PARTY_NOTICES](docs/THIRD_PARTY_NOTICES.md)）。
 
 ## 环境
 
 - Node.js 22 或更高版本
 - 支持 WebGL 2 的现代浏览器
 
-## 启动
+## 快速开始
+
+```bash
+git clone https://github.com/wwweruu/cn_cheer.git
+cd cn_cheer
+```
+
+**下载运行时资产**（约 2.1 GB，不入仓库）：打开 [Release v1.0.0](https://github.com/wwweruu/cn_cheer/releases/tag/v1.0.0)，下载 5 个必需包——`cn_chess-1.0.0-assets-base.zip`、`cn_chess-1.0.0-assets-production-a.zip`、`cn_chess-1.0.0-assets-production-b.zip`、`cn_chess-1.0.0-assets-motion-a.zip`、`cn_chess-1.0.0-assets-motion-b.zip`——在**项目根目录**逐个解压（包内路径自带 `public/assets/` 前缀，解压即就位）。可用 Release 附件 `SHA256SUMS.txt` 校验完整性。不解压资产也能启动，但棋子会回退为程序化简易造型。
 
 ```bash
 npm install
 npm run dev
 ```
 
-默认开发地址为 `http://127.0.0.1:5173`。
+默认开发地址为 `http://127.0.0.1:5173`。生产构建用 `npm run build && npm run preview`。
 
 ## 质量命令
 
@@ -97,11 +102,3 @@ npm run test:meshy
 ```
 
 `plan` 是原候选配置的离线估算；`demo` 只访问本地模拟服务、消耗 0 积分，输出为测试几何体。生产流程另支持高模、Retexture、单图建模和场景图像，并共用 1800 积分累计上限与 1200 余额下限。重复运行原任务键会查询和恢复已有任务，新版本才可能产生新费用。
-
-## 1.0 发布与安装
-
-1.0.0 已发布：本地双人 3D 中国象棋正式版，发布说明见 [RELEASE_1.0](docs/RELEASE_1.0.md)。运行时资产（约 2.1 GB）不入仓库，从 GitHub Release 下载 5 个必需资产包（`cn_chess-1.0.0-assets-*.zip`），在项目根目录解压后即可 `npm install && npm run dev`；逐包 SHA-256 见 Release 附件 `SHA256SUMS.txt`。
-
-## 许可证
-
-本项目以 **GPL-3.0-or-later** 开源（见 `LICENSE`）：规则核心 `elephantops@0.1.1` 为该许可证，1.0 选择遵从此路线发布。第三方依赖与美术/音频资产来源清单见 [THIRD_PARTY_NOTICES](docs/THIRD_PARTY_NOTICES.md)。闭源或商业发行前必须替换规则实现或取得其他授权。
