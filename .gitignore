@@ -13,6 +13,12 @@ playwright-report/
 coverage/
 *.log
 
+# Meshy local credit ledger, signed asset URLs, generated candidates, Python cache
+.meshy/
+/assets/generated/meshy/
+public/assets/review/
+__pycache__/
+
 # Editor and operating-system metadata
 .vscode/
 .idea/
@@ -22,3 +28,15 @@ Thumbs.db
 # AI参考图体积过大（382MB），仅保留脚本与清单，图片本地留存可用脚本再生成
 象棋3D参考图/**/*.png
 象棋3D参考图/**/*.jpg
+
+# 大体量资产不入仓库：运行时二进制资产随 Release 附件分发，源工程与素材本地留存
+public/assets/board/
+public/assets/environment/
+public/assets/models/
+/assets/*
+!/assets/source/
+/assets/source/*
+!/assets/source/production.json
+建模素材/
+象棋3D参考图-备份/
+dist-release/

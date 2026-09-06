@@ -1,0 +1,16 @@
+{
+  "frontend_unit_tests": 23,
+  "api_offline_tests": 59,
+  "lint": "passed",
+  "production_build": "passed",
+  "e2e": {
+    "passed": 5,
+    "skipped": 1
+  },
+  "motion_variants": 42,
+  "clip_tier_combinations": 252,
+  "samples_per_combination": 5,
+  "motion_max_fixed_base_displacement": 1.884182165845516e-08,
+  "physical_mobile_tested": false,
+  "native_sky_2k": false
+}

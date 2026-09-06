@@ -1,0 +1,104 @@
+{
+  "piece": "general_black",
+  "version": 20,
+  "file": "assets\\generated\\meshy\\general_black\\motion\\runtime\\v20\\general_black_mobile.glb",
+  "clips": [
+    {
+      "clip": "idle",
+      "frames": [
+        0.0,
+        95.19999694824219
+      ],
+      "feet": {
+        "RightFoot": {
+          "vertices": 22,
+          "min_surface_clearance_m": 0.0005645155906677246,
+          "max_surface_clearance_m": 0.0005645155906677246,
+          "support_error_max_m": 0
+        },
+        "LeftFoot": {
+          "vertices": 22,
+          "min_surface_clearance_m": 0.0005324780941009521,
+          "max_surface_clearance_m": 0.0005324780941009521,
+          "support_error_max_m": 0
+        }
+      },
+      "pedestal_drift_m": 2.986047320518992e-08,
+      "ankle_edge_stretch_p99": 1.000006079673767,
+      "ankle_edge_stretch_max": 1.10422945022583,
+      "worst_ankle_edge": {
+        "rest": [
+          [
+            -0.24215476214885712,
+            -0.08965276181697845,
+            0.2396700084209442
+          ],
+          [
+            -0.23338277637958527,
+            -0.10615922510623932,
+            0.2289142608642578
+          ]
+        ],
+        "weights": [
+          {
+            "HeldWeapon": 0.8724805116653442,
+            "RightFoot": 0.12751948833465576
+          },
+          {
+            "RightFoot": 0.5258545875549316,
+            "HeldWeapon": 0.47414541244506836
+          }
+        ]
+      },
+      "loop_vertex_jump_m": 0.0
+    },
+    {
+      "clip": "walk",
+      "frames": [
+        0.0,
+        28.80000114440918
+      ],
+      "feet": {
+        "RightFoot": {
+          "vertices": 22,
+          "min_surface_clearance_m": 0.0003236830234527588,
+          "max_surface_clearance_m": 0.10866233706474304,
+          "support_error_max_m": 0
+        },
+        "LeftFoot": {
+          "vertices": 22,
+          "min_surface_clearance_m": 0.0006229132413864136,
+          "max_surface_clearance_m": 0.0901612937450409,
+          "support_error_max_m": 0
+        }
+      },
+      "pedestal_drift_m": 2.986047320518992e-08,
+      "ankle_edge_stretch_p99": 2.439624309539795,
+      "ankle_edge_stretch_max": 9.200263977050781,
+      "worst_ankle_edge": {
+        "rest": [
+          [
+            -0.24215476214885712,
+            -0.08965276181697845,
+            0.2396700084209442
+          ],
+          [
+            -0.22093240916728973,
+            -0.0789942666888237,
+            0.2450680285692215
+          ]
+        ],
+        "weights": [
+          {
+            "HeldWeapon": 0.8724805116653442,
+            "RightFoot": 0.12751948833465576
+          },
+          {
+            "RightFoot": 1.0
+          }
+        ]
+      },
+      "loop_vertex_jump_m": 0.0
+    }
+  ]
+}

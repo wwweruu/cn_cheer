@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "revision_reason": "Original four transparent outputs contain baked checker grids; regenerate clean isolation backgrounds.",
+  "assets": [
+    {
+      "id": "distant_mountains",
+      "kind": "image",
+      "prompt": "A very wide continuous distant mountain ridge silhouette stretching all the way from left edge to right edge, layered desaturated slate gray Chinese mountains seen through mist, only the ridge and solid land below, white empty sky above. Low horizon in bottom third. Matte atmospheric miniature battlefield backdrop, subtle irregular peaks, no foreground objects. No checkerboard, no transparency grid, no text, no watermark, no borders. ",
+      "aspect_ratio": "16:9",
+      "remove_background": true
+    },
+    {
+      "id": "distant_camp",
+      "kind": "image",
+      "prompt": "Very wide continuous distant ancient Chinese military encampment silhouette, many tiny low canvas tents and slim flagpoles across a low horizontal ground line extending from left edge to right edge, dark charcoal muted brown misty shapes, pure white empty sky above. Isolated scenery strip, no large foreground object. No checkerboard, no transparency grid, no text, no watermark, no borders. ",
+      "aspect_ratio": "16:9",
+      "remove_background": true
+    },
+    {
+      "id": "fx_embers",
+      "kind": "image",
+      "prompt": "Only fifteen tiny scattered glowing orange embers and fine sparks on a completely pure black background. Tiny varied irregular specks spread sparsely around the center, a few soft halos, subdued ancient battlefield atmosphere. No flames, no scenery, no smoke. No checkerboard, no transparency grid, no text, no watermark, no borders. ",
+      "aspect_ratio": "1:1",
+      "remove_background": false
+    },
+    {
+      "id": "fx_smoke",
+      "kind": "image",
+      "prompt": "One very soft thin irregular wisp of pale gray smoke dissipating gently upward on a completely pure black background. Subtle wispy edges and broad mostly empty black space, low density, suitable as an additive smoke sprite. No objects, no flames, no glowing light. No checkerboard, no transparency grid, no text, no watermark, no borders. ",
+      "aspect_ratio": "1:1",
+      "remove_background": false
+    }
+  ]
+}

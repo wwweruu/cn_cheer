@@ -1,0 +1,218 @@
+[
+  {
+    "piece": "soldier_red",
+    "variants": {
+      "mobile": {
+        "file": "/assets/models/native-motion/soldier_red/v14.webp.glb",
+        "bytes": 4114956,
+        "triangles": 19899
+      }
+    },
+    "generated_clips": [
+      "walk"
+    ],
+    "review_clips": [
+      "walk"
+    ],
+    "note": "保留 API 生成步行；重建脚踝连续权重，匹配完整步行周期，修正首尾闭合和脚底高度。剑盾保持刚性跟随。",
+    "source_version": 14,
+    "production_replaced": false,
+    "sha256": "fe6900b48498a71a45e66fc31aa48751ff07f64742e80cb9a481e58d040faed1",
+    "source": "assets/generated/meshy/soldier_red/motion/runtime/v14/soldier_red_mobile.glb"
+  },
+  {
+    "piece": "soldier_black",
+    "variants": {
+      "mobile": {
+        "file": "/assets/models/native-motion/soldier_black/v19.webp.glb",
+        "bytes": 4655740,
+        "triangles": 19900
+      }
+    },
+    "generated_clips": [
+      "idle",
+      "walk"
+    ],
+    "review_clips": [
+      "idle",
+      "walk"
+    ],
+    "note": "保留 API 动作；从原高模恢复被上传裁切移除的鞋面，重建小腿与脚踝连续权重，收敛持剑持盾动作。步态与衣摆仍在复核。",
+    "source_version": 19,
+    "production_replaced": false,
+    "sha256": "9a46f58d5092912e3bb8011ee2f80c5e8769dc6dfcff74dfdab5c08fc7821b3a",
+    "source": "assets/generated/meshy/soldier_black/motion/runtime/v19/soldier_black_mobile.glb"
+  },
+  {
+    "piece": "general_black",
+    "variants": {
+      "mobile": {
+        "file": "/assets/models/native-motion/general_black/v20.webp.glb",
+        "bytes": 3720340,
+        "triangles": 19899
+      }
+    },
+    "generated_clips": [
+      "idle",
+      "walk"
+    ],
+    "review_clips": [
+      "idle",
+      "walk"
+    ],
+    "note": "以原始手部表面拟合握持姿态，枪杆独立保持刚性，手臂跟随握持点。另修正披风与靴子的权重和循环首尾；近景手指与披风边缘仍需精修。",
+    "source_version": 20,
+    "production_replaced": false,
+    "sha256": "efb7898f5a785d3288bed2508b9e8bb917002a982ac31cb6795a7712c0336924",
+    "source": "assets/generated/meshy/general_black/motion/runtime/v20/general_black_mobile.glb"
+  },
+  {
+    "piece": "advisor_red",
+    "variants": {
+      "mobile": {
+        "file": "/assets/models/native-motion/advisor_red/v8.webp.glb",
+        "bytes": 3142020,
+        "triangles": 19899
+      }
+    },
+    "generated_clips": [
+      "idle"
+    ],
+    "review_clips": [
+      "idle"
+    ],
+    "note": "保留 API 观察待机、原始长袍与固定站姿；闭合循环首尾，避免重复播放时突跳。衣袖与羽扇的细节仍需复核。",
+    "source_version": 8,
+    "production_replaced": false,
+    "sha256": "839d5f4f572f5ddd1089b90773da52073f96d49f6c082b6b60469e5661f9809c",
+    "source": "assets/generated/meshy/advisor_red/motion/runtime/v8/advisor_red_mobile.glb"
+  },
+  {
+    "piece": "horse_red",
+    "variants": {
+      "mobile": {
+        "file": "/assets/models/native-motion/horse_red/v12.webp.glb",
+        "bytes": 3816068,
+        "triangles": 19900
+      }
+    },
+    "generated_clips": [
+      "idle"
+    ],
+    "review_clips": [
+      "idle"
+    ],
+    "note": "修复骑手骨骼朝向，并用双关节约束稳定持枪手与左手落点；保留 API 头部与上身表演。马身仍沿用本地关节动作。",
+    "source_version": 12,
+    "production_replaced": false,
+    "sha256": "d901eff12a86762230404f41af334a504db132c31a3982fad595f7cc02557339",
+    "source": "assets/generated/meshy/horse_red/motion/runtime/v12/horse_red_mobile.glb"
+  },
+  {
+    "piece": "horse_black",
+    "variants": {
+      "mobile": {
+        "file": "/assets/models/native-motion/horse_black/v8.webp.glb",
+        "bytes": 4009916,
+        "triangles": 19899
+      }
+    },
+    "generated_clips": [
+      "idle"
+    ],
+    "review_clips": [
+      "idle"
+    ],
+    "note": "修复骑手骨骼朝向，并用双关节约束稳定持枪手与左手落点；保留 API 头部与上身表演。马身仍沿用本地关节动作。",
+    "source_version": 8,
+    "production_replaced": false,
+    "sha256": "99e26c07162f05f8ad7e37295b57a92ec8fe95bbfdd5160669e2a1b5d026a3d9",
+    "source": "assets/generated/meshy/horse_black/motion/runtime/v8/horse_black_mobile.glb"
+  },
+  {
+    "piece": "cannon_red",
+    "variants": {
+      "mobile": {
+        "file": "/assets/models/native-motion/cannon_red/v13.webp.glb",
+        "bytes": 4060740,
+        "triangles": 19898
+      }
+    },
+    "generated_clips": [
+      "idle"
+    ],
+    "review_clips": [
+      "idle"
+    ],
+    "note": "修复炮手骨骼朝向、低处部件的错误手部权重，并保留 API 头部、手臂动作。炮架和发射机构沿用既有机械动作；近景手部仍需精修。",
+    "source_version": 13,
+    "production_replaced": false,
+    "sha256": "753c5caff9a13af34cfe5056c5b0b3975006084364a0290854486faa4dda7446",
+    "source": "assets/generated/meshy/cannon_red/motion/runtime/v13/cannon_red_mobile.glb"
+  },
+  {
+    "piece": "cannon_black",
+    "variants": {
+      "mobile": {
+        "file": "/assets/models/native-motion/cannon_black/v11.webp.glb",
+        "bytes": 3688540,
+        "triangles": 19898
+      }
+    },
+    "generated_clips": [
+      "idle"
+    ],
+    "review_clips": [
+      "idle"
+    ],
+    "note": "修复炮手骨骼朝向、低处部件的错误手部权重，并保留 API 头部、手臂动作。炮架和发射机构沿用既有机械动作；近景手部仍需精修。",
+    "source_version": 11,
+    "production_replaced": false,
+    "sha256": "fdb6fc11517b395df7ec3e842d8b0b9115d519b8ad16d7f7abbd44fa4262ed5b",
+    "source": "assets/generated/meshy/cannon_black/motion/runtime/v11/cannon_black_mobile.glb"
+  },
+  {
+    "piece": "elephant_red",
+    "variants": {
+      "mobile": {
+        "file": "/assets/models/native-motion/elephant_red/v8.webp.glb",
+        "bytes": 4177768,
+        "triangles": 19899
+      }
+    },
+    "generated_clips": [
+      "idle"
+    ],
+    "review_clips": [
+      "idle",
+      "walk"
+    ],
+    "note": "象身改为本地四足骨架和分阶段落脚轨迹，新增行进预览；背上弓手保留 API 动作。四足步态是本地制作，尚需侧面和循环自然度复核。",
+    "source_version": 8,
+    "production_replaced": false,
+    "sha256": "d08fe3a88371ee193499ef5cb3ca03c41a55f94c6cfcd89b9d2f44d59fa4d96b",
+    "source": "assets/generated/meshy/elephant_red/motion/runtime/v8/elephant_red_mobile.glb"
+  },
+  {
+    "piece": "elephant_black",
+    "variants": {
+      "mobile": {
+        "file": "/assets/models/native-motion/elephant_black/v8.webp.glb",
+        "bytes": 4923372,
+        "triangles": 19899
+      }
+    },
+    "generated_clips": [
+      "idle"
+    ],
+    "review_clips": [
+      "idle",
+      "walk"
+    ],
+    "note": "象身改为本地四足骨架和分阶段落脚轨迹，新增行进预览；背上弓手保留 API 动作。四足步态是本地制作，尚需侧面和循环自然度复核。",
+    "source_version": 8,
+    "production_replaced": false,
+    "sha256": "d15a9f75c2f453ccb2dd059e7f8fd3c244eb461560c64fa0c074362f093e765e",
+    "source": "assets/generated/meshy/elephant_black/motion/runtime/v8/elephant_black_mobile.glb"
+  }
+]

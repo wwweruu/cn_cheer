@@ -1,4 +1,4 @@
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useMemo, useRef, useState } from "react";
 import { playMoveSound } from "../audio/sfx";
 import { positionKey, samePosition } from "./coordinates";
 import {
@@ -12,12 +12,14 @@ import type {
   GameSettings,
   GameState,
   MoveRecord,
+  MovePlayback,
   Position,
 } from "./types";
 
 const SETTINGS_KEY = "xuanjia-xiangqi-settings";
 
 const defaultSettings: GameSettings = {
+  quality: "auto",
   effects: "full",
   sound: true,
   cameraShake: true,
@@ -40,7 +42,9 @@ export function useGameController() {
   const [legalMoves, setLegalMoves] = useState<Position[]>([]);
   const [history, setHistory] = useState<GameState[]>([]);
   const [moves, setMoves] = useState<MoveRecord[]>([]);
-  const [animation, setAnimation] = useState<MoveRecord | null>(null);
+  const [animation, setAnimation] = useState<MovePlayback | null>(null);
+  const playbackSequence = useRef(0);
+  const sounded = useRef(0);
   const [settings, setSettingsState] = useState<GameSettings>(loadSettings);
   const [cameraMode, setCameraMode] = useState<CameraMode>("perspective");
   const [cameraReset, setCameraReset] = useState(0);
@@ -92,15 +96,18 @@ export function useGameController() {
       setHistory((current) => [...current, game]);
       setMoves((current) => [...current, result.move]);
       setGame(result.state);
-      setAnimation(result.move);
+      setAnimation({...result.move,token:++playbackSequence.current,startedAt:performance.now(),effectLevel:settings.effects});
       setSelected(null);
       setLegalMoves([]);
-      if (settings.sound) playMoveSound(Boolean(result.move.captured));
     },
-    [animation, game, legalMoveKeys, moves.length, select, selected, settings.sound],
+    [animation, game, legalMoveKeys, moves.length, select, selected, settings.effects],
   );
 
-  const finishAnimation = useCallback(() => setAnimation(null), []);
+  const finishAnimation = useCallback((token:number) => setAnimation(current=>current?.token===token?null:current), []);
+  const contactAnimation = useCallback((token:number,captured:boolean) => {
+    if(token!==playbackSequence.current||sounded.current===token)return;
+    sounded.current=token;if(settings.sound)playMoveSound(captured);
+  },[settings.sound]);
 
   const undo = useCallback(() => {
     if (animation || history.length === 0) return;
@@ -114,6 +121,7 @@ export function useGameController() {
   }, [animation, history]);
 
   const restart = useCallback(() => {
+    ++playbackSequence.current;
     setGame(createInitialGameState());
     setHistory([]);
     setMoves([]);
@@ -142,6 +150,7 @@ export function useGameController() {
     canUndo: history.length > 0 && !animation,
     clickPosition,
     finishAnimation,
+    contactAnimation,
     undo,
     restart,
     updateSettings,

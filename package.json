@@ -10,7 +10,9 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:e2e": "playwright test",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "meshy": "python scripts/meshy/cli.py",
+    "test:meshy": "python -m unittest discover -s scripts/meshy -p test_*.py -v"
   },
   "dependencies": {
     "@phosphor-icons/react": "2.1.10",

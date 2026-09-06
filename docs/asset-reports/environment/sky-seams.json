@@ -1,0 +1,98 @@
+[
+  {
+    "faces": [
+      "px_left",
+      "pz_right"
+    ],
+    "mae_8bit": 0.6487630208333334,
+    "max_8bit": 6
+  },
+  {
+    "faces": [
+      "px_right",
+      "nz_left"
+    ],
+    "mae_8bit": 0.59765625,
+    "max_8bit": 5
+  },
+  {
+    "faces": [
+      "px_top",
+      "py_right"
+    ],
+    "mae_8bit": 0.4453125,
+    "max_8bit": 4
+  },
+  {
+    "faces": [
+      "px_bottom",
+      "ny_right"
+    ],
+    "mae_8bit": 1.1468098958333333,
+    "max_8bit": 4
+  },
+  {
+    "faces": [
+      "nx_left",
+      "nz_right"
+    ],
+    "mae_8bit": 0.5657552083333334,
+    "max_8bit": 6
+  },
+  {
+    "faces": [
+      "nx_right",
+      "pz_left"
+    ],
+    "mae_8bit": 0.6214192708333334,
+    "max_8bit": 4
+  },
+  {
+    "faces": [
+      "nx_top",
+      "py_left"
+    ],
+    "mae_8bit": 0.5061848958333334,
+    "max_8bit": 4
+  },
+  {
+    "faces": [
+      "nx_bottom",
+      "ny_left"
+    ],
+    "mae_8bit": 1.0481770833333333,
+    "max_8bit": 5
+  },
+  {
+    "faces": [
+      "py_top",
+      "nz_top"
+    ],
+    "mae_8bit": 0.3486328125,
+    "max_8bit": 3
+  },
+  {
+    "faces": [
+      "py_bottom",
+      "pz_top"
+    ],
+    "mae_8bit": 1.1881510416666667,
+    "max_8bit": 6
+  },
+  {
+    "faces": [
+      "ny_top",
+      "pz_bottom"
+    ],
+    "mae_8bit": 0.9033203125,
+    "max_8bit": 5
+  },
+  {
+    "faces": [
+      "ny_bottom",
+      "nz_bottom"
+    ],
+    "mae_8bit": 0.5426432291666666,
+    "max_8bit": 4
+  }
+]

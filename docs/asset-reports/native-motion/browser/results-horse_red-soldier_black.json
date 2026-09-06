@@ -1,0 +1,30 @@
+[
+  {
+    "piece": "soldier_black",
+    "sourceVersion": 17,
+    "clips": [
+      {
+        "clip": "idle",
+        "changedPixels": 47678
+      },
+      {
+        "clip": "walk",
+        "changedPixels": 64065
+      }
+    ],
+    "maxBaseDrift": 2.0583964939479343e-8,
+    "errors": []
+  },
+  {
+    "piece": "horse_red",
+    "sourceVersion": 11,
+    "clips": [
+      {
+        "clip": "idle",
+        "changedPixels": 28589
+      }
+    ],
+    "maxBaseDrift": 0,
+    "errors": []
+  }
+]

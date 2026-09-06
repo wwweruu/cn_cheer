@@ -1,0 +1,55 @@
+{
+  "piece": "advisor_red",
+  "version": 8,
+  "file": "assets\\generated\\meshy\\advisor_red\\motion\\runtime\\v8\\advisor_red_mobile.glb",
+  "clips": [
+    {
+      "clip": "idle",
+      "frames": [
+        0.0,
+        95.19999694824219
+      ],
+      "feet": {
+        "LeftFoot": {
+          "vertices": 12,
+          "min_surface_clearance_m": 0.0009428113698959351,
+          "max_surface_clearance_m": 0.0009428113698959351,
+          "support_error_max_m": 0
+        },
+        "RightFoot": {
+          "vertices": 10,
+          "min_surface_clearance_m": 0.000922664999961853,
+          "max_surface_clearance_m": 0.000922664999961853,
+          "support_error_max_m": 0
+        }
+      },
+      "pedestal_drift_m": 3.0719530030864917e-08,
+      "ankle_edge_stretch_p99": 1.0000040531158447,
+      "ankle_edge_stretch_max": 1.000017762184143,
+      "worst_ankle_edge": {
+        "rest": [
+          [
+            -0.15344084799289703,
+            -0.1650131642818451,
+            0.2680356800556183
+          ],
+          [
+            -0.1484520137310028,
+            -0.15732263028621674,
+            0.27319496870040894
+          ]
+        ],
+        "weights": [
+          {
+            "Hips": 0.8627656102180481,
+            "RightFoot": 0.1372343897819519
+          },
+          {
+            "RightFoot": 1.0
+          }
+        ]
+      },
+      "loop_vertex_jump_m": 0.0
+    }
+  ]
+}

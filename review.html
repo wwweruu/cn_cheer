@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>红帅 · 单棋子验收</title>
+    <link rel="icon" href="data:," />
+  </head>
+  <body>
+    <main class="review-shell">
+      <section class="stage" aria-label="棋子三维预览">
+        <div class="stage-heading"><span>象棋 / 资产检视</span><span id="status" role="status">准备载入…</span></div>
+        <div id="viewport"></div>
+        <div class="views" aria-label="视角">
+          <button data-view="front">正面</button><button data-view="quarter" aria-pressed="true">45°</button><button data-view="back">背面</button><button data-view="detail">脸部细节</button>
+        </div>
+        <p class="gesture">拖动旋转 · 滚轮缩放 · 右键平移</p>
+      </section>
+      <aside>
+        <p class="eyebrow">旧样板 01 <span>造型未通过</span></p>
+        <h1>红方 · 帅</h1>
+        <p class="intro">此页保留上一版贴图与运行模型的检查记录。几何标准已改为你提供的官网 Agent 高模。</p>
+        <label for="quality">模型版本</label>
+        <select id="quality">
+          <option value="desktop">桌面 · 4K / LOD0</option>
+          <option value="mobile">移动 · 2K / LOD0</option>
+          <option value="lod1">远景 · 2K / LOD1</option>
+          <option value="lod2">极远景 · 2K / LOD2</option>
+        </select>
+        <dl><div><dt>当前三角面</dt><dd id="triangles">—</dd></div><div><dt>文件体积</dt><dd id="size">—</dd></div><div><dt>源贴图</dt><dd>8K 色彩 / 4K PBR</dd></div><div><dt>本次费用</dt><dd>35 积分</dd></div></dl>
+        <div class="toggles"><label><input type="checkbox" id="rotate" /> 自动旋转</label><label><input type="checkbox" id="wireframe" /> 查看线框</label><label><input type="checkbox" id="grid" /> 显示棋格尺度</label></div>
+        <div class="review-note"><strong>本版造型已被退回</strong><p>长披风、冠冕和人物细节未达到指定高模标准。最新 Ultra 对照也未通过，详见<a href="/assets/review/general_red/geometry-comparison/index.html">原始高模对比</a>。</p></div>
+        <div class="links"><a id="download" download>下载当前 GLB</a><a href="/assets/review/general_red/review_front.png" target="_blank" rel="noreferrer">正面渲染图 ↗</a><a href="/assets/review/general_red/review_back.png" target="_blank" rel="noreferrer">背面渲染图 ↗</a></div>
+        <p class="footnote">这是实际 GLB 的实时预览。原件与整理后的 Blender 工程已归档。当前为静态样板，尚未替换正式棋子。</p>
+      </aside>
+    </main>
+    <script type="module" src="/src/review/main.ts"></script>
+  </body>
+</html>

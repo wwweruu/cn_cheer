@@ -1,0 +1,43 @@
+{
+  "piece": "horse_black",
+  "version": 8,
+  "file": "assets\\generated\\meshy\\horse_black\\motion\\runtime\\v8\\horse_black_mobile.glb",
+  "clips": [
+    {
+      "clip": "idle",
+      "frames": [
+        0.0,
+        143.1999969482422
+      ],
+      "feet": {},
+      "pedestal_drift_m": 0,
+      "ankle_edge_stretch_p99": 1.0838606357574463,
+      "ankle_edge_stretch_max": 1.2131866216659546,
+      "worst_ankle_edge": {
+        "rest": [
+          [
+            0.038616716861724854,
+            0.3570004403591156,
+            0.38764750957489014
+          ],
+          [
+            0.036874692887067795,
+            0.35543596744537354,
+            0.3866284489631653
+          ]
+        ],
+        "weights": [
+          {
+            "HorseTail": 0.8648912310600281,
+            "HorseBack": 0.13510876893997192
+          },
+          {
+            "HorseTail": 0.8263166546821594,
+            "HorseBack": 0.1736833155155182
+          }
+        ]
+      },
+      "loop_vertex_jump_m": 0.0
+    }
+  ]
+}

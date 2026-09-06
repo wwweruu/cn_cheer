@@ -1,0 +1,1388 @@
+[
+  {
+    "asset": "general_red",
+    "tier": "desktop",
+    "clips": [
+      {
+        "clip": "idle",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "attack",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "hit",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "death",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "walk",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "run",
+        "maxBaseDrift": 0
+      }
+    ],
+    "maxBaseDrift": 0,
+    "compressedTextures": 3,
+    "errors": []
+  },
+  {
+    "asset": "general_red",
+    "tier": "mobile",
+    "clips": [
+      {
+        "clip": "idle",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "attack",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "hit",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "death",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "walk",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "run",
+        "maxBaseDrift": 0
+      }
+    ],
+    "maxBaseDrift": 0,
+    "compressedTextures": 3,
+    "errors": []
+  },
+  {
+    "asset": "general_red",
+    "tier": "lod2",
+    "clips": [
+      {
+        "clip": "idle",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "attack",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "hit",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "death",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "walk",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "run",
+        "maxBaseDrift": 0
+      }
+    ],
+    "maxBaseDrift": 0,
+    "compressedTextures": 3,
+    "errors": []
+  },
+  {
+    "asset": "general_black",
+    "tier": "desktop",
+    "clips": [
+      {
+        "clip": "idle",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "attack",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "hit",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "death",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "walk",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "run",
+        "maxBaseDrift": 0
+      }
+    ],
+    "maxBaseDrift": 0,
+    "compressedTextures": 3,
+    "errors": []
+  },
+  {
+    "asset": "general_black",
+    "tier": "mobile",
+    "clips": [
+      {
+        "clip": "idle",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "attack",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "hit",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "death",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "walk",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "run",
+        "maxBaseDrift": 0
+      }
+    ],
+    "maxBaseDrift": 0,
+    "compressedTextures": 3,
+    "errors": []
+  },
+  {
+    "asset": "general_black",
+    "tier": "lod2",
+    "clips": [
+      {
+        "clip": "idle",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "attack",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "hit",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "death",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "walk",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "run",
+        "maxBaseDrift": 0
+      }
+    ],
+    "maxBaseDrift": 0,
+    "compressedTextures": 3,
+    "errors": []
+  },
+  {
+    "asset": "advisor_red",
+    "tier": "desktop",
+    "clips": [
+      {
+        "clip": "idle",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "attack",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "hit",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "death",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "walk",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "run",
+        "maxBaseDrift": 0
+      }
+    ],
+    "maxBaseDrift": 0,
+    "compressedTextures": 3,
+    "errors": []
+  },
+  {
+    "asset": "advisor_red",
+    "tier": "mobile",
+    "clips": [
+      {
+        "clip": "idle",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "attack",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "hit",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "death",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "walk",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "run",
+        "maxBaseDrift": 0
+      }
+    ],
+    "maxBaseDrift": 0,
+    "compressedTextures": 3,
+    "errors": []
+  },
+  {
+    "asset": "advisor_red",
+    "tier": "lod2",
+    "clips": [
+      {
+        "clip": "idle",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "attack",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "hit",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "death",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "walk",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "run",
+        "maxBaseDrift": 0
+      }
+    ],
+    "maxBaseDrift": 0,
+    "compressedTextures": 3,
+    "errors": []
+  },
+  {
+    "asset": "advisor_black",
+    "tier": "desktop",
+    "clips": [
+      {
+        "clip": "idle",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "attack",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "hit",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "death",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "walk",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "run",
+        "maxBaseDrift": 0
+      }
+    ],
+    "maxBaseDrift": 0,
+    "compressedTextures": 3,
+    "errors": []
+  },
+  {
+    "asset": "advisor_black",
+    "tier": "mobile",
+    "clips": [
+      {
+        "clip": "idle",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "attack",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "hit",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "death",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "walk",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "run",
+        "maxBaseDrift": 0
+      }
+    ],
+    "maxBaseDrift": 0,
+    "compressedTextures": 3,
+    "errors": []
+  },
+  {
+    "asset": "advisor_black",
+    "tier": "lod2",
+    "clips": [
+      {
+        "clip": "idle",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "attack",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "hit",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "death",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "walk",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "run",
+        "maxBaseDrift": 0
+      }
+    ],
+    "maxBaseDrift": 0,
+    "compressedTextures": 3,
+    "errors": []
+  },
+  {
+    "asset": "elephant_red",
+    "tier": "desktop",
+    "clips": [
+      {
+        "clip": "idle",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "attack",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "hit",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "death",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "walk",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "run",
+        "maxBaseDrift": 0
+      }
+    ],
+    "maxBaseDrift": 0,
+    "compressedTextures": 3,
+    "errors": []
+  },
+  {
+    "asset": "elephant_red",
+    "tier": "mobile",
+    "clips": [
+      {
+        "clip": "idle",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "attack",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "hit",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "death",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "walk",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "run",
+        "maxBaseDrift": 0
+      }
+    ],
+    "maxBaseDrift": 0,
+    "compressedTextures": 3,
+    "errors": []
+  },
+  {
+    "asset": "elephant_red",
+    "tier": "lod2",
+    "clips": [
+      {
+        "clip": "idle",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "attack",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "hit",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "death",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "walk",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "run",
+        "maxBaseDrift": 0
+      }
+    ],
+    "maxBaseDrift": 0,
+    "compressedTextures": 3,
+    "errors": []
+  },
+  {
+    "asset": "elephant_black",
+    "tier": "desktop",
+    "clips": [
+      {
+        "clip": "idle",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "attack",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "hit",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "death",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "walk",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "run",
+        "maxBaseDrift": 0
+      }
+    ],
+    "maxBaseDrift": 0,
+    "compressedTextures": 3,
+    "errors": []
+  },
+  {
+    "asset": "elephant_black",
+    "tier": "mobile",
+    "clips": [
+      {
+        "clip": "idle",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "attack",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "hit",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "death",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "walk",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "run",
+        "maxBaseDrift": 0
+      }
+    ],
+    "maxBaseDrift": 0,
+    "compressedTextures": 3,
+    "errors": []
+  },
+  {
+    "asset": "elephant_black",
+    "tier": "lod2",
+    "clips": [
+      {
+        "clip": "idle",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "attack",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "hit",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "death",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "walk",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "run",
+        "maxBaseDrift": 0
+      }
+    ],
+    "maxBaseDrift": 0,
+    "compressedTextures": 3,
+    "errors": []
+  },
+  {
+    "asset": "horse_red",
+    "tier": "desktop",
+    "clips": [
+      {
+        "clip": "idle",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "attack",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "hit",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "death",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "walk",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "run",
+        "maxBaseDrift": 0
+      }
+    ],
+    "maxBaseDrift": 0,
+    "compressedTextures": 3,
+    "errors": []
+  },
+  {
+    "asset": "horse_red",
+    "tier": "mobile",
+    "clips": [
+      {
+        "clip": "idle",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "attack",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "hit",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "death",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "walk",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "run",
+        "maxBaseDrift": 0
+      }
+    ],
+    "maxBaseDrift": 0,
+    "compressedTextures": 3,
+    "errors": []
+  },
+  {
+    "asset": "horse_red",
+    "tier": "lod2",
+    "clips": [
+      {
+        "clip": "idle",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "attack",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "hit",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "death",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "walk",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "run",
+        "maxBaseDrift": 0
+      }
+    ],
+    "maxBaseDrift": 0,
+    "compressedTextures": 3,
+    "errors": []
+  },
+  {
+    "asset": "horse_black",
+    "tier": "desktop",
+    "clips": [
+      {
+        "clip": "idle",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "attack",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "hit",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "death",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "walk",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "run",
+        "maxBaseDrift": 0
+      }
+    ],
+    "maxBaseDrift": 0,
+    "compressedTextures": 3,
+    "errors": []
+  },
+  {
+    "asset": "horse_black",
+    "tier": "mobile",
+    "clips": [
+      {
+        "clip": "idle",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "attack",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "hit",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "death",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "walk",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "run",
+        "maxBaseDrift": 0
+      }
+    ],
+    "maxBaseDrift": 0,
+    "compressedTextures": 3,
+    "errors": []
+  },
+  {
+    "asset": "horse_black",
+    "tier": "lod2",
+    "clips": [
+      {
+        "clip": "idle",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "attack",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "hit",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "death",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "walk",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "run",
+        "maxBaseDrift": 0
+      }
+    ],
+    "maxBaseDrift": 0,
+    "compressedTextures": 3,
+    "errors": []
+  },
+  {
+    "asset": "chariot_red",
+    "tier": "desktop",
+    "clips": [
+      {
+        "clip": "idle",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "attack",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "hit",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "death",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "walk",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "run",
+        "maxBaseDrift": 0
+      }
+    ],
+    "maxBaseDrift": 0,
+    "compressedTextures": 3,
+    "errors": []
+  },
+  {
+    "asset": "chariot_red",
+    "tier": "mobile",
+    "clips": [
+      {
+        "clip": "idle",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "attack",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "hit",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "death",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "walk",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "run",
+        "maxBaseDrift": 0
+      }
+    ],
+    "maxBaseDrift": 0,
+    "compressedTextures": 3,
+    "errors": []
+  },
+  {
+    "asset": "chariot_red",
+    "tier": "lod2",
+    "clips": [
+      {
+        "clip": "idle",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "attack",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "hit",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "death",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "walk",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "run",
+        "maxBaseDrift": 0
+      }
+    ],
+    "maxBaseDrift": 0,
+    "compressedTextures": 3,
+    "errors": []
+  },
+  {
+    "asset": "chariot_black",
+    "tier": "desktop",
+    "clips": [
+      {
+        "clip": "idle",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "attack",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "hit",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "death",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "walk",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "run",
+        "maxBaseDrift": 0
+      }
+    ],
+    "maxBaseDrift": 0,
+    "compressedTextures": 3,
+    "errors": []
+  },
+  {
+    "asset": "chariot_black",
+    "tier": "mobile",
+    "clips": [
+      {
+        "clip": "idle",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "attack",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "hit",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "death",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "walk",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "run",
+        "maxBaseDrift": 0
+      }
+    ],
+    "maxBaseDrift": 0,
+    "compressedTextures": 3,
+    "errors": []
+  },
+  {
+    "asset": "chariot_black",
+    "tier": "lod2",
+    "clips": [
+      {
+        "clip": "idle",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "attack",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "hit",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "death",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "walk",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "run",
+        "maxBaseDrift": 0
+      }
+    ],
+    "maxBaseDrift": 0,
+    "compressedTextures": 3,
+    "errors": []
+  },
+  {
+    "asset": "cannon_red",
+    "tier": "desktop",
+    "clips": [
+      {
+        "clip": "idle",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "attack",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "hit",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "death",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "walk",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "run",
+        "maxBaseDrift": 0
+      }
+    ],
+    "maxBaseDrift": 0,
+    "compressedTextures": 3,
+    "errors": []
+  },
+  {
+    "asset": "cannon_red",
+    "tier": "mobile",
+    "clips": [
+      {
+        "clip": "idle",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "attack",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "hit",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "death",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "walk",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "run",
+        "maxBaseDrift": 0
+      }
+    ],
+    "maxBaseDrift": 0,
+    "compressedTextures": 3,
+    "errors": []
+  },
+  {
+    "asset": "cannon_red",
+    "tier": "lod2",
+    "clips": [
+      {
+        "clip": "idle",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "attack",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "hit",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "death",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "walk",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "run",
+        "maxBaseDrift": 0
+      }
+    ],
+    "maxBaseDrift": 0,
+    "compressedTextures": 3,
+    "errors": []
+  },
+  {
+    "asset": "cannon_black",
+    "tier": "desktop",
+    "clips": [
+      {
+        "clip": "idle",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "attack",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "hit",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "death",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "walk",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "run",
+        "maxBaseDrift": 0
+      }
+    ],
+    "maxBaseDrift": 0,
+    "compressedTextures": 3,
+    "errors": []
+  },
+  {
+    "asset": "cannon_black",
+    "tier": "mobile",
+    "clips": [
+      {
+        "clip": "idle",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "attack",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "hit",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "death",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "walk",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "run",
+        "maxBaseDrift": 0
+      }
+    ],
+    "maxBaseDrift": 0,
+    "compressedTextures": 3,
+    "errors": []
+  },
+  {
+    "asset": "cannon_black",
+    "tier": "lod2",
+    "clips": [
+      {
+        "clip": "idle",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "attack",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "hit",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "death",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "walk",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "run",
+        "maxBaseDrift": 0
+      }
+    ],
+    "maxBaseDrift": 0,
+    "compressedTextures": 3,
+    "errors": []
+  },
+  {
+    "asset": "soldier_red",
+    "tier": "desktop",
+    "clips": [
+      {
+        "clip": "idle",
+        "maxBaseDrift": 1.884182165845516e-8
+      },
+      {
+        "clip": "attack",
+        "maxBaseDrift": 1.884182165845516e-8
+      },
+      {
+        "clip": "hit",
+        "maxBaseDrift": 1.884182165845516e-8
+      },
+      {
+        "clip": "death",
+        "maxBaseDrift": 1.884182165845516e-8
+      },
+      {
+        "clip": "walk",
+        "maxBaseDrift": 1.884182165845516e-8
+      },
+      {
+        "clip": "run",
+        "maxBaseDrift": 1.884182165845516e-8
+      }
+    ],
+    "maxBaseDrift": 1.884182165845516e-8,
+    "compressedTextures": 3,
+    "errors": []
+  },
+  {
+    "asset": "soldier_red",
+    "tier": "mobile",
+    "clips": [
+      {
+        "clip": "idle",
+        "maxBaseDrift": 1.8818888614102747e-8
+      },
+      {
+        "clip": "attack",
+        "maxBaseDrift": 1.8818888614102747e-8
+      },
+      {
+        "clip": "hit",
+        "maxBaseDrift": 1.8818888614102747e-8
+      },
+      {
+        "clip": "death",
+        "maxBaseDrift": 1.8818888614102747e-8
+      },
+      {
+        "clip": "walk",
+        "maxBaseDrift": 1.8818888614102747e-8
+      },
+      {
+        "clip": "run",
+        "maxBaseDrift": 1.8818888614102747e-8
+      }
+    ],
+    "maxBaseDrift": 1.8818888614102747e-8,
+    "compressedTextures": 3,
+    "errors": []
+  },
+  {
+    "asset": "soldier_red",
+    "tier": "lod2",
+    "clips": [
+      {
+        "clip": "idle",
+        "maxBaseDrift": 1.8818888614102747e-8
+      },
+      {
+        "clip": "attack",
+        "maxBaseDrift": 1.8818888614102747e-8
+      },
+      {
+        "clip": "hit",
+        "maxBaseDrift": 1.8818888614102747e-8
+      },
+      {
+        "clip": "death",
+        "maxBaseDrift": 1.8818888614102747e-8
+      },
+      {
+        "clip": "walk",
+        "maxBaseDrift": 1.8818888614102747e-8
+      },
+      {
+        "clip": "run",
+        "maxBaseDrift": 1.8818888614102747e-8
+      }
+    ],
+    "maxBaseDrift": 1.8818888614102747e-8,
+    "compressedTextures": 3,
+    "errors": []
+  },
+  {
+    "asset": "soldier_black",
+    "tier": "desktop",
+    "clips": [
+      {
+        "clip": "idle",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "attack",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "hit",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "death",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "walk",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "run",
+        "maxBaseDrift": 0
+      }
+    ],
+    "maxBaseDrift": 0,
+    "compressedTextures": 3,
+    "errors": []
+  },
+  {
+    "asset": "soldier_black",
+    "tier": "mobile",
+    "clips": [
+      {
+        "clip": "idle",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "attack",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "hit",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "death",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "walk",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "run",
+        "maxBaseDrift": 0
+      }
+    ],
+    "maxBaseDrift": 0,
+    "compressedTextures": 3,
+    "errors": []
+  },
+  {
+    "asset": "soldier_black",
+    "tier": "lod2",
+    "clips": [
+      {
+        "clip": "idle",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "attack",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "hit",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "death",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "walk",
+        "maxBaseDrift": 0
+      },
+      {
+        "clip": "run",
+        "maxBaseDrift": 0
+      }
+    ],
+    "maxBaseDrift": 0,
+    "compressedTextures": 3,
+    "errors": []
+  }
+]

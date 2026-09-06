@@ -1,0 +1,56 @@
+{
+  "piece": "soldier_red",
+  "version": 14,
+  "file": "assets\\generated\\meshy\\soldier_red\\motion\\runtime\\v14\\soldier_red_mobile.glb",
+  "clips": [
+    {
+      "clip": "walk",
+      "frames": [
+        0.0,
+        28.80000114440918
+      ],
+      "feet": {
+        "LeftFoot": {
+          "vertices": 105,
+          "min_surface_clearance_m": -0.00025869905948638916,
+          "max_surface_clearance_m": 0.04996681213378906,
+          "support_error_max_m": 0
+        },
+        "RightFoot": {
+          "vertices": 113,
+          "min_surface_clearance_m": -0.0003862529993057251,
+          "max_surface_clearance_m": 0.05961930751800537,
+          "support_error_max_m": 0
+        }
+      },
+      "pedestal_drift_m": 2.9802322387695312e-08,
+      "ankle_edge_stretch_p99": 1.1256358623504639,
+      "ankle_edge_stretch_max": 1.3090823888778687,
+      "worst_ankle_edge": {
+        "rest": [
+          [
+            -0.15782684087753296,
+            0.08825446665287018,
+            0.3297117352485657
+          ],
+          [
+            -0.15523333847522736,
+            0.08670119196176529,
+            0.33975568413734436
+          ]
+        ],
+        "weights": [
+          {
+            "RightLeg": 0.7323927283287048,
+            "RightFoot": 0.26760730147361755
+          },
+          {
+            "RightLeg": 0.9253528118133545,
+            "RightFoot": 0.07464717328548431
+          }
+        ]
+      },
+      "loop_vertex_jump_m": 0.0
+    }
+  ]
+}

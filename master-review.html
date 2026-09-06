@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>红帅 · 官网高模贴图检查</title>
+    <link rel="icon" href="data:," />
+  </head>
+  <body data-review-root="/assets/review/general_red/agent-master/" data-normalize="true">
+    <main class="review-shell">
+      <section class="stage" aria-label="棋子三维预览">
+        <div class="stage-heading"><span>官网原件 / 贴图检查</span><span id="status" role="status">准备载入…</span></div>
+        <div id="viewport"></div>
+        <div class="views" aria-label="视角">
+          <button data-view="front">正面</button><button data-view="quarter" aria-pressed="true">45°</button><button data-view="back">披风背面</button><button data-view="detail">脸部与珠串</button><button data-view="base">底座与靴子</button>
+        </div>
+        <p class="gesture">拖动旋转 · 滚轮缩放 · 右键平移</p>
+      </section>
+      <aside>
+        <p class="eyebrow">源模型 <span>已验收 · 制作基准</span></p>
+        <h1>红方 · 帅</h1>
+        <p class="intro">使用你提供的官网 GLB 上贴图。重点检查完整披风、底座、冠冕珠串和靴子，再确认红金材质。</p>
+        <label for="quality">模型版本</label>
+        <select id="quality"><option value="desktop">官网源高模 · 8K PBR</option></select>
+        <dl><div><dt>当前三角面</dt><dd id="triangles">—</dd></div><div><dt>文件体积</dt><dd id="size">—</dd></div><div><dt>源贴图</dt><dd id="texture-spec">8K 色彩 / 4K PBR</dd></div><div><dt>本次贴图</dt><dd>15 积分</dd></div></dl>
+        <div class="toggles"><label><input type="checkbox" id="rotate" /> 自动旋转</label><label><input type="checkbox" id="wireframe" /> 查看线框</label><label><input type="checkbox" id="grid" /> 显示棋格尺度</label></div>
+        <div class="review-note"><strong>底座和披风完整保留</strong><p>这份高模已获确认，作为后续制作基准。底座形状、边饰、“帅”字与人物站立关系均属于运行版本的检查内容。</p></div>
+        <div class="links"><a id="download" download>下载带贴图 GLB</a><a href="/runtime-review.html">查看游戏运行版本 ↗</a><a href="/assets/review/general_red/geometry-comparison/index.html">查看之前的几何对比 ↗</a></div>
+        <p class="footnote">展示仅对整体等比例缩放并居中。下载文件保留原始几何尺度。此样板尚未替换正式棋子。</p>
+      </aside>
+    </main>
+    <script type="module" src="/src/review/main.ts"></script>
+  </body>
+</html>

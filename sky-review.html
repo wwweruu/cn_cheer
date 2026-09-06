@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><title>天空立方体接缝检查</title>
+<style>body{margin:0;background:#161c1e;font:14px system-ui;color:white}canvas{display:block}nav{position:fixed;top:16px;left:16px;padding:14px;background:#111b22d9;border-radius:8px}button{margin:8px 4px 0 0;padding:8px 14px;cursor:pointer}</style></head>
+<body><nav>原生 1024 × 1024 LDR 天空 · 拖动旋转 · 对角视角检查接缝<br><span id="controls"></span></nav>
+<script type="module">
+import * as THREE from 'three';
+import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
+import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
+import {KTX2Loader} from 'three/addons/loaders/KTX2Loader.js';
+const renderer=new THREE.WebGLRenderer({antialias:true});renderer.setSize(innerWidth,innerHeight);document.body.append(renderer.domElement);
+const scene=new THREE.Scene(),camera=new THREE.PerspectiveCamera(80,innerWidth/innerHeight,.01,100);
+const controls=new OrbitControls(camera,renderer.domElement);controls.enablePan=false;controls.enableZoom=false;
+const cube=await new THREE.CubeTextureLoader().loadAsync(['px','nx','py','ny','pz','nz'].map(f=>`/assets/environment/atmosphere/sky_${f}.webp`));cube.colorSpace=THREE.SRGBColorSpace;scene.background=cube;
+function view(yaw,pitch=0){const direction=new THREE.Vector3(Math.sin(yaw)*Math.cos(pitch),Math.sin(pitch),Math.cos(yaw)*Math.cos(pitch));camera.position.copy(direction).multiplyScalar(-.1);controls.target.set(0,0,0);controls.update();renderer.render(scene,camera);}
+const views=[['东南',Math.PI/4,0],['西南',-Math.PI/4,0],['东北',Math.PI*.75,0],['西北',-Math.PI*.75,0],['天顶',Math.PI/4,Math.PI/3],['天底',Math.PI/4,-Math.PI/3]];
+views.forEach(([name,yaw,pitch])=>{const b=document.createElement('button');b.textContent=name;b.onclick=()=>view(yaw,pitch);document.querySelector('#controls').append(b);});
+view(Math.PI/4);renderer.setAnimationLoop(()=>renderer.render(scene,camera));
+window.skyAudit={ready:true,views,view,async board(){
+ const decoder=new KTX2Loader().setTranscoderPath('/assets/decoders/basis/').detectSupport(renderer);const loader=new GLTFLoader().setKTX2Loader(decoder);const report=[];
+ for(const tier of ['desktop','mobile']){const model=(await loader.loadAsync(`/assets/board/production/board_main/${tier}.glb`)).scene;model.updateMatrixWorld(true);const heights=[];const ray=new THREE.Raycaster();
+  for(let rank=0;rank<10;rank++)for(let file=0;file<9;file++){ray.set(new THREE.Vector3((file-4)*1.05,3,(rank-4.5)*1.05),new THREE.Vector3(0,-1,0));const hits=ray.intersectObject(model,true);if(!hits.length)throw new Error('Uncovered square');heights.push(hits[0].point.y);}
+  const maximumHeightError=Math.max(...heights.map(y=>Math.abs(y-.25)));if(maximumHeightError>=.008)throw new Error('Board is not flat');report.push({tier,heights,maximumHeightError});
+ }decoder.dispose();return report;
+}};
+window.addEventListener('resize',()=>{renderer.setSize(innerWidth,innerHeight);camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();});
+</script></body></html>

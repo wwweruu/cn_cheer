@@ -2,6 +2,7 @@ import { Component, type ErrorInfo, type ReactNode } from "react";
 import { GameScene } from "./scene/GameScene";
 import { GameHud } from "./ui/GameHud";
 import { useGameController } from "./game/useGameController";
+import { AssetLoadingStatus } from "./ui/AssetLoadingStatus";
 
 class SceneErrorBoundary extends Component<
   { children: ReactNode },
@@ -56,13 +57,16 @@ export default function App() {
             moves={controller.moves}
             animation={controller.animation}
             effects={controller.settings.effects}
+            quality={controller.settings.quality}
             cameraShake={controller.settings.cameraShake}
             cameraMode={controller.cameraMode}
             cameraReset={controller.cameraReset}
             onPositionClick={controller.clickPosition}
             onMoveComplete={controller.finishAnimation}
+            onContact={controller.contactAnimation}
           />
         </SceneErrorBoundary>
+        <AssetLoadingStatus />
         {controller.game.winner && (
           <div className="victory-band" role="status">
             <span>{controller.game.winner === "red" ? "赤军" : "玄军"}</span>

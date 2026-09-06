@@ -1,0 +1,296 @@
+[
+  {
+    "asset": "general_red",
+    "tier": "desktop",
+    "triangles": "59,918",
+    "compressed": "3",
+    "errors": []
+  },
+  {
+    "asset": "general_red",
+    "tier": "mobile",
+    "triangles": "19,920",
+    "compressed": "3",
+    "errors": []
+  },
+  {
+    "asset": "general_red",
+    "tier": "lod2",
+    "triangles": "11,920",
+    "compressed": "3",
+    "errors": []
+  },
+  {
+    "asset": "general_black",
+    "tier": "desktop",
+    "triangles": "59,919",
+    "compressed": "3",
+    "errors": []
+  },
+  {
+    "asset": "general_black",
+    "tier": "mobile",
+    "triangles": "19,920",
+    "compressed": "3",
+    "errors": []
+  },
+  {
+    "asset": "general_black",
+    "tier": "lod2",
+    "triangles": "11,920",
+    "compressed": "3",
+    "errors": []
+  },
+  {
+    "asset": "advisor_red",
+    "tier": "desktop",
+    "triangles": "59,920",
+    "compressed": "3",
+    "errors": []
+  },
+  {
+    "asset": "advisor_red",
+    "tier": "mobile",
+    "triangles": "19,920",
+    "compressed": "3",
+    "errors": []
+  },
+  {
+    "asset": "advisor_red",
+    "tier": "lod2",
+    "triangles": "11,920",
+    "compressed": "3",
+    "errors": []
+  },
+  {
+    "asset": "advisor_black",
+    "tier": "desktop",
+    "triangles": "59,920",
+    "compressed": "3",
+    "errors": []
+  },
+  {
+    "asset": "advisor_black",
+    "tier": "mobile",
+    "triangles": "19,920",
+    "compressed": "3",
+    "errors": []
+  },
+  {
+    "asset": "advisor_black",
+    "tier": "lod2",
+    "triangles": "11,920",
+    "compressed": "3",
+    "errors": []
+  },
+  {
+    "asset": "elephant_red",
+    "tier": "desktop",
+    "triangles": "59,919",
+    "compressed": "3",
+    "errors": []
+  },
+  {
+    "asset": "elephant_red",
+    "tier": "mobile",
+    "triangles": "19,920",
+    "compressed": "3",
+    "errors": []
+  },
+  {
+    "asset": "elephant_red",
+    "tier": "lod2",
+    "triangles": "11,920",
+    "compressed": "3",
+    "errors": []
+  },
+  {
+    "asset": "elephant_black",
+    "tier": "desktop",
+    "triangles": "59,920",
+    "compressed": "3",
+    "errors": []
+  },
+  {
+    "asset": "elephant_black",
+    "tier": "mobile",
+    "triangles": "19,920",
+    "compressed": "3",
+    "errors": []
+  },
+  {
+    "asset": "elephant_black",
+    "tier": "lod2",
+    "triangles": "11,920",
+    "compressed": "3",
+    "errors": []
+  },
+  {
+    "asset": "horse_red",
+    "tier": "desktop",
+    "triangles": "59,920",
+    "compressed": "3",
+    "errors": []
+  },
+  {
+    "asset": "horse_red",
+    "tier": "mobile",
+    "triangles": "19,920",
+    "compressed": "3",
+    "errors": []
+  },
+  {
+    "asset": "horse_red",
+    "tier": "lod2",
+    "triangles": "11,920",
+    "compressed": "3",
+    "errors": []
+  },
+  {
+    "asset": "horse_black",
+    "tier": "desktop",
+    "triangles": "59,918",
+    "compressed": "3",
+    "errors": []
+  },
+  {
+    "asset": "horse_black",
+    "tier": "mobile",
+    "triangles": "19,920",
+    "compressed": "3",
+    "errors": []
+  },
+  {
+    "asset": "horse_black",
+    "tier": "lod2",
+    "triangles": "11,920",
+    "compressed": "3",
+    "errors": []
+  },
+  {
+    "asset": "chariot_red",
+    "tier": "desktop",
+    "triangles": "59,919",
+    "compressed": "3",
+    "errors": []
+  },
+  {
+    "asset": "chariot_red",
+    "tier": "mobile",
+    "triangles": "19,920",
+    "compressed": "3",
+    "errors": []
+  },
+  {
+    "asset": "chariot_red",
+    "tier": "lod2",
+    "triangles": "11,920",
+    "compressed": "3",
+    "errors": []
+  },
+  {
+    "asset": "chariot_black",
+    "tier": "desktop",
+    "triangles": "59,919",
+    "compressed": "3",
+    "errors": []
+  },
+  {
+    "asset": "chariot_black",
+    "tier": "mobile",
+    "triangles": "19,919",
+    "compressed": "3",
+    "errors": []
+  },
+  {
+    "asset": "chariot_black",
+    "tier": "lod2",
+    "triangles": "11,919",
+    "compressed": "3",
+    "errors": []
+  },
+  {
+    "asset": "cannon_red",
+    "tier": "desktop",
+    "triangles": "59,920",
+    "compressed": "3",
+    "errors": []
+  },
+  {
+    "asset": "cannon_red",
+    "tier": "mobile",
+    "triangles": "19,920",
+    "compressed": "3",
+    "errors": []
+  },
+  {
+    "asset": "cannon_red",
+    "tier": "lod2",
+    "triangles": "11,920",
+    "compressed": "3",
+    "errors": []
+  },
+  {
+    "asset": "cannon_black",
+    "tier": "desktop",
+    "triangles": "59,919",
+    "compressed": "3",
+    "errors": []
+  },
+  {
+    "asset": "cannon_black",
+    "tier": "mobile",
+    "triangles": "19,919",
+    "compressed": "3",
+    "errors": []
+  },
+  {
+    "asset": "cannon_black",
+    "tier": "lod2",
+    "triangles": "11,919",
+    "compressed": "3",
+    "errors": []
+  },
+  {
+    "asset": "soldier_red",
+    "tier": "desktop",
+    "triangles": "59,920",
+    "compressed": "3",
+    "errors": []
+  },
+  {
+    "asset": "soldier_red",
+    "tier": "mobile",
+    "triangles": "19,920",
+    "compressed": "3",
+    "errors": []
+  },
+  {
+    "asset": "soldier_red",
+    "tier": "lod2",
+    "triangles": "11,920",
+    "compressed": "3",
+    "errors": []
+  },
+  {
+    "asset": "soldier_black",
+    "tier": "desktop",
+    "triangles": "59,920",
+    "compressed": "3",
+    "errors": []
+  },
+  {
+    "asset": "soldier_black",
+    "tier": "mobile",
+    "triangles": "19,920",
+    "compressed": "3",
+    "errors": []
+  },
+  {
+    "asset": "soldier_black",
+    "tier": "lod2",
+    "triangles": "11,920",
+    "compressed": "3",
+    "errors": []
+  }
+]

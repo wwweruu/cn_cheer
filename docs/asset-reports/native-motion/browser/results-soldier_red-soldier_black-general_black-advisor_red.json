@@ -1,0 +1,58 @@
+[
+  {
+    "piece": "soldier_red",
+    "sourceVersion": 14,
+    "clips": [
+      {
+        "clip": "walk",
+        "changedPixels": 50910
+      }
+    ],
+    "maxBaseDrift": 4.705092204737582e-9,
+    "errors": []
+  },
+  {
+    "piece": "soldier_black",
+    "sourceVersion": 19,
+    "clips": [
+      {
+        "clip": "idle",
+        "changedPixels": 48837
+      },
+      {
+        "clip": "walk",
+        "changedPixels": 69438
+      }
+    ],
+    "maxBaseDrift": 2.058396493259403e-8,
+    "errors": []
+  },
+  {
+    "piece": "general_black",
+    "sourceVersion": 12,
+    "clips": [
+      {
+        "clip": "idle",
+        "changedPixels": 8127
+      },
+      {
+        "clip": "walk",
+        "changedPixels": 51810
+      }
+    ],
+    "maxBaseDrift": 1.6826796394998582e-8,
+    "errors": []
+  },
+  {
+    "piece": "advisor_red",
+    "sourceVersion": 8,
+    "clips": [
+      {
+        "clip": "idle",
+        "changedPixels": 14886
+      }
+    ],
+    "maxBaseDrift": 1.6892795386060675e-8,
+    "errors": []
+  }
+]

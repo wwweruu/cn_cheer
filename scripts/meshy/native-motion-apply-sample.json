@@ -1,0 +1,5 @@
+{"jobs":[
+  {"piece":"soldier_red","role":"body","operation":"walk","rig_key":"soldier_red/motion/rig/v1","motion_key":"shared-motion/native/infantry-walk/generate/v1"},
+  {"piece":"soldier_black","role":"body","operation":"walk","rig_key":"soldier_black/motion/rig/v1","motion_key":"shared-motion/native/infantry-walk/generate/v1"},
+  {"piece":"shared-motion","role":"court-idle","operation":"generate","prompt":"A dignified armored commander stands at ease. Subtle natural breathing, a gentle balanced shift of weight through both legs, small head turns and restrained arm gestures. Feet remain planted. Calm realistic full-body idle suitable for a looping game animation.","mode":"prime","duration":4}
+]}

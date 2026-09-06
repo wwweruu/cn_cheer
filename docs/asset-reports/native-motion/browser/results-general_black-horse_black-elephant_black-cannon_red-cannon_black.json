@@ -1,0 +1,70 @@
+[
+  {
+    "piece": "general_black",
+    "sourceVersion": 10,
+    "clips": [
+      {
+        "clip": "idle",
+        "changedPixels": 8127
+      },
+      {
+        "clip": "walk",
+        "changedPixels": 52072
+      }
+    ],
+    "maxBaseDrift": 1.6826796394998582e-8,
+    "errors": []
+  },
+  {
+    "piece": "horse_black",
+    "sourceVersion": 8,
+    "clips": [
+      {
+        "clip": "idle",
+        "changedPixels": 22696
+      }
+    ],
+    "maxBaseDrift": 0,
+    "errors": []
+  },
+  {
+    "piece": "cannon_red",
+    "sourceVersion": 12,
+    "clips": [
+      {
+        "clip": "idle",
+        "changedPixels": 14753
+      }
+    ],
+    "maxBaseDrift": 0,
+    "errors": []
+  },
+  {
+    "piece": "cannon_black",
+    "sourceVersion": 10,
+    "clips": [
+      {
+        "clip": "idle",
+        "changedPixels": 3456
+      }
+    ],
+    "maxBaseDrift": 0,
+    "errors": []
+  },
+  {
+    "piece": "elephant_black",
+    "sourceVersion": 5,
+    "clips": [
+      {
+        "clip": "idle",
+        "changedPixels": 20316
+      },
+      {
+        "clip": "walk",
+        "changedPixels": 36852
+      }
+    ],
+    "maxBaseDrift": 0,
+    "errors": []
+  }
+]

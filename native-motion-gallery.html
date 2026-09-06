@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/><title>玄甲棋局 · 动作修整样板</title><link rel="icon" href="data:,"/></head>
+<body data-motion-gallery="true" data-native-gallery="true" data-normalize="true">
+<main class="review-shell">
+  <section class="stage" aria-label="棋子三维预览">
+    <div class="stage-heading"><span>玄甲棋局 / 动作修整样板</span><span id="status" role="status">准备载入…</span></div>
+    <div id="viewport"></div>
+    <div class="views" aria-label="视角"><button data-view="front">正面</button><button data-view="quarter" aria-pressed="true">45°</button><button data-view="side">侧面</button><button data-view="back">背面</button><button data-view="detail">上部细节</button><button data-view="base">底座</button></div>
+    <p class="gesture">拖动旋转 · 滚轮缩放 · 右键平移</p>
+  </section>
+  <aside>
+    <p class="eyebrow">MOTION WORKSHOP <span>修整样板</span></p><h1 id="piece-title">红方 · 兵</h1>
+    <label for="asset">选择棋子</label>
+    <select id="asset"><option value="soldier_red">红方 · 兵</option><option value="soldier_black">黑方 · 卒</option><option value="general_black">黑方 · 将</option><option value="advisor_red">红方 · 仕</option><option value="horse_red">红方 · 马</option><option value="horse_black">黑方 · 马</option><option value="cannon_red">红方 · 炮</option><option value="cannon_black">黑方 · 炮</option><option value="elephant_red">红方 · 相</option><option value="elephant_black">黑方 · 象</option></select>
+    <p class="intro">保留原生人物动作，修整骨骼与接触，并加入本地制作的四足步态。可切换上一轮样板对照。</p>
+    <label for="sample-version">版本对照</label><select id="sample-version"><option value="current">本轮修整</option><option value="before">上一轮样板</option></select>
+    <label for="clip">检查动作</label><select id="clip"><option value="idle">观察 / 待机</option><option value="walk">行进</option></select>
+    <div style="display:flex;gap:10px;margin:14px 0"><button id="play-motion">暂停</button><select id="speed" aria-label="播放速度"><option value="1">正常速度</option><option value="0.5">半速</option><option value="0.25">四分之一速度</option></select></div>
+    <input id="playhead" aria-label="动作时间轴" type="range" min="0" max="1000" value="0" style="width:100%;margin:0 0 22px"/>
+    <label for="quality">样板精度</label><select id="quality"><option value="mobile">2K / 约 2 万面</option></select>
+    <dl><div><dt>当前三角面</dt><dd id="triangles">—</dd></div><div><dt>文件体积</dt><dd id="size">—</dd></div></dl>
+    <div class="toggles"><label><input type="checkbox" id="rotate"/> 自动旋转</label><label><input type="checkbox" id="wireframe"/> 查看线框</label><label><input type="checkbox" id="grid"/> 显示棋格尺度</label></div>
+    <div class="review-note"><strong>动作来源与待修问题</strong><p id="native-note">正在读取生成记录…</p></div>
+    <div class="links"><a id="download" download>下载当前样板 GLB</a><a id="compare-current">对照现有棋局版本 ↗</a><a href="/">返回棋局 ↗</a></div>
+    <p class="footnote">候选样板尚未替换棋局资源。原始高模、贴图和生成文件均保留。</p>
+  </aside>
+</main><script type="module" src="/src/review/main.ts"></script>
+</body></html>

@@ -1,0 +1,193 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "id": "board_main_ref",
+      "kind": "image",
+      "prompt": "Create ONE isolated rectangular battlefield sand-table board model reference, 9 units wide by 10 units long. Entire slab and all four corners visible, elevated three-quarter studio view on uniform light gray. Thick carved dark wood plinth with bronze corner straps, compact dry earth top split into two broad perfectly level open fields by ONE straight shallow narrow river trench across the middle from left edge to right edge. Straight low stone riverbanks. Both playing fields are completely empty, flat and unobstructed: no chess pieces, no tents, no trees, no towers, no rocks protruding, no lettering and no grid lines. A thin raised outer border outside the playing surface. The reference is for mood and materials only; show this single complete clean slab, no surrounding landscape. Realistic ancient Chinese battlefield miniature, muted ochre earth, weathered dark wood, aged bronze, dark iron, red Han and charcoal Chu accents. Crisp physically plausible materials, no modern objects, no text or watermark.",
+      "references": [
+        "象棋3D参考图-备份/棋盘/C2-棋盘45度战场视角.jpg"
+      ],
+      "aspect_ratio": "1:1"
+    },
+    {
+      "id": "camp_red_ref",
+      "kind": "image",
+      "prompt": "Create ONE isolated complete Han command tent miniature, round crimson canvas pavilion with a peaked conical roof, embroidered dark gold edging, visible cloth seams, open entrance with dark interior, two short carved wooden posts and a small wooden threshold. No walls around it, no soldiers, no separate flags, no scene, no lettering. Entire tent including floor visible on uniform gray, three-quarter studio view. Compact standalone building. Realistic ancient Chinese battlefield miniature, muted ochre earth, weathered dark wood, aged bronze, dark iron, red Han and charcoal Chu accents. Crisp physically plausible materials, no modern objects, no text or watermark.",
+      "references": [
+        "象棋3D参考图-备份/棋盘/C4-九宫格大营特写.jpg"
+      ],
+      "aspect_ratio": "1:1"
+    },
+    {
+      "id": "camp_black_ref",
+      "kind": "image",
+      "prompt": "Create ONE isolated complete Chu command tent miniature, charcoal black canvas pavilion with a low broad faceted roof and iron crest, open entrance with dark interior, weathered dark timber frame, subtle faded bronze edging. Distinct angular architecture, compact standalone building. No walls around it, no soldiers, no separate flags, no scene, no lettering. Entire tent including floor visible on uniform gray, three-quarter studio view. Realistic ancient Chinese battlefield miniature, muted ochre earth, weathered dark wood, aged bronze, dark iron, red Han and charcoal Chu accents. Crisp physically plausible materials, no modern objects, no text or watermark.",
+      "references": [
+        "象棋3D参考图-备份/棋盘/C4-九宫格大营特写.jpg"
+      ],
+      "aspect_ratio": "1:1"
+    },
+    {
+      "id": "watchtower_ref",
+      "kind": "image",
+      "prompt": "Create ONE isolated complete wooden watchtower miniature: four sturdy timber legs, diagonal cross braces, ladder, elevated square platform with waist-high rails and a small weathered timber hip roof. Ancient Chinese military camp architecture. Stable compact footprint. No flags, no soldiers, no surrounding scene, no lettering. Entire tower and all feet visible on uniform gray background, three-quarter studio view. Realistic ancient Chinese battlefield miniature, muted ochre earth, weathered dark wood, aged bronze, dark iron, red Han and charcoal Chu accents. Crisp physically plausible materials, no modern objects, no text or watermark.",
+      "references": [
+        "象棋3D参考图-备份/环境/E2-远景环境贴图.jpg"
+      ],
+      "aspect_ratio": "1:1"
+    },
+    {
+      "id": "board_main",
+      "kind": "geometry",
+      "references": [
+        "assets/generated/meshy/scene/board_main_ref/image/v1/image.png"
+      ]
+    },
+    {
+      "id": "camp_red",
+      "kind": "geometry",
+      "references": [
+        "assets/generated/meshy/scene/camp_red_ref/image/v1/image.png"
+      ]
+    },
+    {
+      "id": "camp_black",
+      "kind": "geometry",
+      "references": [
+        "assets/generated/meshy/scene/camp_black_ref/image/v1/image.png"
+      ]
+    },
+    {
+      "id": "watchtower",
+      "kind": "geometry",
+      "references": [
+        "assets/generated/meshy/scene/watchtower_ref/image/v1/image.png"
+      ]
+    },
+    {
+      "id": "sky_px",
+      "kind": "image",
+      "prompt": "Generate a square 90-degree rectilinear view of a restrained cinematic overcast dusk sky for a seamless cubemap. No text, watermark, frame, buildings, mountains, silhouettes or objects. Muted cool charcoal-gray clouds above a desaturated dusty amber haze, soft low contrast, no bright sun disc, no dramatic red fire. Smooth horizon at the exact middle, dark diffuse ochre-gray below it. Overall mid-dark exposure, high quality subtle natural cloud texture. Reference is mood only, not a panoramic layout. Facing east: slightly warmer horizon glow but no sun.",
+      "references": [
+        "象棋3D参考图-备份/环境/E1-天空盒全景.jpg"
+      ],
+      "aspect_ratio": "1:1"
+    },
+    {
+      "id": "sky_nx",
+      "kind": "image",
+      "prompt": "Generate a square 90-degree rectilinear view of a restrained cinematic overcast dusk sky for a seamless cubemap. No text, watermark, frame, buildings, mountains, silhouettes or objects. Muted cool charcoal-gray clouds above a desaturated dusty amber haze, soft low contrast, no bright sun disc, no dramatic red fire. Smooth horizon at the exact middle, dark diffuse ochre-gray below it. Overall mid-dark exposure, high quality subtle natural cloud texture. Reference is mood only, not a panoramic layout. Facing west: cooler slate dusk clouds.",
+      "references": [
+        "象棋3D参考图-备份/环境/E1-天空盒全景.jpg"
+      ],
+      "aspect_ratio": "1:1"
+    },
+    {
+      "id": "sky_pz",
+      "kind": "image",
+      "prompt": "Generate a square 90-degree rectilinear view of a restrained cinematic overcast dusk sky for a seamless cubemap. No text, watermark, frame, buildings, mountains, silhouettes or objects. Muted cool charcoal-gray clouds above a desaturated dusty amber haze, soft low contrast, no bright sun disc, no dramatic red fire. Smooth horizon at the exact middle, dark diffuse ochre-gray below it. Overall mid-dark exposure, high quality subtle natural cloud texture. Reference is mood only, not a panoramic layout. Facing north: neutral charcoal cloud layer and amber-gray haze.",
+      "references": [
+        "象棋3D参考图-备份/环境/E1-天空盒全景.jpg"
+      ],
+      "aspect_ratio": "1:1"
+    },
+    {
+      "id": "sky_nz",
+      "kind": "image",
+      "prompt": "Generate a square 90-degree rectilinear view of a restrained cinematic overcast dusk sky for a seamless cubemap. No text, watermark, frame, buildings, mountains, silhouettes or objects. Muted cool charcoal-gray clouds above a desaturated dusty amber haze, soft low contrast, no bright sun disc, no dramatic red fire. Smooth horizon at the exact middle, dark diffuse ochre-gray below it. Overall mid-dark exposure, high quality subtle natural cloud texture. Reference is mood only, not a panoramic layout. Facing south: same neutral charcoal clouds and amber-gray haze.",
+      "references": [
+        "象棋3D参考图-备份/环境/E1-天空盒全景.jpg"
+      ],
+      "aspect_ratio": "1:1"
+    },
+    {
+      "id": "sky_py",
+      "kind": "image",
+      "prompt": "Generate a square 90-degree rectilinear view of a restrained cinematic overcast dusk sky for a seamless cubemap. No text, watermark, frame, buildings, mountains, silhouettes or objects. Muted cool charcoal-gray clouds above a desaturated dusty amber haze, soft low contrast, no bright sun disc, no dramatic red fire. Smooth horizon at the exact middle, dark diffuse ochre-gray below it. Overall mid-dark exposure, high quality subtle natural cloud texture. Reference is mood only, not a panoramic layout. Looking straight upward at the zenith: entire square only charcoal-gray overcast clouds, no horizon, no amber band.",
+      "references": [
+        "象棋3D参考图-备份/环境/E1-天空盒全景.jpg"
+      ],
+      "aspect_ratio": "1:1"
+    },
+    {
+      "id": "sky_ny",
+      "kind": "image",
+      "prompt": "Generate a square 90-degree rectilinear view of a restrained cinematic overcast dusk sky for a seamless cubemap. No text, watermark, frame, buildings, mountains, silhouettes or objects. Muted cool charcoal-gray clouds above a desaturated dusty amber haze, soft low contrast, no bright sun disc, no dramatic red fire. Smooth horizon at the exact middle, dark diffuse ochre-gray below it. Overall mid-dark exposure, high quality subtle natural cloud texture. Reference is mood only, not a panoramic layout. Looking straight downward: smooth diffuse dark ochre-gray atmospheric void, no horizon, no visible ground details, no objects.",
+      "references": [
+        "象棋3D参考图-备份/环境/E1-天空盒全景.jpg"
+      ],
+      "aspect_ratio": "1:1"
+    },
+    {
+      "id": "distant_mountains",
+      "kind": "image",
+      "references": [
+        "象棋3D参考图-备份/环境/E2-远景环境贴图.jpg"
+      ],
+      "aspect_ratio": "16:9",
+      "prompt": "A wide horizontal distant mountain ridge silhouette layer for a historical battlefield diorama, layered eroded Chinese hills in desaturated charcoal gray and dusty umber haze. Mountains occupy bottom 40 percent, horizon approximately flat. Transparent empty sky above, clean soft atmospheric ridge edges. No sun, no buildings, no people, no text or watermark. High resolution realistic matte painting, subdued contrast.",
+      "remove_background": true
+    },
+    {
+      "id": "distant_camp",
+      "kind": "image",
+      "references": [
+        "象棋3D参考图-备份/环境/E2-远景环境贴图.jpg"
+      ],
+      "aspect_ratio": "16:9",
+      "prompt": "One wide horizontal isolated distant ancient Chinese military encampment skyline layer, many very small dark tent silhouettes and slender flag poles, sparse tiny warm brazier lights. All occupy the bottom 30 percent, a level strip across the image. No mountains, no sky, no foreground objects, no people, no lettering. Subdued charcoal and dark umber with atmospheric haze, realistic miniature distance, transparent background.",
+      "remove_background": true
+    },
+    {
+      "id": "fx_embers",
+      "kind": "image",
+      "aspect_ratio": "1:1",
+      "remove_background": true,
+      "prompt": "Transparent RGBA particle sprite of only twelve tiny sparse warm amber embers, varied pinpoint sizes, subtle soft light glow and a few very short upward streaks. Most of the square is completely empty transparent space. No fire, no flames, no smoke, no background, no border, no text. Realistic cinematic particle texture, softly fading particles."
+    },
+    {
+      "id": "fx_smoke",
+      "kind": "image",
+      "aspect_ratio": "1:1",
+      "remove_background": true,
+      "prompt": "Transparent RGBA sprite of one very faint narrow wisp of diffuse gray smoke drifting upward and curling slightly, realistic volumetric softness with very low density and soft irregular edges. Mostly transparent empty space. No fire, no objects, no background, no border, no text. Subtle distant battlefield atmospheric particle, not a thick explosion."
+    },
+    {
+      "id": "ground_dirt",
+      "kind": "surface",
+      "model": "assets/source/environment/material_carrier.glb",
+      "prompt": "Fine compact dry ochre-brown battlefield soil, subtle dust, small irregular grains and sparse tiny pebbles. Flat surface, consistent fine scale and even tone. No footprints, no large stones, no trenches, no green plants. Seamless tileable PBR material over the entire UV square, matching all opposite edges. Orthographic material swatch appearance. Uniform neutral illumination, no shadows, no highlights baked in base color, no directional gradient, no perspective, no border."
+    },
+    {
+      "id": "ground_stone",
+      "kind": "surface",
+      "model": "assets/source/environment/material_carrier.glb",
+      "prompt": "Worn dusty gray-brown natural stone pavement and fine gravel, small fractured flat stones, restrained roughness, subtle pores. Even scale, no very large cracks or raised boulders. Seamless tileable PBR material over the entire UV square, matching all opposite edges. Orthographic material swatch appearance. Uniform neutral illumination, no shadows, no highlights baked in base color, no directional gradient, no perspective, no border."
+    },
+    {
+      "id": "weathered_wood",
+      "kind": "surface",
+      "model": "assets/source/environment/material_carrier.glb",
+      "prompt": "Aged dark brown oak wood grain, fine longitudinal grain and subtle worn fibers, dry matte wood, no nails or planks boundaries, no knots larger than a small coin. Seamless tileable PBR material over the entire UV square, matching all opposite edges. Orthographic material swatch appearance. Uniform neutral illumination, no shadows, no highlights baked in base color, no directional gradient, no perspective, no border."
+    },
+    {
+      "id": "aged_metal",
+      "kind": "surface",
+      "model": "assets/source/environment/material_carrier.glb",
+      "prompt": "Dark aged iron with subtle cool gunmetal sheen, fine hammered texture, tiny worn bronze highlights and sparse brown oxidation. Restrained metal response, no large rust blotches, no lettering. Seamless tileable PBR material over the entire UV square, matching all opposite edges. Orthographic material swatch appearance. Uniform neutral illumination, no shadows, no highlights baked in base color, no directional gradient, no perspective, no border."
+    },
+    {
+      "id": "fabric_red",
+      "kind": "surface",
+      "model": "assets/source/environment/material_carrier.glb",
+      "prompt": "Weathered deep crimson woven linen canvas for an ancient Han command tent. Fine visible plain weave fibers, very subtle faded dye, matte dry cloth, no folds, no embroidery, no symbols. Seamless tileable PBR material over the entire UV square, matching all opposite edges. Orthographic material swatch appearance. Uniform neutral illumination, no shadows, no highlights baked in base color, no directional gradient, no perspective, no border."
+    },
+    {
+      "id": "fabric_black",
+      "kind": "surface",
+      "model": "assets/source/environment/material_carrier.glb",
+      "prompt": "Weathered charcoal-black woven linen canvas for an ancient Chu command tent. Fine visible plain weave fibers, subtle dusty gray wear, matte dry cloth, no folds, no embroidery, no symbols. Seamless tileable PBR material over the entire UV square, matching all opposite edges. Orthographic material swatch appearance. Uniform neutral illumination, no shadows, no highlights baked in base color, no directional gradient, no perspective, no border."
+    }
+  ]
+}

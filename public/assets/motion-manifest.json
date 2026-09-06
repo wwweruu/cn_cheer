@@ -1,0 +1,524 @@
+{
+  "files": [
+    {
+      "source": "assets/generated/meshy/general_red/motion/runtime/v2/ktx/general_red_desktop.glb",
+      "path": "/assets/models/motion/general_red/desktop.glb",
+      "bytes": 31494732,
+      "sha256": "0823604b3794332f9000ce0444179c55c334e3638496a99737e945e53afddf2e"
+    },
+    {
+      "source": "assets/generated/meshy/general_red/motion/runtime/v2/general_red_desktop.glb",
+      "path": "/assets/models/motion/general_red/desktop.webp.glb",
+      "bytes": 11626596,
+      "sha256": "787a82f97d86bea243b06a88b95a0ad4019c1bd09fa6d9f15fda36114ade1047"
+    },
+    {
+      "source": "assets/generated/meshy/general_red/motion/runtime/v2/ktx/general_red_mobile.glb",
+      "path": "/assets/models/motion/general_red/mobile.glb",
+      "bytes": 9395900,
+      "sha256": "07c1d009e4ee955c25654e6fe7575d2cab26ec215645ffca0b9a09d6f0ac7d52"
+    },
+    {
+      "source": "assets/generated/meshy/general_red/motion/runtime/v2/general_red_mobile.glb",
+      "path": "/assets/models/motion/general_red/mobile.webp.glb",
+      "bytes": 3885296,
+      "sha256": "7a80ec0ffc230c64c1583a54ececcbe512a9c262ca415436e9f6bc7a8e05f85b"
+    },
+    {
+      "source": "assets/generated/meshy/general_red/motion/runtime/v2/ktx/general_red_distant.glb",
+      "path": "/assets/models/motion/general_red/distant.glb",
+      "bytes": 3150224,
+      "sha256": "a28e701d33739cac978e2c03be949f545f356d4c3264bd541c0e15ed0770f9bc"
+    },
+    {
+      "source": "assets/generated/meshy/general_red/motion/runtime/v2/general_red_distant.glb",
+      "path": "/assets/models/motion/general_red/distant.webp.glb",
+      "bytes": 1720576,
+      "sha256": "740f76cca70af21e0f855369022494642d5e63549e376768561f9bd9fae273fa"
+    },
+    {
+      "source": "assets/generated/meshy/general_black/motion/runtime/v4/ktx/general_black_desktop.glb",
+      "path": "/assets/models/motion/general_black/desktop.glb",
+      "bytes": 28894952,
+      "sha256": "e4ee702157c7a0cc8b356d4686739162244bd6994ad70f9845c45f414241a3f4"
+    },
+    {
+      "source": "assets/generated/meshy/general_black/motion/runtime/v4/general_black_desktop.glb",
+      "path": "/assets/models/motion/general_black/desktop.webp.glb",
+      "bytes": 10927928,
+      "sha256": "1195eb7aefc00b9009054ca3d6c9caaedb040ef03cf6f7806d02e13a378915a0"
+    },
+    {
+      "source": "assets/generated/meshy/general_black/motion/runtime/v4/ktx/general_black_mobile.glb",
+      "path": "/assets/models/motion/general_black/mobile.glb",
+      "bytes": 8845296,
+      "sha256": "47e315f4bb623d34d339e8ffb2007494409a987a53e6e3fa2436836ffdda08d6"
+    },
+    {
+      "source": "assets/generated/meshy/general_black/motion/runtime/v4/general_black_mobile.glb",
+      "path": "/assets/models/motion/general_black/mobile.webp.glb",
+      "bytes": 3804732,
+      "sha256": "58618b41b9ba8c073388b660f734b9f5f16ea47a717b26446a266265de573864"
+    },
+    {
+      "source": "assets/generated/meshy/general_black/motion/runtime/v4/ktx/general_black_distant.glb",
+      "path": "/assets/models/motion/general_black/distant.glb",
+      "bytes": 3071132,
+      "sha256": "1143bd75dc9d311386d3c03e9af23a8b70d17c6bff6189e92d9c41103b7ab9eb"
+    },
+    {
+      "source": "assets/generated/meshy/general_black/motion/runtime/v4/general_black_distant.glb",
+      "path": "/assets/models/motion/general_black/distant.webp.glb",
+      "bytes": 1737628,
+      "sha256": "9be5474a1e07ed97eb7691f039bfbd7857ed5337d9f815a02e69ed972e23cead"
+    },
+    {
+      "source": "assets/generated/meshy/advisor_red/motion/runtime/v4/ktx/advisor_red_desktop.glb",
+      "path": "/assets/models/motion/advisor_red/desktop.glb",
+      "bytes": 27026504,
+      "sha256": "4c5e195580f6d9df9ac899695e441da699747b5733d893590dddd22659cb7bcf"
+    },
+    {
+      "source": "assets/generated/meshy/advisor_red/motion/runtime/v4/advisor_red_desktop.glb",
+      "path": "/assets/models/motion/advisor_red/desktop.webp.glb",
+      "bytes": 9387456,
+      "sha256": "f8494d9e9f295bca63d2739d94f8c21e3798c746cd840c2680f8d7049b585275"
+    },
+    {
+      "source": "assets/generated/meshy/advisor_red/motion/runtime/v4/ktx/advisor_red_mobile.glb",
+      "path": "/assets/models/motion/advisor_red/mobile.glb",
+      "bytes": 8167580,
+      "sha256": "477b2aa38226e6ab271ef1cd054587b36695ce03059c0efd62bcd4f45d393e44"
+    },
+    {
+      "source": "assets/generated/meshy/advisor_red/motion/runtime/v4/advisor_red_mobile.glb",
+      "path": "/assets/models/motion/advisor_red/mobile.webp.glb",
+      "bytes": 3247156,
+      "sha256": "a38aaeddd7ff79951a4644ff720a06367b9bf7cee795f5cc941bfaeeab60fa47"
+    },
+    {
+      "source": "assets/generated/meshy/advisor_red/motion/runtime/v4/ktx/advisor_red_distant.glb",
+      "path": "/assets/models/motion/advisor_red/distant.glb",
+      "bytes": 2712884,
+      "sha256": "049b53570f2ae7f12759a6ef1ff7ef270c5083d84ca7415f6e4437e74999ac88"
+    },
+    {
+      "source": "assets/generated/meshy/advisor_red/motion/runtime/v4/advisor_red_distant.glb",
+      "path": "/assets/models/motion/advisor_red/distant.webp.glb",
+      "bytes": 1451188,
+      "sha256": "177314d880172b018e6ff9a3894ee2662c00616c4595eb14665a26a7490a9482"
+    },
+    {
+      "source": "assets/generated/meshy/advisor_black/motion/runtime/v2/ktx/advisor_black_desktop.glb",
+      "path": "/assets/models/motion/advisor_black/desktop.glb",
+      "bytes": 32463696,
+      "sha256": "8e4f31f39a77f2243db54ea4b09833348b9099056dce47a05a621255c46778f5"
+    },
+    {
+      "source": "assets/generated/meshy/advisor_black/motion/runtime/v2/advisor_black_desktop.glb",
+      "path": "/assets/models/motion/advisor_black/desktop.webp.glb",
+      "bytes": 11448524,
+      "sha256": "4500ae55ba8204700dd755c3de9c5ffa0797c1bee466f2f10225a55334d222cd"
+    },
+    {
+      "source": "assets/generated/meshy/advisor_black/motion/runtime/v2/ktx/advisor_black_mobile.glb",
+      "path": "/assets/models/motion/advisor_black/mobile.glb",
+      "bytes": 9453360,
+      "sha256": "3751bde3a2f102b58e9aa994565cdb806dcf11e134a5faec9a1fe176c1bd058a"
+    },
+    {
+      "source": "assets/generated/meshy/advisor_black/motion/runtime/v2/advisor_black_mobile.glb",
+      "path": "/assets/models/motion/advisor_black/mobile.webp.glb",
+      "bytes": 3789320,
+      "sha256": "80bf2adc864846a77eea5436f14c33c7928fadeca35dcae3550d52d6ebf2c05b"
+    },
+    {
+      "source": "assets/generated/meshy/advisor_black/motion/runtime/v2/ktx/advisor_black_distant.glb",
+      "path": "/assets/models/motion/advisor_black/distant.glb",
+      "bytes": 3071164,
+      "sha256": "1f0540fad768642085e7f900ab38b56de892d7aa0384b108888cb256fddba836"
+    },
+    {
+      "source": "assets/generated/meshy/advisor_black/motion/runtime/v2/advisor_black_distant.glb",
+      "path": "/assets/models/motion/advisor_black/distant.webp.glb",
+      "bytes": 1595124,
+      "sha256": "8e134c8c17252e48270fa9bc93524ad67106c52e539b33e3ee4e73eddae0d924"
+    },
+    {
+      "source": "assets/generated/meshy/elephant_red/motion/runtime/v1/ktx/elephant_red_desktop.glb",
+      "path": "/assets/models/motion/elephant_red/desktop.glb",
+      "bytes": 35124968,
+      "sha256": "576c6c03e8efbd34c09f72e20a6ea9be172c4c9e8033e84e6cc6317c96a3aa82"
+    },
+    {
+      "source": "assets/generated/meshy/elephant_red/motion/runtime/v1/elephant_red_desktop.glb",
+      "path": "/assets/models/motion/elephant_red/desktop.webp.glb",
+      "bytes": 12444016,
+      "sha256": "22999f645fa7bed06ae507479e08874bbdb7dec73801ae5cbade5a39f6cbd9f9"
+    },
+    {
+      "source": "assets/generated/meshy/elephant_red/motion/runtime/v1/ktx/elephant_red_mobile.glb",
+      "path": "/assets/models/motion/elephant_red/mobile.glb",
+      "bytes": 10387976,
+      "sha256": "54941e64114a30bf38e406f2c770501fc4890c0ef54eb4e3c41254e234a01528"
+    },
+    {
+      "source": "assets/generated/meshy/elephant_red/motion/runtime/v1/elephant_red_mobile.glb",
+      "path": "/assets/models/motion/elephant_red/mobile.webp.glb",
+      "bytes": 4047420,
+      "sha256": "058dd3023e4cf873dffc27b324e2ad97715bef510c802b0b088f95ea37140a4e"
+    },
+    {
+      "source": "assets/generated/meshy/elephant_red/motion/runtime/v1/ktx/elephant_red_distant.glb",
+      "path": "/assets/models/motion/elephant_red/distant.glb",
+      "bytes": 3305460,
+      "sha256": "4548e781df0cfcb3c9bd6f3a6d00ee07d436d858543e4b410158f5757633747a"
+    },
+    {
+      "source": "assets/generated/meshy/elephant_red/motion/runtime/v1/elephant_red_distant.glb",
+      "path": "/assets/models/motion/elephant_red/distant.webp.glb",
+      "bytes": 1650292,
+      "sha256": "5fc262289c5d6c9bf1c749f8c7f299244b6db99cbe28fc13c182949c2e7d9f06"
+    },
+    {
+      "source": "assets/generated/meshy/elephant_black/motion/runtime/v1/ktx/elephant_black_desktop.glb",
+      "path": "/assets/models/motion/elephant_black/desktop.glb",
+      "bytes": 38461276,
+      "sha256": "f6a39fb81caff69181246d0cdbf763b669f0add0eb1a4c33350fb9e5c37cc37f"
+    },
+    {
+      "source": "assets/generated/meshy/elephant_black/motion/runtime/v1/elephant_black_desktop.glb",
+      "path": "/assets/models/motion/elephant_black/desktop.webp.glb",
+      "bytes": 14630020,
+      "sha256": "bc2a4029c4ad5dc1b10e0db06788115748246ed6225d46f8311d32a269b191f7"
+    },
+    {
+      "source": "assets/generated/meshy/elephant_black/motion/runtime/v1/ktx/elephant_black_mobile.glb",
+      "path": "/assets/models/motion/elephant_black/mobile.glb",
+      "bytes": 11324152,
+      "sha256": "9b185ba80301130368ff58b6aaac9a918693f38554de962b9987f71d5f87910c"
+    },
+    {
+      "source": "assets/generated/meshy/elephant_black/motion/runtime/v1/elephant_black_mobile.glb",
+      "path": "/assets/models/motion/elephant_black/mobile.webp.glb",
+      "bytes": 4768236,
+      "sha256": "37c1a4651ef738adb141eb6d707c0d450436cd16f4a443e945c6e4388b29579f"
+    },
+    {
+      "source": "assets/generated/meshy/elephant_black/motion/runtime/v1/ktx/elephant_black_distant.glb",
+      "path": "/assets/models/motion/elephant_black/distant.glb",
+      "bytes": 3619644,
+      "sha256": "f323bb9b2d463e4de28a2e9892d3e945f607b49d6a4318fe3fb5047986013f8a"
+    },
+    {
+      "source": "assets/generated/meshy/elephant_black/motion/runtime/v1/elephant_black_distant.glb",
+      "path": "/assets/models/motion/elephant_black/distant.webp.glb",
+      "bytes": 1926096,
+      "sha256": "f3d27801284b28ff95954276b5283d61a9c58eb46e6e78bbfc4f601c041f3e92"
+    },
+    {
+      "source": "assets/generated/meshy/horse_red/motion/runtime/v6/ktx/horse_red_desktop.glb",
+      "path": "/assets/models/motion/horse_red/desktop.glb",
+      "bytes": 33139936,
+      "sha256": "ea1924b4303c7be109a97ac30d9ad06cdbf1a5e474fef1e1c486eb258f955aad"
+    },
+    {
+      "source": "assets/generated/meshy/horse_red/motion/runtime/v6/horse_red_desktop.glb",
+      "path": "/assets/models/motion/horse_red/desktop.webp.glb",
+      "bytes": 11753304,
+      "sha256": "4eb592101a34e2624fe3a2f3620667c18f970f69e735d53abcef91c2ea02bdc3"
+    },
+    {
+      "source": "assets/generated/meshy/horse_red/motion/runtime/v6/ktx/horse_red_mobile.glb",
+      "path": "/assets/models/motion/horse_red/mobile.glb",
+      "bytes": 9810856,
+      "sha256": "05a2357d35f0bf75a037836037c0afbb95d65aa74032270441b20976b9cf08c4"
+    },
+    {
+      "source": "assets/generated/meshy/horse_red/motion/runtime/v6/horse_red_mobile.glb",
+      "path": "/assets/models/motion/horse_red/mobile.webp.glb",
+      "bytes": 3833768,
+      "sha256": "81ffe6a86987783d2988cf2c785865b9f9afaeae823df8a45195e4379ca3e5a2"
+    },
+    {
+      "source": "assets/generated/meshy/horse_red/motion/runtime/v6/ktx/horse_red_distant.glb",
+      "path": "/assets/models/motion/horse_red/distant.glb",
+      "bytes": 3152468,
+      "sha256": "f0be82a02c23a2db4ee987820447c58c913b784eea123226294cda68e5f33c31"
+    },
+    {
+      "source": "assets/generated/meshy/horse_red/motion/runtime/v6/horse_red_distant.glb",
+      "path": "/assets/models/motion/horse_red/distant.webp.glb",
+      "bytes": 1578224,
+      "sha256": "ab06f76d9a67f972f28cf023bc8d4152d9d620d5d96f44271ef694a8666747e0"
+    },
+    {
+      "source": "assets/generated/meshy/horse_black/motion/runtime/v4/ktx/horse_black_desktop.glb",
+      "path": "/assets/models/motion/horse_black/desktop.glb",
+      "bytes": 33345116,
+      "sha256": "12aa16ad2a3fbe68580dce983b3d499ff832fdf590c80e1bd8a1900862e7129e"
+    },
+    {
+      "source": "assets/generated/meshy/horse_black/motion/runtime/v4/horse_black_desktop.glb",
+      "path": "/assets/models/motion/horse_black/desktop.webp.glb",
+      "bytes": 12214952,
+      "sha256": "1e32420b8eacffc5012c7821267338eec9e5d39f2e9a74a1257d7df346c4ad8e"
+    },
+    {
+      "source": "assets/generated/meshy/horse_black/motion/runtime/v4/ktx/horse_black_mobile.glb",
+      "path": "/assets/models/motion/horse_black/mobile.glb",
+      "bytes": 9898088,
+      "sha256": "acd15f31d5e9ed0d6a627c295e66c4206aaf1f2fcd0665b4b258522bcb0f9bb1"
+    },
+    {
+      "source": "assets/generated/meshy/horse_black/motion/runtime/v4/horse_black_mobile.glb",
+      "path": "/assets/models/motion/horse_black/mobile.webp.glb",
+      "bytes": 3994600,
+      "sha256": "f9f28f525d6afe78815efc726bda94484304285db22462c863410bb93c8cbbee"
+    },
+    {
+      "source": "assets/generated/meshy/horse_black/motion/runtime/v4/ktx/horse_black_distant.glb",
+      "path": "/assets/models/motion/horse_black/distant.glb",
+      "bytes": 3223492,
+      "sha256": "6d02c85b8deddc32cd9305cc4e874a4ee91fe5b4d308afe315f1512f52676062"
+    },
+    {
+      "source": "assets/generated/meshy/horse_black/motion/runtime/v4/horse_black_distant.glb",
+      "path": "/assets/models/motion/horse_black/distant.webp.glb",
+      "bytes": 1667348,
+      "sha256": "90d63087255ee413f1b2a96395df5f7f93d29f72cb4ea3ca1cfa068b814aba67"
+    },
+    {
+      "source": "assets/generated/meshy/chariot_red/motion/runtime/v6/ktx/chariot_red_desktop.glb",
+      "path": "/assets/models/motion/chariot_red/desktop.glb",
+      "bytes": 37157628,
+      "sha256": "073a9927d43728ce639dd4c20a7b3b017efc2a5290cd2b82e3b64e346664d328"
+    },
+    {
+      "source": "assets/generated/meshy/chariot_red/motion/runtime/v6/chariot_red_desktop.glb",
+      "path": "/assets/models/motion/chariot_red/desktop.webp.glb",
+      "bytes": 14113676,
+      "sha256": "5a2846b9934c74e9e11be82b424ee7bdc51e646eb8fd5d89ebc16301dd5c3ed6"
+    },
+    {
+      "source": "assets/generated/meshy/chariot_red/motion/runtime/v6/ktx/chariot_red_mobile.glb",
+      "path": "/assets/models/motion/chariot_red/mobile.glb",
+      "bytes": 11316856,
+      "sha256": "154e38610708578a6b6e46b0997047fd50f8a0b3a6213534fa5b072855494efd"
+    },
+    {
+      "source": "assets/generated/meshy/chariot_red/motion/runtime/v6/chariot_red_mobile.glb",
+      "path": "/assets/models/motion/chariot_red/mobile.webp.glb",
+      "bytes": 4791152,
+      "sha256": "973afe4e08dffc92b6fc8578fe88af796f769f6522fc08cef08892bf150d647b"
+    },
+    {
+      "source": "assets/generated/meshy/chariot_red/motion/runtime/v6/ktx/chariot_red_distant.glb",
+      "path": "/assets/models/motion/chariot_red/distant.glb",
+      "bytes": 3836632,
+      "sha256": "82ac388e5365112571b5894862bf78fb6f63a87b4839f475b53659cd01711239"
+    },
+    {
+      "source": "assets/generated/meshy/chariot_red/motion/runtime/v6/chariot_red_distant.glb",
+      "path": "/assets/models/motion/chariot_red/distant.webp.glb",
+      "bytes": 2123976,
+      "sha256": "61a7249d666afc8855a2dc35fbfd522e1854b9e6ed4025a38c3784346fed1348"
+    },
+    {
+      "source": "assets/generated/meshy/chariot_black/motion/runtime/v4/ktx/chariot_black_desktop.glb",
+      "path": "/assets/models/motion/chariot_black/desktop.glb",
+      "bytes": 31103880,
+      "sha256": "5724475f709450bcaedadac1eaf85ef2ce1136ba8b459d16de462f78e8497438"
+    },
+    {
+      "source": "assets/generated/meshy/chariot_black/motion/runtime/v4/chariot_black_desktop.glb",
+      "path": "/assets/models/motion/chariot_black/desktop.webp.glb",
+      "bytes": 11152344,
+      "sha256": "11782e9928b02b5a2bcfde709908d4c37dabad3e4bab930d2c6da14126eb1c57"
+    },
+    {
+      "source": "assets/generated/meshy/chariot_black/motion/runtime/v4/ktx/chariot_black_mobile.glb",
+      "path": "/assets/models/motion/chariot_black/mobile.glb",
+      "bytes": 9563400,
+      "sha256": "23cf9bb1ac18727fca3a6df63586f4efa46e5da2db1bbd1acf373ec7622fd7a9"
+    },
+    {
+      "source": "assets/generated/meshy/chariot_black/motion/runtime/v4/chariot_black_mobile.glb",
+      "path": "/assets/models/motion/chariot_black/mobile.webp.glb",
+      "bytes": 3820704,
+      "sha256": "4b5e2f73329105fed70c8b7de60982af2660a238c9174713cf4d2953a4128756"
+    },
+    {
+      "source": "assets/generated/meshy/chariot_black/motion/runtime/v4/ktx/chariot_black_distant.glb",
+      "path": "/assets/models/motion/chariot_black/distant.glb",
+      "bytes": 3266320,
+      "sha256": "8ed2802688387a7f15458340ee7f9a5b3ec7904e3ccd4b742fe824cde5673930"
+    },
+    {
+      "source": "assets/generated/meshy/chariot_black/motion/runtime/v4/chariot_black_distant.glb",
+      "path": "/assets/models/motion/chariot_black/distant.webp.glb",
+      "bytes": 1727700,
+      "sha256": "5c390ae21a991d914fb9c2c3718f71b784bc56460c8ea437e2d5f65d36b2af08"
+    },
+    {
+      "source": "assets/generated/meshy/cannon_red/motion/runtime/v6/ktx/cannon_red_desktop.glb",
+      "path": "/assets/models/motion/cannon_red/desktop.glb",
+      "bytes": 34518292,
+      "sha256": "bf470164732f2d7b8a8e826b8d04390e4f9f85d47b50c9de1476623e844b16f2"
+    },
+    {
+      "source": "assets/generated/meshy/cannon_red/motion/runtime/v6/cannon_red_desktop.glb",
+      "path": "/assets/models/motion/cannon_red/desktop.webp.glb",
+      "bytes": 12619704,
+      "sha256": "5195ff83c4bb96b7686b47e219f8d0939c4e4fc7b95e1abd4fe39996fbdff1e2"
+    },
+    {
+      "source": "assets/generated/meshy/cannon_red/motion/runtime/v6/ktx/cannon_red_mobile.glb",
+      "path": "/assets/models/motion/cannon_red/mobile.glb",
+      "bytes": 9952968,
+      "sha256": "fdbab20270f1477f2006095ec81e141aea8164065a44c42c5385244e555945d1"
+    },
+    {
+      "source": "assets/generated/meshy/cannon_red/motion/runtime/v6/cannon_red_mobile.glb",
+      "path": "/assets/models/motion/cannon_red/mobile.webp.glb",
+      "bytes": 3938288,
+      "sha256": "d3ab15b893d957d12bcbc3a0cbae6dfe54aa9688a1660fd28efb935f0352008f"
+    },
+    {
+      "source": "assets/generated/meshy/cannon_red/motion/runtime/v6/ktx/cannon_red_distant.glb",
+      "path": "/assets/models/motion/cannon_red/distant.glb",
+      "bytes": 3141964,
+      "sha256": "f1e251419a288e76829c4417d1af5d2fa30f161d5bc1e5da68f83db7bbbfe37b"
+    },
+    {
+      "source": "assets/generated/meshy/cannon_red/motion/runtime/v6/cannon_red_distant.glb",
+      "path": "/assets/models/motion/cannon_red/distant.webp.glb",
+      "bytes": 1595300,
+      "sha256": "b73c1c7f3653b4c6ab84f45b78d25c7302750c611585a82935326a20d59c38f6"
+    },
+    {
+      "source": "assets/generated/meshy/cannon_black/motion/runtime/v7/ktx/cannon_black_desktop.glb",
+      "path": "/assets/models/motion/cannon_black/desktop.glb",
+      "bytes": 28631036,
+      "sha256": "53ce2da58e7b40d05fedaf9ad12c35c0bdd04b39516f6e7f592e099cd8397be4"
+    },
+    {
+      "source": "assets/generated/meshy/cannon_black/motion/runtime/v7/cannon_black_desktop.glb",
+      "path": "/assets/models/motion/cannon_black/desktop.webp.glb",
+      "bytes": 10646520,
+      "sha256": "6dc230129bdc4722d002c13de1ef73b74f74855220dab2af82bb075a7088b7cc"
+    },
+    {
+      "source": "assets/generated/meshy/cannon_black/motion/runtime/v7/ktx/cannon_black_mobile.glb",
+      "path": "/assets/models/motion/cannon_black/mobile.glb",
+      "bytes": 8650408,
+      "sha256": "4b42182dd94c6cd0e6d1e0b4449ac91fa6cd2ef160a487fa1ca834b102c48ca1"
+    },
+    {
+      "source": "assets/generated/meshy/cannon_black/motion/runtime/v7/cannon_black_mobile.glb",
+      "path": "/assets/models/motion/cannon_black/mobile.webp.glb",
+      "bytes": 3574272,
+      "sha256": "00407ab352fe423bf92a08cb87bf88d0f444a2f7b9388a2fd5c5b7fe5bd1f6ee"
+    },
+    {
+      "source": "assets/generated/meshy/cannon_black/motion/runtime/v7/ktx/cannon_black_distant.glb",
+      "path": "/assets/models/motion/cannon_black/distant.glb",
+      "bytes": 2898828,
+      "sha256": "3ba0731a4966717e5ce8bd307627088f85b43fb144188e308ca3f50eebab2765"
+    },
+    {
+      "source": "assets/generated/meshy/cannon_black/motion/runtime/v7/cannon_black_distant.glb",
+      "path": "/assets/models/motion/cannon_black/distant.webp.glb",
+      "bytes": 1522344,
+      "sha256": "93899a4aca0621257943967a877df18f948394a78b8bf36833966688a6ed8d5b"
+    },
+    {
+      "source": "assets/generated/meshy/soldier_red/motion/runtime/v6/ktx/soldier_red_desktop.glb",
+      "path": "/assets/models/motion/soldier_red/desktop.glb",
+      "bytes": 36620312,
+      "sha256": "fcb3544adefabf4e8a4854b24fa32a3cb6341c713ac7cbbd590ac193be41a8d8"
+    },
+    {
+      "source": "assets/generated/meshy/soldier_red/motion/runtime/v6/soldier_red_desktop.glb",
+      "path": "/assets/models/motion/soldier_red/desktop.webp.glb",
+      "bytes": 13709032,
+      "sha256": "b27fe314117649f30cb6d6501e3c6e9c222345f1459d41e31d61d2be42aacdf2"
+    },
+    {
+      "source": "assets/generated/meshy/soldier_red/motion/runtime/v6/ktx/soldier_red_mobile.glb",
+      "path": "/assets/models/motion/soldier_red/mobile.glb",
+      "bytes": 10333940,
+      "sha256": "05b7253f96e2ebdda0104d9b6a6fce948671bdb03830ef7f023e3bcdd9a7f005"
+    },
+    {
+      "source": "assets/generated/meshy/soldier_red/motion/runtime/v6/soldier_red_mobile.glb",
+      "path": "/assets/models/motion/soldier_red/mobile.webp.glb",
+      "bytes": 4192872,
+      "sha256": "21558ccb6017f8717fe494d203459f503af4b1655d11586bade030a0d186b26a"
+    },
+    {
+      "source": "assets/generated/meshy/soldier_red/motion/runtime/v6/ktx/soldier_red_distant.glb",
+      "path": "/assets/models/motion/soldier_red/distant.glb",
+      "bytes": 3221128,
+      "sha256": "521a0083e3cb441a9e9af40045e11deb131f6ec1afad715522bc8ce44d104dbc"
+    },
+    {
+      "source": "assets/generated/meshy/soldier_red/motion/runtime/v6/soldier_red_distant.glb",
+      "path": "/assets/models/motion/soldier_red/distant.webp.glb",
+      "bytes": 1654204,
+      "sha256": "c180b50482ffe092344d5706406aa41b3456a94941300fe47fc9a071a522d38c"
+    },
+    {
+      "source": "assets/generated/meshy/soldier_black/motion/runtime/v11/ktx/soldier_black_desktop.glb",
+      "path": "/assets/models/motion/soldier_black/desktop.glb",
+      "bytes": 38330664,
+      "sha256": "da662fe528baa5183139d80b4da8d5bf97d34a9f4a679adf7b3ea23af2a7cc83"
+    },
+    {
+      "source": "assets/generated/meshy/soldier_black/motion/runtime/v11/soldier_black_desktop.glb",
+      "path": "/assets/models/motion/soldier_black/desktop.webp.glb",
+      "bytes": 15093268,
+      "sha256": "c2483849c8e1b8e8282a009db3d8c33d82944d48c445a3268578bdeefe15bcda"
+    },
+    {
+      "source": "assets/generated/meshy/soldier_black/motion/runtime/v11/ktx/soldier_black_mobile.glb",
+      "path": "/assets/models/motion/soldier_black/mobile.glb",
+      "bytes": 10771132,
+      "sha256": "a5c4376dd005a8b0df77b1651555006ea8cd5850b08bceea49eabc188cd3b7a6"
+    },
+    {
+      "source": "assets/generated/meshy/soldier_black/motion/runtime/v11/soldier_black_mobile.glb",
+      "path": "/assets/models/motion/soldier_black/mobile.webp.glb",
+      "bytes": 4650972,
+      "sha256": "1e1db2c0a9a0244b4a0901b4b7d4d44127f404afef4a29016e9e881e0cb9ca08"
+    },
+    {
+      "source": "assets/generated/meshy/soldier_black/motion/runtime/v11/ktx/soldier_black_distant.glb",
+      "path": "/assets/models/motion/soldier_black/distant.glb",
+      "bytes": 3311772,
+      "sha256": "fbf8f909470ce16b6e663fc060c14d844fbc087e899cf2440c8328d9654ac02d"
+    },
+    {
+      "source": "assets/generated/meshy/soldier_black/motion/runtime/v11/soldier_black_distant.glb",
+      "path": "/assets/models/motion/soldier_black/distant.webp.glb",
+      "bytes": 1716536,
+      "sha256": "d48b608bd527f4fb8a339e2a20498d585208c3569690dc4f6877dbc62b568549"
+    }
+  ],
+  "versions": {
+    "general_red": 2,
+    "general_black": 4,
+    "advisor_red": 4,
+    "advisor_black": 2,
+    "elephant_red": 1,
+    "elephant_black": 1,
+    "horse_red": 6,
+    "horse_black": 4,
+    "chariot_red": 6,
+    "chariot_black": 4,
+    "cannon_red": 6,
+    "cannon_black": 7,
+    "soldier_red": 6,
+    "soldier_black": 11
+  }
+}

@@ -186,6 +186,15 @@ export function GameHud({
             <h2>表现设置</h2>
           </div>
           <fieldset>
+            <legend>画面质量</legend>
+            <div className="segmented-control">
+              {([["auto", "自动"], ["high", "精细"], ["low", "流畅"]] as const).map(([value, label]) => (
+                <button key={value} type="button" className={settings.quality === value ? "is-selected" : ""}
+                  aria-pressed={settings.quality === value} onClick={() => onSettingsChange({ quality: value })}>{label}</button>
+              ))}
+            </div>
+          </fieldset>
+          <fieldset>
             <legend>特效强度</legend>
             <div className="segmented-control">
               {([

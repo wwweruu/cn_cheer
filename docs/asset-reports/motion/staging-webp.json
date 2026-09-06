@@ -1,0 +1,800 @@
+[
+  {
+    "piece": "advisor_black",
+    "tier": "desktop",
+    "source_version": 1,
+    "clips": {
+      "idle": 75,
+      "attack": 75,
+      "hit": 75,
+      "death": 75,
+      "walk": 75,
+      "run": 75
+    },
+    "files": {
+      "desktop.webp.glb": {
+        "bytes": 11495044,
+        "sha256": "007deceed9931b8ab5db421bb23a156df7ebc7aa26f57fbd144dcc9d9d9c619b"
+      }
+    }
+  },
+  {
+    "piece": "advisor_black",
+    "tier": "distant",
+    "source_version": 1,
+    "clips": {
+      "idle": 75,
+      "attack": 75,
+      "hit": 75,
+      "death": 75,
+      "walk": 75,
+      "run": 75
+    },
+    "files": {
+      "distant.webp.glb": {
+        "bytes": 1607156,
+        "sha256": "6ff7580514ee140eb0cc25688d35571df01310d99b5ceb5d830d324c0a98115a"
+      }
+    }
+  },
+  {
+    "piece": "advisor_black",
+    "tier": "mobile",
+    "source_version": 1,
+    "clips": {
+      "idle": 75,
+      "attack": 75,
+      "hit": 75,
+      "death": 75,
+      "walk": 75,
+      "run": 75
+    },
+    "files": {
+      "mobile.webp.glb": {
+        "bytes": 3805880,
+        "sha256": "d65f528a5bb350a01ecff6301142dee19c66344036041303b6174f12e4b18f31"
+      }
+    }
+  },
+  {
+    "piece": "advisor_red",
+    "tier": "desktop",
+    "source_version": 1,
+    "clips": {
+      "idle": 75,
+      "attack": 75,
+      "hit": 75,
+      "death": 75,
+      "walk": 75,
+      "run": 75
+    },
+    "files": {
+      "desktop.webp.glb": {
+        "bytes": 9446996,
+        "sha256": "0fc325d19831f63cc4037b7ef1f71aa6bfefb83e127c8f03fb92e9577d370a15"
+      }
+    }
+  },
+  {
+    "piece": "advisor_red",
+    "tier": "distant",
+    "source_version": 1,
+    "clips": {
+      "idle": 75,
+      "attack": 75,
+      "hit": 75,
+      "death": 75,
+      "walk": 75,
+      "run": 75
+    },
+    "files": {
+      "distant.webp.glb": {
+        "bytes": 1470600,
+        "sha256": "aadde8c614c1de2ca650f3e78aa4d5842c543d396e76aa9658e56df63ea8694b"
+      }
+    }
+  },
+  {
+    "piece": "advisor_red",
+    "tier": "mobile",
+    "source_version": 1,
+    "clips": {
+      "idle": 75,
+      "attack": 75,
+      "hit": 75,
+      "death": 75,
+      "walk": 75,
+      "run": 75
+    },
+    "files": {
+      "mobile.webp.glb": {
+        "bytes": 3272512,
+        "sha256": "6f5bcc9c83bace43a1661c65c56b32fe418c85161221559d33feb7ed91aa4e2f"
+      }
+    }
+  },
+  {
+    "piece": "cannon_black",
+    "tier": "desktop",
+    "source_version": 1,
+    "clips": {
+      "idle": 12,
+      "attack": 12,
+      "hit": 12,
+      "death": 12,
+      "walk": 12,
+      "run": 12
+    },
+    "files": {
+      "desktop.webp.glb": {
+        "bytes": 10613176,
+        "sha256": "97cf9f724bbbfd16965e4528d142d654108a2c14e26f084c0406416fe0ff7317"
+      }
+    }
+  },
+  {
+    "piece": "cannon_black",
+    "tier": "distant",
+    "source_version": 1,
+    "clips": {
+      "idle": 12,
+      "attack": 12,
+      "hit": 12,
+      "death": 12,
+      "walk": 12,
+      "run": 12
+    },
+    "files": {
+      "distant.webp.glb": {
+        "bytes": 1483552,
+        "sha256": "485d7fa871ce2f8917d26b699332e97d1cfe1d9ea2ab93335607073ad03e0781"
+      }
+    }
+  },
+  {
+    "piece": "cannon_black",
+    "tier": "mobile",
+    "source_version": 1,
+    "clips": {
+      "idle": 12,
+      "attack": 12,
+      "hit": 12,
+      "death": 12,
+      "walk": 12,
+      "run": 12
+    },
+    "files": {
+      "mobile.webp.glb": {
+        "bytes": 3541564,
+        "sha256": "eaae96911ad0a70badd9bb9da942176b7b3a91a5de646dc347d698b6cfeb04de"
+      }
+    }
+  },
+  {
+    "piece": "cannon_red",
+    "tier": "desktop",
+    "source_version": 1,
+    "clips": {
+      "idle": 12,
+      "attack": 12,
+      "hit": 12,
+      "death": 12,
+      "walk": 12,
+      "run": 12
+    },
+    "files": {
+      "desktop.webp.glb": {
+        "bytes": 12576688,
+        "sha256": "898d7c307d54eba6d9927fe9408e5a2c5df6c897c152cbdd01822209130d445f"
+      }
+    }
+  },
+  {
+    "piece": "cannon_red",
+    "tier": "distant",
+    "source_version": 1,
+    "clips": {
+      "idle": 12,
+      "attack": 12,
+      "hit": 12,
+      "death": 12,
+      "walk": 12,
+      "run": 12
+    },
+    "files": {
+      "distant.webp.glb": {
+        "bytes": 1549332,
+        "sha256": "40b256f982819ebcb538d07656c0207993022ce69ee8930d993536f8ce9ce6b3"
+      }
+    }
+  },
+  {
+    "piece": "cannon_red",
+    "tier": "mobile",
+    "source_version": 1,
+    "clips": {
+      "idle": 12,
+      "attack": 12,
+      "hit": 12,
+      "death": 12,
+      "walk": 12,
+      "run": 12
+    },
+    "files": {
+      "mobile.webp.glb": {
+        "bytes": 3901536,
+        "sha256": "62b4b93bf636a0eec63acd85e98c73cff5fee5e227eb73a3bb1224e9ad376ae2"
+      }
+    }
+  },
+  {
+    "piece": "chariot_black",
+    "tier": "desktop",
+    "source_version": 1,
+    "clips": {
+      "idle": 12,
+      "attack": 12,
+      "hit": 12,
+      "death": 12,
+      "walk": 12,
+      "run": 12
+    },
+    "files": {
+      "desktop.webp.glb": {
+        "bytes": 11054152,
+        "sha256": "734ee4adf4787430e02791ead99bedb49efbd2ae44205ffaa6426944d02e4bb2"
+      }
+    }
+  },
+  {
+    "piece": "chariot_black",
+    "tier": "distant",
+    "source_version": 1,
+    "clips": {
+      "idle": 12,
+      "attack": 12,
+      "hit": 12,
+      "death": 12,
+      "walk": 12,
+      "run": 12
+    },
+    "files": {
+      "distant.webp.glb": {
+        "bytes": 1625720,
+        "sha256": "b9db5375947b508e7cca726ee75268584ba2ef74eba8bdc972e895b89c66b539"
+      }
+    }
+  },
+  {
+    "piece": "chariot_black",
+    "tier": "mobile",
+    "source_version": 1,
+    "clips": {
+      "idle": 12,
+      "attack": 12,
+      "hit": 12,
+      "death": 12,
+      "walk": 12,
+      "run": 12
+    },
+    "files": {
+      "mobile.webp.glb": {
+        "bytes": 3721272,
+        "sha256": "464f28cc2a3a10d7f10416c2b553b6f3d65b94378c8feff7e8dc1a83830eb6a9"
+      }
+    }
+  },
+  {
+    "piece": "chariot_red",
+    "tier": "desktop",
+    "source_version": 1,
+    "clips": {
+      "idle": 12,
+      "attack": 12,
+      "hit": 12,
+      "death": 12,
+      "walk": 12,
+      "run": 12
+    },
+    "files": {
+      "desktop.webp.glb": {
+        "bytes": 14018672,
+        "sha256": "23148bb425536cc44ec14085e4348579476c59a7c9bbb821acd53a647833e8fe"
+      }
+    }
+  },
+  {
+    "piece": "chariot_red",
+    "tier": "distant",
+    "source_version": 1,
+    "clips": {
+      "idle": 12,
+      "attack": 12,
+      "hit": 12,
+      "death": 12,
+      "walk": 12,
+      "run": 12
+    },
+    "files": {
+      "distant.webp.glb": {
+        "bytes": 1993604,
+        "sha256": "de5668e96e94acdbe4ccef457689f861df68ef6953aadc28787e54ea827b8539"
+      }
+    }
+  },
+  {
+    "piece": "chariot_red",
+    "tier": "mobile",
+    "source_version": 1,
+    "clips": {
+      "idle": 12,
+      "attack": 12,
+      "hit": 12,
+      "death": 12,
+      "walk": 12,
+      "run": 12
+    },
+    "files": {
+      "mobile.webp.glb": {
+        "bytes": 4630988,
+        "sha256": "560cd555fd3aafa18f3dc0ff46cc061c7191abf97e6094256027cd8f6ef0f2af"
+      }
+    }
+  },
+  {
+    "piece": "elephant_black",
+    "tier": "desktop",
+    "source_version": 1,
+    "clips": {
+      "idle": 12,
+      "attack": 12,
+      "hit": 12,
+      "death": 12,
+      "walk": 12,
+      "run": 12
+    },
+    "files": {
+      "desktop.webp.glb": {
+        "bytes": 14630020,
+        "sha256": "bc2a4029c4ad5dc1b10e0db06788115748246ed6225d46f8311d32a269b191f7"
+      }
+    }
+  },
+  {
+    "piece": "elephant_black",
+    "tier": "distant",
+    "source_version": 1,
+    "clips": {
+      "idle": 12,
+      "attack": 12,
+      "hit": 12,
+      "death": 12,
+      "walk": 12,
+      "run": 12
+    },
+    "files": {
+      "distant.webp.glb": {
+        "bytes": 1926096,
+        "sha256": "f3d27801284b28ff95954276b5283d61a9c58eb46e6e78bbfc4f601c041f3e92"
+      }
+    }
+  },
+  {
+    "piece": "elephant_black",
+    "tier": "mobile",
+    "source_version": 1,
+    "clips": {
+      "idle": 12,
+      "attack": 12,
+      "hit": 12,
+      "death": 12,
+      "walk": 12,
+      "run": 12
+    },
+    "files": {
+      "mobile.webp.glb": {
+        "bytes": 4768236,
+        "sha256": "37c1a4651ef738adb141eb6d707c0d450436cd16f4a443e945c6e4388b29579f"
+      }
+    }
+  },
+  {
+    "piece": "elephant_red",
+    "tier": "desktop",
+    "source_version": 1,
+    "clips": {
+      "idle": 12,
+      "attack": 12,
+      "hit": 12,
+      "death": 12,
+      "walk": 12,
+      "run": 12
+    },
+    "files": {
+      "desktop.webp.glb": {
+        "bytes": 12444016,
+        "sha256": "22999f645fa7bed06ae507479e08874bbdb7dec73801ae5cbade5a39f6cbd9f9"
+      }
+    }
+  },
+  {
+    "piece": "elephant_red",
+    "tier": "distant",
+    "source_version": 1,
+    "clips": {
+      "idle": 12,
+      "attack": 12,
+      "hit": 12,
+      "death": 12,
+      "walk": 12,
+      "run": 12
+    },
+    "files": {
+      "distant.webp.glb": {
+        "bytes": 1650292,
+        "sha256": "5fc262289c5d6c9bf1c749f8c7f299244b6db99cbe28fc13c182949c2e7d9f06"
+      }
+    }
+  },
+  {
+    "piece": "elephant_red",
+    "tier": "mobile",
+    "source_version": 1,
+    "clips": {
+      "idle": 12,
+      "attack": 12,
+      "hit": 12,
+      "death": 12,
+      "walk": 12,
+      "run": 12
+    },
+    "files": {
+      "mobile.webp.glb": {
+        "bytes": 4047420,
+        "sha256": "058dd3023e4cf873dffc27b324e2ad97715bef510c802b0b088f95ea37140a4e"
+      }
+    }
+  },
+  {
+    "piece": "general_black",
+    "tier": "desktop",
+    "source_version": 1,
+    "clips": {
+      "idle": 75,
+      "attack": 75,
+      "hit": 75,
+      "death": 75,
+      "walk": 75,
+      "run": 75
+    },
+    "files": {
+      "desktop.webp.glb": {
+        "bytes": 10957280,
+        "sha256": "2ff572b3fe879005ccb9dbce5a479f0692095218f11e94590ecb95c281825cb4"
+      }
+    }
+  },
+  {
+    "piece": "general_black",
+    "tier": "distant",
+    "source_version": 1,
+    "clips": {
+      "idle": 75,
+      "attack": 75,
+      "hit": 75,
+      "death": 75,
+      "walk": 75,
+      "run": 75
+    },
+    "files": {
+      "distant.webp.glb": {
+        "bytes": 1738636,
+        "sha256": "a36429f37e663aad06e453333f089275421297962a8e5ee8387c919c6bb73b21"
+      }
+    }
+  },
+  {
+    "piece": "general_black",
+    "tier": "mobile",
+    "source_version": 1,
+    "clips": {
+      "idle": 75,
+      "attack": 75,
+      "hit": 75,
+      "death": 75,
+      "walk": 75,
+      "run": 75
+    },
+    "files": {
+      "mobile.webp.glb": {
+        "bytes": 3806504,
+        "sha256": "32878f9d5af331ddb3d42a250e83daa0fd5cc2bf9cd77791a1ee24d7d6eb1122"
+      }
+    }
+  },
+  {
+    "piece": "general_red",
+    "tier": "desktop",
+    "source_version": 1,
+    "clips": {
+      "idle": 75,
+      "attack": 75,
+      "hit": 75,
+      "death": 75,
+      "walk": 75,
+      "run": 75
+    },
+    "files": {
+      "desktop.webp.glb": {
+        "bytes": 11618320,
+        "sha256": "cd644083e511d692662223d62b7c2c8b46f2bfcaa50c83df72752c3d1979453d"
+      }
+    }
+  },
+  {
+    "piece": "general_red",
+    "tier": "distant",
+    "source_version": 1,
+    "clips": {
+      "idle": 75,
+      "attack": 75,
+      "hit": 75,
+      "death": 75,
+      "walk": 75,
+      "run": 75
+    },
+    "files": {
+      "distant.webp.glb": {
+        "bytes": 1722040,
+        "sha256": "579559fbfda6870c3e8bb8c0c29616bf624336c2cc920762b8dad83256f98c1a"
+      }
+    }
+  },
+  {
+    "piece": "general_red",
+    "tier": "mobile",
+    "source_version": 1,
+    "clips": {
+      "idle": 75,
+      "attack": 75,
+      "hit": 75,
+      "death": 75,
+      "walk": 75,
+      "run": 75
+    },
+    "files": {
+      "mobile.webp.glb": {
+        "bytes": 3887636,
+        "sha256": "d086c924a823bce6bdbcf48d4033fc66b4704d389c279577ca3d74475235281e"
+      }
+    }
+  },
+  {
+    "piece": "horse_black",
+    "tier": "desktop",
+    "source_version": 1,
+    "clips": {
+      "idle": 12,
+      "attack": 12,
+      "hit": 12,
+      "death": 12,
+      "walk": 12,
+      "run": 12
+    },
+    "files": {
+      "desktop.webp.glb": {
+        "bytes": 12152944,
+        "sha256": "2d2755d42daf7960d06cc7b6d9306195662cc078a05f65b517587a26461f9c54"
+      }
+    }
+  },
+  {
+    "piece": "horse_black",
+    "tier": "distant",
+    "source_version": 1,
+    "clips": {
+      "idle": 12,
+      "attack": 12,
+      "hit": 12,
+      "death": 12,
+      "walk": 12,
+      "run": 12
+    },
+    "files": {
+      "distant.webp.glb": {
+        "bytes": 1601744,
+        "sha256": "2fbaf5657f04ea38b6c7cde3587035c6818c39e4872e8b6df66b12601bac00f5"
+      }
+    }
+  },
+  {
+    "piece": "horse_black",
+    "tier": "mobile",
+    "source_version": 1,
+    "clips": {
+      "idle": 12,
+      "attack": 12,
+      "hit": 12,
+      "death": 12,
+      "walk": 12,
+      "run": 12
+    },
+    "files": {
+      "mobile.webp.glb": {
+        "bytes": 3932684,
+        "sha256": "06ed6ce895769ceea765eec27f6b61eaf3d503974c81b8c9f109ca17747a0fd2"
+      }
+    }
+  },
+  {
+    "piece": "horse_red",
+    "tier": "desktop",
+    "source_version": 1,
+    "clips": {
+      "idle": 12,
+      "attack": 12,
+      "hit": 12,
+      "death": 12,
+      "walk": 12,
+      "run": 12
+    },
+    "files": {
+      "desktop.webp.glb": {
+        "bytes": 11679196,
+        "sha256": "1c1f2e475b6a4e88f1ac4950fc8c5ee2dbd5aaeaef100d133a33def444f9953c"
+      }
+    }
+  },
+  {
+    "piece": "horse_red",
+    "tier": "distant",
+    "source_version": 1,
+    "clips": {
+      "idle": 12,
+      "attack": 12,
+      "hit": 12,
+      "death": 12,
+      "walk": 12,
+      "run": 12
+    },
+    "files": {
+      "distant.webp.glb": {
+        "bytes": 1509240,
+        "sha256": "a97d4b8dde631baa762b9c4ae61d9b0db0f6eed5ee75c577bcfc71fe84f52914"
+      }
+    }
+  },
+  {
+    "piece": "horse_red",
+    "tier": "mobile",
+    "source_version": 1,
+    "clips": {
+      "idle": 12,
+      "attack": 12,
+      "hit": 12,
+      "death": 12,
+      "walk": 12,
+      "run": 12
+    },
+    "files": {
+      "mobile.webp.glb": {
+        "bytes": 3769104,
+        "sha256": "1bf0e144209492c7cc97d8ddee47c67d0fc5e28d31ff85670ff2b01d734db1a6"
+      }
+    }
+  },
+  {
+    "piece": "soldier_black",
+    "tier": "desktop",
+    "source_version": 1,
+    "clips": {
+      "idle": 75,
+      "attack": 75,
+      "hit": 75,
+      "death": 75,
+      "walk": 75,
+      "run": 75
+    },
+    "files": {
+      "desktop.webp.glb": {
+        "bytes": 15177788,
+        "sha256": "b43b142aeb52a71191e13d6fa5e2278481828377570022aec4fe702e52910669"
+      }
+    }
+  },
+  {
+    "piece": "soldier_black",
+    "tier": "distant",
+    "source_version": 1,
+    "clips": {
+      "idle": 75,
+      "attack": 75,
+      "hit": 75,
+      "death": 75,
+      "walk": 75,
+      "run": 75
+    },
+    "files": {
+      "distant.webp.glb": {
+        "bytes": 1821812,
+        "sha256": "6d961dbe96bc5654f28c585f3364cd91cb9cc5d191e38a94981694f76256f5d8"
+      }
+    }
+  },
+  {
+    "piece": "soldier_black",
+    "tier": "mobile",
+    "source_version": 1,
+    "clips": {
+      "idle": 75,
+      "attack": 75,
+      "hit": 75,
+      "death": 75,
+      "walk": 75,
+      "run": 75
+    },
+    "files": {
+      "mobile.webp.glb": {
+        "bytes": 4777564,
+        "sha256": "df0b66a23979b8b9a4a21a06af809ba5778b0dad3c09ac1dccc6d68863a736d3"
+      }
+    }
+  },
+  {
+    "piece": "soldier_red",
+    "tier": "desktop",
+    "source_version": 5,
+    "clips": {
+      "idle": 75,
+      "attack": 75,
+      "hit": 75,
+      "death": 75,
+      "walk": 75,
+      "run": 75
+    },
+    "files": {
+      "desktop.webp.glb": {
+        "bytes": 13747944,
+        "sha256": "74ccdb8d1d3cf6191af618e1ca88f0887d0222ce915b1029714135ca45ed0452"
+      }
+    }
+  },
+  {
+    "piece": "soldier_red",
+    "tier": "distant",
+    "source_version": 5,
+    "clips": {
+      "idle": 75,
+      "attack": 75,
+      "hit": 75,
+      "death": 75,
+      "walk": 75,
+      "run": 75
+    },
+    "files": {
+      "distant.webp.glb": {
+        "bytes": 1668728,
+        "sha256": "c39f51c6711209e1131188b7bdf46912a978d501a4c2647507b90724b99e3a28"
+      }
+    }
+  },
+  {
+    "piece": "soldier_red",
+    "tier": "mobile",
+    "source_version": 5,
+    "clips": {
+      "idle": 75,
+      "attack": 75,
+      "hit": 75,
+      "death": 75,
+      "walk": 75,
+      "run": 75
+    },
+    "files": {
+      "mobile.webp.glb": {
+        "bytes": 4210228,
+        "sha256": "47594b724bac0052da30cec088555cca0aaca46750e48e656b913a7d0867cb8a"
+      }
+    }
+  }
+]

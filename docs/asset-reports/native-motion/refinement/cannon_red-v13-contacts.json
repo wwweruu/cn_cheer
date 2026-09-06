@@ -1,0 +1,41 @@
+{
+  "piece": "cannon_red",
+  "version": 13,
+  "file": "assets\\generated\\meshy\\cannon_red\\motion\\runtime\\v13\\cannon_red_mobile.glb",
+  "clips": [
+    {
+      "clip": "idle",
+      "frames": [
+        0.0,
+        143.1999969482422
+      ],
+      "feet": {},
+      "pedestal_drift_m": 0,
+      "ankle_edge_stretch_p99": 1.0000008344650269,
+      "ankle_edge_stretch_max": 1.000009536743164,
+      "worst_ankle_edge": {
+        "rest": [
+          [
+            -0.3067554831504822,
+            0.10555264353752136,
+            0.3657570481300354
+          ],
+          [
+            -0.30749374628067017,
+            0.10521093010902405,
+            0.359592080116272
+          ]
+        ],
+        "weights": [
+          {
+            "Native_Hips": 1.0
+          },
+          {
+            "Native_Hips": 1.0
+          }
+        ]
+      },
+      "loop_vertex_jump_m": 2.3914506641631306e-07
+    }
+  ]
+}

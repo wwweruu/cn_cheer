@@ -39,6 +39,13 @@ export interface MoveRecord {
   winner: Camp | null;
 }
 
+/** Monotonic playback identity survives undo/restart and LOD changes. */
+export interface MovePlayback extends MoveRecord {
+  token: number;
+  startedAt: number;
+  effectLevel: EffectLevel;
+}
+
 export interface MoveResult {
   state: GameState;
   move: MoveRecord;
@@ -46,8 +53,10 @@ export interface MoveResult {
 
 export type EffectLevel = "full" | "reduced" | "off";
 export type CameraMode = "perspective" | "top";
+export type ModelQuality = "auto" | "high" | "low";
 
 export interface GameSettings {
+  quality: ModelQuality;
   effects: EffectLevel;
   sound: boolean;
   cameraShake: boolean;

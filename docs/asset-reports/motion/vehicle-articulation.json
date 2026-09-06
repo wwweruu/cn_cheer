@@ -1,0 +1,1046 @@
+[
+  {
+    "piece": "horse_red",
+    "tier": "desktop",
+    "joints": 23,
+    "clips": {
+      "idle": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.016250574331107923,
+          "HorseFLLower": 0
+        },
+        "maxRigidLengthError": 3.3306690738754696e-16
+      },
+      "attack": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.7022507199576217,
+          "HorseFLLower": 0.27028908886378206
+        },
+        "maxRigidLengthError": 5.1370634412961635e-9
+      },
+      "hit": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.07044548556026332,
+          "HorseFLLower": 0
+        },
+        "maxRigidLengthError": 2.636779683484747e-16
+      },
+      "death": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.5219180932987791,
+          "HorseFLLower": 0.052566281416835434
+        },
+        "maxRigidLengthError": 1.9683337182385685e-9
+      },
+      "walk": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.05783055875125692,
+          "HorseFLLower": 0.08322753973312086
+        },
+        "maxRigidLengthError": 2.373190532978242e-11
+      },
+      "run": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.05494383732400764,
+          "HorseFLLower": 0.12078813986476548
+        },
+        "maxRigidLengthError": 2.7336688468437842e-11
+      }
+    }
+  },
+  {
+    "piece": "horse_red",
+    "tier": "mobile",
+    "joints": 23,
+    "clips": {
+      "idle": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.016204790940983604,
+          "HorseFLLower": 0
+        },
+        "maxRigidLengthError": 3.0531133177191805e-16
+      },
+      "attack": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.6999386296185102,
+          "HorseFLLower": 0.26604924763418686
+        },
+        "maxRigidLengthError": 5.18802367732718e-9
+      },
+      "hit": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.07017473066646605,
+          "HorseFLLower": 0
+        },
+        "maxRigidLengthError": 3.3306690738754696e-16
+      },
+      "death": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.5200355792016728,
+          "HorseFLLower": 0.0510842598241388
+        },
+        "maxRigidLengthError": 1.9878599877287684e-9
+      },
+      "walk": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.05766238197529461,
+          "HorseFLLower": 0.08281410582518905
+        },
+        "maxRigidLengthError": 2.396749465560788e-11
+      },
+      "run": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.05478688274766034,
+          "HorseFLLower": 0.12094717714503248
+        },
+        "maxRigidLengthError": 2.760802697565623e-11
+      }
+    }
+  },
+  {
+    "piece": "horse_red",
+    "tier": "distant",
+    "joints": 23,
+    "clips": {
+      "idle": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.01647929334517069,
+          "HorseFLLower": 0
+        },
+        "maxRigidLengthError": 3.3306690738754696e-16
+      },
+      "attack": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.7131423603714485,
+          "HorseFLLower": 0.2659986714208336
+        },
+        "maxRigidLengthError": 5.327358887363687e-9
+      },
+      "hit": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.07181744892005727,
+          "HorseFLLower": 0
+        },
+        "maxRigidLengthError": 3.3306690738754696e-16
+      },
+      "death": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.5301200076198576,
+          "HorseFLLower": 0.052566281416835434
+        },
+        "maxRigidLengthError": 2.0412480594700355e-9
+      },
+      "walk": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.058613376762364625,
+          "HorseFLLower": 0.08280335785656136
+        },
+        "maxRigidLengthError": 2.4611312987588008e-11
+      },
+      "run": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.05565154669655422,
+          "HorseFLLower": 0.12101110452767798
+        },
+        "maxRigidLengthError": 2.8349544933803372e-11
+      }
+    }
+  },
+  {
+    "piece": "horse_black",
+    "tier": "desktop",
+    "joints": 23,
+    "clips": {
+      "idle": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.013996276790022478,
+          "HorseFLLower": 0
+        },
+        "maxRigidLengthError": 2.220446049250313e-16
+      },
+      "attack": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.6052331639533453,
+          "HorseFLLower": 0.24359089807722306
+        },
+        "maxRigidLengthError": 3.5383974084091108e-9
+      },
+      "hit": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.05993063999410597,
+          "HorseFLLower": 0
+        },
+        "maxRigidLengthError": 1.942890293094024e-16
+      },
+      "death": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.4475255517859807,
+          "HorseFLLower": 0.042692353889373626
+        },
+        "maxRigidLengthError": 1.3557837075239831e-9
+      },
+      "walk": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.04996706565563445,
+          "HorseFLLower": 0.07107377433450793
+        },
+        "maxRigidLengthError": 1.6346535236522186e-11
+      },
+      "run": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.04757512473586762,
+          "HorseFLLower": 0.10264084387802815
+        },
+        "maxRigidLengthError": 1.882954903109635e-11
+      }
+    }
+  },
+  {
+    "piece": "horse_black",
+    "tier": "mobile",
+    "joints": 23,
+    "clips": {
+      "idle": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.015832718035623538,
+          "HorseFLLower": 0
+        },
+        "maxRigidLengthError": 3.3306690738754696e-16
+      },
+      "attack": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.693074232247306,
+          "HorseFLLower": 0.24363813290714162
+        },
+        "maxRigidLengthError": 5.318391949060697e-9
+      },
+      "hit": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.07093891036425715,
+          "HorseFLLower": 0
+        },
+        "maxRigidLengthError": 3.3306690738754696e-16
+      },
+      "death": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.5140821378390933,
+          "HorseFLLower": 0.043629093187059084
+        },
+        "maxRigidLengthError": 2.0378123632980305e-9
+      },
+      "walk": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.05676490450090401,
+          "HorseFLLower": 0.07108370222897875
+        },
+        "maxRigidLengthError": 2.456990166876949e-11
+      },
+      "run": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.05380809039381006,
+          "HorseFLLower": 0.10265343545344416
+        },
+        "maxRigidLengthError": 2.830180534374449e-11
+      }
+    }
+  },
+  {
+    "piece": "horse_black",
+    "tier": "distant",
+    "joints": 23,
+    "clips": {
+      "idle": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.015832161168414762,
+          "HorseFLLower": 0
+        },
+        "maxRigidLengthError": 2.220446049250313e-16
+      },
+      "attack": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.6930204071150127,
+          "HorseFLLower": 0.2417536973776961
+        },
+        "maxRigidLengthError": 5.754198006968636e-9
+      },
+      "hit": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.07093700270311117,
+          "HorseFLLower": 0
+        },
+        "maxRigidLengthError": 2.220446049250313e-16
+      },
+      "death": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.5141155489713496,
+          "HorseFLLower": 0.04270080509818591
+        },
+        "maxRigidLengthError": 2.2047972336736166e-9
+      },
+      "walk": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.05680398842459735,
+          "HorseFLLower": 0.07078150982256726
+        },
+        "maxRigidLengthError": 2.6583069079322286e-11
+      },
+      "run": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.05384891873272597,
+          "HorseFLLower": 0.10234885218855545
+        },
+        "maxRigidLengthError": 3.062095021988398e-11
+      }
+    }
+  },
+  {
+    "piece": "chariot_red",
+    "tier": "desktop",
+    "joints": 38,
+    "clips": {
+      "idle": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.010587700146307371,
+          "LeftHorseFLLower": 0,
+          "WheelR": 0
+        },
+        "maxRigidLengthError": 2.7755575615628914e-16
+      },
+      "attack": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.43447506733040137,
+          "LeftHorseFLLower": 0.11141944462478767,
+          "WheelR": 0.14698524695935156
+        },
+        "maxRigidLengthError": 5.547658610272066e-9
+      },
+      "hit": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.06946452221812423,
+          "LeftHorseFLLower": 0,
+          "WheelR": 0
+        },
+        "maxRigidLengthError": 2.498001805406602e-16
+      },
+      "death": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.30941697179968475,
+          "LeftHorseFLLower": 0.030041829972004018,
+          "WheelR": 0
+        },
+        "maxRigidLengthError": 9.592673322345036e-10
+      },
+      "walk": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.03488408618141849,
+          "LeftHorseFLLower": 0.049214578155818124,
+          "WheelR": 0.3574462155096661
+        },
+        "maxRigidLengthError": 2.5761388910972016e-8
+      },
+      "run": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.033442813183561126,
+          "LeftHorseFLLower": 0.07118763401884953,
+          "WheelR": 0.3574462154999482
+        },
+        "maxRigidLengthError": 3.3417470679530936e-8
+      }
+    }
+  },
+  {
+    "piece": "chariot_red",
+    "tier": "mobile",
+    "joints": 38,
+    "clips": {
+      "idle": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.010620501531459442,
+          "LeftHorseFLLower": 0,
+          "WheelR": 0
+        },
+        "maxRigidLengthError": 2.498001805406602e-16
+      },
+      "attack": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.43603600050426145,
+          "LeftHorseFLLower": 0.11133281866256123,
+          "WheelR": 0.1408503050023092
+        },
+        "maxRigidLengthError": 5.3907582286960576e-9
+      },
+      "hit": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.06157742547432015,
+          "LeftHorseFLLower": 0,
+          "WheelR": 0
+        },
+        "maxRigidLengthError": 2.7755575615628914e-16
+      },
+      "death": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.30552325881423403,
+          "LeftHorseFLLower": 0.027858274307013223,
+          "WheelR": 0
+        },
+        "maxRigidLengthError": 8.583310728838001e-10
+      },
+      "walk": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.035010427875871455,
+          "LeftHorseFLLower": 0.049970747074565745,
+          "WheelR": 0.3425269509557023
+        },
+        "maxRigidLengthError": 2.5032798611768214e-8
+      },
+      "run": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.03356267733722344,
+          "LeftHorseFLLower": 0.07181237494709991,
+          "WheelR": 0.3425269509463901
+        },
+        "maxRigidLengthError": 3.2472349253964694e-8
+      }
+    }
+  },
+  {
+    "piece": "chariot_red",
+    "tier": "distant",
+    "joints": 38,
+    "clips": {
+      "idle": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.010620501531459442,
+          "LeftHorseFLLower": 0,
+          "WheelR": 0
+        },
+        "maxRigidLengthError": 2.220446049250313e-16
+      },
+      "attack": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.43603600050426145,
+          "LeftHorseFLLower": 0.11148682743354063,
+          "WheelR": 0.14083046064610524
+        },
+        "maxRigidLengthError": 5.6571691220419495e-9
+      },
+      "hit": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.06570395951430974,
+          "LeftHorseFLLower": 0,
+          "WheelR": 0
+        },
+        "maxRigidLengthError": 2.1510571102112408e-16
+      },
+      "death": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.30552325881423403,
+          "LeftHorseFLLower": 0.029841586757355532,
+          "WheelR": 0
+        },
+        "maxRigidLengthError": 9.138158008070718e-10
+      },
+      "walk": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.035010427875871455,
+          "LeftHorseFLLower": 0.050558759098579556,
+          "WheelR": 0.34247869243880324
+        },
+        "maxRigidLengthError": 2.6269917907661977e-8
+      },
+      "run": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.03356267733722344,
+          "LeftHorseFLLower": 0.07248378150472254,
+          "WheelR": 0.3424786924294923
+        },
+        "maxRigidLengthError": 3.4077130506293685e-8
+      }
+    }
+  },
+  {
+    "piece": "chariot_black",
+    "tier": "desktop",
+    "joints": 38,
+    "clips": {
+      "idle": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.008971294207666508,
+          "LeftHorseFLLower": 0,
+          "WheelR": 0
+        },
+        "maxRigidLengthError": 3.3306690738754696e-16
+      },
+      "attack": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.3685543109031808,
+          "LeftHorseFLLower": 0.10336619283744204,
+          "WheelR": 0.14694651518247542
+        },
+        "maxRigidLengthError": 4.25588092545226e-9
+      },
+      "hit": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.04412189905636299,
+          "LeftHorseFLLower": 0,
+          "WheelR": 0
+        },
+        "maxRigidLengthError": 3.608224830031759e-16
+      },
+      "death": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.2696102988415304,
+          "LeftHorseFLLower": 0.020918422080163798,
+          "WheelR": 0
+        },
+        "maxRigidLengthError": 8.179908417282888e-10
+      },
+      "walk": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.029929980865109902,
+          "LeftHorseFLLower": 0.04616281000065289,
+          "WheelR": 0.35735202560046964
+        },
+        "maxRigidLengthError": 1.976282451576772e-8
+      },
+      "run": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.028667286593399077,
+          "LeftHorseFLLower": 0.06573622523764792,
+          "WheelR": 0.35735202559075424
+        },
+        "maxRigidLengthError": 2.563618023421199e-8
+      }
+    }
+  },
+  {
+    "piece": "chariot_black",
+    "tier": "mobile",
+    "joints": 38,
+    "clips": {
+      "idle": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.009109299200854648,
+          "LeftHorseFLLower": 0,
+          "WheelR": 0
+        },
+        "maxRigidLengthError": 2.498001805406602e-16
+      },
+      "attack": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.37547888842606325,
+          "LeftHorseFLLower": 0.10303917262635384,
+          "WheelR": 0.15294878396100497
+        },
+        "maxRigidLengthError": 4.1849160803408836e-9
+      },
+      "hit": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.044043978895763676,
+          "LeftHorseFLLower": 0,
+          "WheelR": 0
+        },
+        "maxRigidLengthError": 3.3306690738754696e-16
+      },
+      "death": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.2740487543340297,
+          "LeftHorseFLLower": 0.02030435383625516,
+          "WheelR": 0
+        },
+        "maxRigidLengthError": 1.1472297556380795e-9
+      },
+      "walk": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.030517361940268963,
+          "LeftHorseFLLower": 0.04602494192237311,
+          "WheelR": 0.3719486487564694
+        },
+        "maxRigidLengthError": 1.9433288700465567e-8
+      },
+      "run": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.029189552724477888,
+          "LeftHorseFLLower": 0.06556095737771886,
+          "WheelR": 0.3719486487463572
+        },
+        "maxRigidLengthError": 2.520870895361682e-8
+      }
+    }
+  },
+  {
+    "piece": "chariot_black",
+    "tier": "distant",
+    "joints": 38,
+    "clips": {
+      "idle": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.008530327146907444,
+          "LeftHorseFLLower": 0,
+          "WheelR": 0
+        },
+        "maxRigidLengthError": 2.7755575615628914e-16
+      },
+      "attack": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.3499786371648267,
+          "LeftHorseFLLower": 0.10577800382113992,
+          "WheelR": 0.14677689901371732
+        },
+        "maxRigidLengthError": 6.183825895789141e-9
+      },
+      "hit": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.04182454653818481,
+          "LeftHorseFLLower": 0,
+          "WheelR": 0
+        },
+        "maxRigidLengthError": 2.7755575615628914e-16
+      },
+      "death": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.25287788120661436,
+          "LeftHorseFLLower": 0.02000493182416078,
+          "WheelR": 0
+        },
+        "maxRigidLengthError": 1.0481411849561084e-9
+      },
+      "walk": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.028430103023967805,
+          "LeftHorseFLLower": 0.046986751505618214,
+          "WheelR": 0.35693954435581365
+        },
+        "maxRigidLengthError": 2.8715528122003064e-8
+      },
+      "run": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.02723478038308304,
+          "LeftHorseFLLower": 0.06690343583152589,
+          "WheelR": 0.3569395443461096
+        },
+        "maxRigidLengthError": 3.7249556994467525e-8
+      }
+    }
+  },
+  {
+    "piece": "cannon_red",
+    "tier": "desktop",
+    "joints": 15,
+    "clips": {
+      "idle": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.011269609213731489,
+          "Barrel": 0,
+          "WheelR": 0
+        },
+        "maxRigidLengthError": 1.1796119636642288e-16
+      },
+      "attack": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.15967570482853286,
+          "Barrel": 0.08256611668537596,
+          "WheelR": 0
+        },
+        "maxRigidLengthError": 2.082723854490709e-10
+      },
+      "hit": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.027247127684938297,
+          "Barrel": 0,
+          "WheelR": 0
+        },
+        "maxRigidLengthError": 1.3183898417423734e-16
+      },
+      "death": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.303220782006752,
+          "Barrel": 0.05594869005523932,
+          "WheelR": 0
+        },
+        "maxRigidLengthError": 1.6520007584119867e-10
+      },
+      "walk": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.03573685099598401,
+          "Barrel": 0,
+          "WheelR": 0.39920471847601435
+        },
+        "maxRigidLengthError": 2.6658165952486712e-8
+      },
+      "run": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.034355552082889096,
+          "Barrel": 0,
+          "WheelR": 0.39920471846516115
+        },
+        "maxRigidLengthError": 3.458076297535584e-8
+      }
+    }
+  },
+  {
+    "piece": "cannon_red",
+    "tier": "mobile",
+    "joints": 15,
+    "clips": {
+      "idle": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.011430473508530175,
+          "Barrel": 0,
+          "WheelR": 0
+        },
+        "maxRigidLengthError": 1.2663481374630692e-16
+      },
+      "attack": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.1610774082149435,
+          "Barrel": 0.08256611668537596,
+          "WheelR": 0
+        },
+        "maxRigidLengthError": 2.923655831321703e-10
+      },
+      "hit": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.02847277614906408,
+          "Barrel": 0,
+          "WheelR": 0
+        },
+        "maxRigidLengthError": 1.214306433183765e-16
+      },
+      "death": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.30866434027142203,
+          "Barrel": 0.05082090995929242,
+          "WheelR": 0
+        },
+        "maxRigidLengthError": 1.6207124531320005e-10
+      },
+      "walk": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.03634815772466286,
+          "Barrel": 0,
+          "WheelR": 0.42196814925915427
+        },
+        "maxRigidLengthError": 2.3225381590163963e-8
+      },
+      "run": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.03493592396833728,
+          "Barrel": 0,
+          "WheelR": 0.4219681492476823
+        },
+        "maxRigidLengthError": 3.0127781935895825e-8
+      }
+    }
+  },
+  {
+    "piece": "cannon_red",
+    "tier": "distant",
+    "joints": 15,
+    "clips": {
+      "idle": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.011430473508530175,
+          "Barrel": 0,
+          "WheelR": 0
+        },
+        "maxRigidLengthError": 1.2663481374630692e-16
+      },
+      "attack": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.1610774082149435,
+          "Barrel": 0.08256611668537596,
+          "WheelR": 0
+        },
+        "maxRigidLengthError": 2.923655831321703e-10
+      },
+      "hit": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.02847277614906408,
+          "Barrel": 0,
+          "WheelR": 0
+        },
+        "maxRigidLengthError": 1.1622647289044608e-16
+      },
+      "death": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.30866434027142203,
+          "Barrel": 0.05613027775261928,
+          "WheelR": 0
+        },
+        "maxRigidLengthError": 1.6871648522709393e-10
+      },
+      "walk": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.03634815772466286,
+          "Barrel": 0,
+          "WheelR": 0.4171640697983704
+        },
+        "maxRigidLengthError": 2.3922696157363532e-8
+      },
+      "run": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.03493592396833728,
+          "Barrel": 0,
+          "WheelR": 0.4171640697870291
+        },
+        "maxRigidLengthError": 3.103233298107355e-8
+      }
+    }
+  },
+  {
+    "piece": "cannon_black",
+    "tier": "desktop",
+    "joints": 15,
+    "clips": {
+      "idle": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.006580388016695032,
+          "ThrowArm": 0
+        },
+        "maxRigidLengthError": 1.457167719820518e-16
+      },
+      "attack": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.12432873167808979,
+          "ThrowArm": 0.33176494764189757
+        },
+        "maxRigidLengthError": 9.432036263135046e-9
+      },
+      "hit": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.014364004206525501,
+          "ThrowArm": 0.052787992476308096
+        },
+        "maxRigidLengthError": 4.996003610813204e-16
+      },
+      "death": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.17977833470312912,
+          "ThrowArm": 0.2657626464845685
+        },
+        "maxRigidLengthError": 7.354709063989162e-10
+      },
+      "walk": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.020612015079945426,
+          "ThrowArm": 0
+        },
+        "maxRigidLengthError": 3.1069452566256928e-12
+      },
+      "run": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.019832402645671095,
+          "ThrowArm": 0
+        },
+        "maxRigidLengthError": 3.578901064393847e-12
+      }
+    }
+  },
+  {
+    "piece": "cannon_black",
+    "tier": "mobile",
+    "joints": 15,
+    "clips": {
+      "idle": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.006954057866494551,
+          "ThrowArm": 0
+        },
+        "maxRigidLengthError": 1.249000902703301e-16
+      },
+      "attack": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.13138878624843567,
+          "ThrowArm": 0.34719188448632565
+        },
+        "maxRigidLengthError": 1.0044661824526457e-8
+      },
+      "hit": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.01672582914556726,
+          "ThrowArm": 0.055242612929325814
+        },
+        "maxRigidLengthError": 3.885780586188048e-16
+      },
+      "death": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.19386863118537875,
+          "ThrowArm": 0.27812050282854506
+        },
+        "maxRigidLengthError": 7.83240750035219e-10
+      },
+      "walk": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.02199566268192572,
+          "ThrowArm": 0
+        },
+        "maxRigidLengthError": 3.0423302765925087e-12
+      },
+      "run": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.02114867769067133,
+          "ThrowArm": 0
+        },
+        "maxRigidLengthError": 3.5044328550171144e-12
+      }
+    }
+  },
+  {
+    "piece": "cannon_black",
+    "tier": "distant",
+    "joints": 15,
+    "clips": {
+      "idle": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.00696512475612781,
+          "ThrowArm": 0
+        },
+        "maxRigidLengthError": 8.326672684688674e-17
+      },
+      "attack": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.13159788217837656,
+          "ThrowArm": 0.3559602596717895
+        },
+        "maxRigidLengthError": 1.0291776986193213e-8
+      },
+      "hit": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.017108085486912648,
+          "ThrowArm": 0.05663777214252674
+        },
+        "maxRigidLengthError": 3.3306690738754696e-16
+      },
+      "death": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.19524783141704968,
+          "ThrowArm": 0.28514447148834987
+        },
+        "maxRigidLengthError": 8.025098363617644e-10
+      },
+      "walk": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.022059986853331603,
+          "ThrowArm": 0
+        },
+        "maxRigidLengthError": 4.902522832139766e-12
+      },
+      "run": {
+        "maxVertexDisplacement": {
+          "FixedPedestal": 0,
+          "Weapon": 0.021208189018354282,
+          "ThrowArm": 0
+        },
+        "maxRigidLengthError": 5.647177170331474e-12
+      }
+    }
+  }
+]

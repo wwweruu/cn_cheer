@@ -1,0 +1,62 @@
+[
+  {
+    "piece": "soldier_black",
+    "sourceVersion": 18,
+    "clips": [
+      {
+        "clip": "idle",
+        "changedPixels": 48837
+      },
+      {
+        "clip": "walk",
+        "changedPixels": 66351
+      }
+    ],
+    "maxBaseDrift": 2.058396493259403e-8,
+    "errors": []
+  },
+  {
+    "piece": "general_black",
+    "sourceVersion": 9,
+    "clips": [
+      {
+        "clip": "idle",
+        "changedPixels": 12023
+      },
+      {
+        "clip": "walk",
+        "changedPixels": 56415
+      }
+    ],
+    "maxBaseDrift": 1.6826794476668055e-8,
+    "errors": []
+  },
+  {
+    "piece": "horse_red",
+    "sourceVersion": 12,
+    "clips": [
+      {
+        "clip": "idle",
+        "changedPixels": 19324
+      }
+    ],
+    "maxBaseDrift": 0,
+    "errors": []
+  },
+  {
+    "piece": "elephant_red",
+    "sourceVersion": 5,
+    "clips": [
+      {
+        "clip": "idle",
+        "changedPixels": 12694
+      },
+      {
+        "clip": "walk",
+        "changedPixels": 24713
+      }
+    ],
+    "maxBaseDrift": 0,
+    "errors": []
+  }
+]

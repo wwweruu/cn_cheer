@@ -1,0 +1,34 @@
+{
+  "reference_root": "象棋3D参考图-备份",
+  "views": ["正面.jpg", "侧面.jpg", "背面.jpg"],
+  "request": {
+    "ai_model": "meshy-7",
+    "ultra_mode": false,
+    "should_texture": true,
+    "enable_pbr": true,
+    "texture_resolution": "2k",
+    "should_remesh": true,
+    "topology": "triangle",
+    "image_enhancement": false,
+    "remove_lighting": true,
+    "auto_size": false,
+    "target_formats": ["glb"],
+    "multi_view_thumbnails": true
+  },
+  "pieces": [
+    {"id": "general_red", "reference": "帅-红方", "target_polycount": 12000, "pilot": true},
+    {"id": "general_black", "reference": "将-黑方", "target_polycount": 12000},
+    {"id": "advisor_red", "reference": "仕-红方", "target_polycount": 10000},
+    {"id": "advisor_black", "reference": "士-黑方", "target_polycount": 10000},
+    {"id": "elephant_red", "reference": "相-红方", "target_polycount": 18000},
+    {"id": "elephant_black", "reference": "象-黑方", "target_polycount": 18000},
+    {"id": "horse_red", "reference": "马-红方", "target_polycount": 18000, "pilot": true},
+    {"id": "horse_black", "reference": "马-黑方", "target_polycount": 18000},
+    {"id": "chariot_red", "reference": "车-红方", "target_polycount": 20000},
+    {"id": "chariot_black", "reference": "车-黑方", "target_polycount": 20000},
+    {"id": "cannon_red", "reference": "炮-红方", "target_polycount": 18000, "pilot": true},
+    {"id": "cannon_black", "reference": "炮-黑方", "target_polycount": 18000},
+    {"id": "soldier_red", "reference": "兵-红方", "target_polycount": 8000},
+    {"id": "soldier_black", "reference": "卒-黑方", "target_polycount": 8000}
+  ]
+}

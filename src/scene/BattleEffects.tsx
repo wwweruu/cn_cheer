@@ -1,161 +1,60 @@
-import { useEffect, useMemo, useRef } from "react";
-import { Line } from "@react-three/drei";
-import { useFrame } from "@react-three/fiber";
-import { Group, Mesh, MeshBasicMaterial, PointLight } from "three";
-import { boardToWorld } from "../game/coordinates";
-import type { EffectLevel, MoveRecord } from "../game/types";
+import { useMemo, useRef } from 'react';
+import { useFrame, useThree } from '@react-three/fiber';
+import { Group, InstancedMesh, Mesh, MeshBasicMaterial, Object3D, Vector3 } from 'three';
+import { boardToWorld } from '../game/coordinates';
+import type { EffectLevel, MovePlayback } from '../game/types';
+import { CAPTURE, clamp, playbackSeconds } from './moveTimeline';
 
-interface BattleEffectsProps {
-  move: MoveRecord | null;
-  level: EffectLevel;
-}
-
-const CAPTURE_IMPACT_DELAY = 0.38;
-const CAPTURE_IMPACT_DURATION = 0.34;
-
-function MoveArc({ move, level }: { move: MoveRecord; level: EffectLevel }) {
-  const points = useMemo(() => {
-    const from = boardToWorld(move.from);
-    const to = boardToWorld(move.to);
-    const height = move.piece.type === "horse" ? 1.45 : move.captured ? 0.9 : 0.52;
-    return Array.from({ length: 17 }, (_, index) => {
-      const progress = index / 16;
-      return [
-        from[0] + (to[0] - from[0]) * progress,
-        0.45 + Math.sin(Math.PI * progress) * height,
-        from[2] + (to[2] - from[2]) * progress,
-      ] as [number, number, number];
-    });
-  }, [move]);
-
-  if (level === "off") return null;
-  return (
-    <Line
-      points={points}
-      color={move.piece.camp === "red" ? "#dc7862" : "#a7c1b8"}
-      lineWidth={level === "full" ? 2.4 : 1.2}
-      transparent
-      opacity={level === "full" ? 0.54 : 0.3}
-    />
-  );
-}
-
-function Impact({ move, level }: { move: MoveRecord; level: EffectLevel }) {
-  const root = useRef<Group>(null);
-  const ring = useRef<Mesh>(null);
-  const flash = useRef<PointLight>(null);
-  const materialRefs = useRef<MeshBasicMaterial[]>([]);
-  const startedAt = useRef(0);
-  const target = boardToWorld(move.to);
-  const particleCount = level === "full" ? 18 : 8;
-  const particles = useMemo(
-    () =>
-      Array.from({ length: particleCount }, (_, index) => {
-        const angle = (index / particleCount) * Math.PI * 2;
-        const speed = 0.55 + ((index * 17) % 7) * 0.08;
-        return {
-          angle,
-          speed,
-          lift: 0.45 + ((index * 11) % 5) * 0.12,
-          size: 0.025 + ((index * 13) % 4) * 0.012,
-        };
-      }),
-    [particleCount],
-  );
-
-  useEffect(() => {
-    startedAt.current = performance.now();
-    if (root.current) root.current.visible = false;
-    if (ring.current) {
-      ring.current.scale.setScalar(0.3);
-      (ring.current.material as MeshBasicMaterial).opacity = 0.72;
+function CaptureEffects({move,level}:{move:MovePlayback;level:EffectLevel}) {
+  const root=useRef<Group>(null),particles=useRef<InstancedMesh>(null),ring=useRef<Mesh>(null),projectile=useRef<Mesh>(null),flash=useRef<Mesh>(null);
+  const dummy=useMemo(()=>new Object3D(),[]);
+  const from=boardToWorld(move.from),to=boardToWorld(move.to);
+  const count=level==='full'?24:10;
+  const cannon=move.piece.type==='cannon';
+  const {scene}=useThree();
+  const launchOrigin=useRef<Vector3|null>(null);
+  useFrame(()=>{
+    const t=playbackSeconds(move),impact=t-CAPTURE.contact,p=clamp(impact/.62);
+    if(root.current)root.current.visible=impact>=0&&p<1;
+    if(particles.current){
+      for(let i=0;i<count;i++){
+        const a=i*2.39996,speed=.5+(i%5)*.12,r=p*speed;
+        dummy.position.set(Math.cos(a)*r,.1+Math.sin(p*Math.PI)*(.3+(i%4)*.1),Math.sin(a)*r);
+        dummy.rotation.set(p*6+i,p*4+i,0);dummy.scale.setScalar((.018+i%3*.008)*(1-p));dummy.updateMatrix();particles.current.setMatrixAt(i,dummy.matrix);
+      }
+      particles.current.instanceMatrix.needsUpdate=true;
+      (particles.current.material as MeshBasicMaterial).opacity=(1-p)*.8;
     }
-    materialRefs.current.forEach((material) => {
-      material.opacity = 0.9;
-    });
-    if (flash.current) flash.current.intensity = 0;
-  }, [move.id]);
-
-  useFrame(() => {
-    const elapsed = (performance.now() - startedAt.current) / 1000;
-    if (elapsed < CAPTURE_IMPACT_DELAY) {
-      if (root.current) root.current.visible = false;
-      if (flash.current) flash.current.intensity = 0;
-      return;
+    if(ring.current){ring.current.scale.setScalar(.3+p*1.7);(ring.current.material as MeshBasicMaterial).opacity=(1-p)*.45;}
+    if(projectile.current){
+      const q=clamp((t-CAPTURE.launch)/(CAPTURE.contact-CAPTURE.launch));
+      projectile.current.visible=cannon&&t>=CAPTURE.launch&&t<CAPTURE.contact;
+      if(projectile.current.visible&&!launchOrigin.current){
+        const muzzle=scene.getObjectByName(`piece-${move.piece.id}`)?.getObjectByName('Muzzle');
+        launchOrigin.current=muzzle?.getWorldPosition(new Vector3())??new Vector3(from[0],.95,from[2]);
+        projectile.current.userData.launchOrigin=launchOrigin.current.toArray();
+      }
+      const origin=launchOrigin.current;
+      if(origin)projectile.current.position.set(origin.x+(to[0]-origin.x)*q,origin.y+(.95-origin.y)*q+Math.sin(q*Math.PI)*Math.min(2,Math.hypot(to[0]-origin.x,to[2]-origin.z)*.32),origin.z+(to[2]-origin.z)*q);
     }
-
-    if (root.current) root.current.visible = true;
-    const progress = Math.min(
-      1,
-      (elapsed - CAPTURE_IMPACT_DELAY) / CAPTURE_IMPACT_DURATION,
-    );
-    if (root.current) {
-      root.current.children.slice(1).forEach((child, index) => {
-        const particle = particles[index];
-        if (!particle) return;
-        const radius = progress * particle.speed;
-        child.position.set(
-          Math.cos(particle.angle) * radius,
-          0.14 + Math.sin(progress * Math.PI) * particle.lift,
-          Math.sin(particle.angle) * radius,
-        );
-        child.rotation.x += 0.12;
-        child.rotation.z += 0.08;
-      });
+    if(flash.current){
+      const age=t-CAPTURE.launch;
+      flash.current.visible=cannon&&move.piece.camp==='red'&&age>=0&&age<.12&&!!launchOrigin.current;
+      if(launchOrigin.current)flash.current.position.copy(launchOrigin.current);
+      flash.current.scale.setScalar(.5+clamp(age/.12)*1.2);
+      (flash.current.material as MeshBasicMaterial).opacity=(1-clamp(age/.12))*.9;
     }
-    if (ring.current) {
-      const scale = 0.3 + progress * 1.7;
-      ring.current.scale.setScalar(scale);
-      const material = ring.current.material as MeshBasicMaterial;
-      material.opacity = Math.max(0, 0.72 * (1 - progress));
-    }
-    materialRefs.current.forEach((material) => {
-      material.opacity = Math.max(0, 0.9 * (1 - progress));
-    });
-    if (flash.current) flash.current.intensity = 3.2 * (1 - progress);
   });
-
-  if (!move.captured || level === "off") return null;
-  const cannon = move.piece.type === "cannon";
-  const color = cannon
-    ? "#e89955"
-    : move.piece.camp === "red"
-      ? "#e67a62"
-      : "#b3c9c2";
-
-  return (
-    <group ref={root} position={[target[0], 0.4, target[2]]} visible={false}>
-      <mesh ref={ring} rotation={[-Math.PI / 2, 0, 0]}>
-        <ringGeometry args={[0.26, 0.34, 36]} />
-        <meshBasicMaterial color={color} transparent opacity={0.72} depthWrite={false} />
-      </mesh>
-      {particles.map((particle, index) => (
-        <mesh key={index} scale={particle.size}>
-          <octahedronGeometry args={[1, 0]} />
-          <meshBasicMaterial
-            ref={(material) => {
-              if (material && !materialRefs.current.includes(material)) {
-                materialRefs.current.push(material);
-              }
-            }}
-            color={index % 3 === 0 ? "#e8d8a7" : color}
-            transparent
-            opacity={0.9}
-            depthWrite={false}
-          />
-        </mesh>
-      ))}
-      <pointLight ref={flash} color={color} intensity={3.2} distance={3.5} decay={2} />
+  return <>
+    <mesh ref={projectile} name="capture-projectile" visible={false}><icosahedronGeometry args={[.065,1]}/><meshStandardMaterial color={move.piece.camp==='red'?'#332b24':'#726958'} roughness={.8}/></mesh>
+    <mesh ref={flash} name="cannon-muzzle-flash" visible={false}><icosahedronGeometry args={[.09,1]}/><meshBasicMaterial color="#ffdc91" transparent depthWrite={false} toneMapped={false}/></mesh>
+    <group ref={root} position={[to[0],.28,to[2]]} visible={false}>
+      <mesh ref={ring} rotation={[-Math.PI/2,0,0]}><ringGeometry args={[.3,.34,32]}/><meshBasicMaterial color="#c6ad77" transparent depthWrite={false}/></mesh>
+      <instancedMesh ref={particles} args={[undefined,undefined,count]} frustumCulled={false}><octahedronGeometry args={[1,0]}/><meshBasicMaterial color={cannon?'#cfad78':'#d4c49c'} transparent depthWrite={false}/></instancedMesh>
     </group>
-  );
+  </>;
 }
 
-export function BattleEffects({ move, level }: BattleEffectsProps) {
-  if (!move) return null;
-  return (
-    <>
-      <MoveArc move={move} level={level} />
-      <Impact move={move} level={level} />
-    </>
-  );
+export function BattleEffects({move,level}:{move:MovePlayback|null;level:EffectLevel}) {
+  return move?.captured&&level!=='off'&&move.effectLevel!=='off'?<CaptureEffects key={move.token} move={move} level={level}/>:null;
 }

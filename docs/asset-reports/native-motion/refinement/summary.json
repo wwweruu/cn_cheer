@@ -1,0 +1,827 @@
+{
+  "recorded_at": "2026-09-06T10:38:30.519694+00:00",
+  "api_spend_this_refinement": 0,
+  "project_spend": 1395,
+  "project_limit": 1800,
+  "project_remaining": 405,
+  "production_replaced": false,
+  "visual_acceptance": false,
+  "technical_checks": {
+    "browser_pieces": 10,
+    "browser_clips": 14,
+    "comparison_switches": 10,
+    "console_errors": 0,
+    "loop_max_vertex_jump_m": 2.3914506641631306e-07
+  },
+  "known_issues": [
+    "Some garment and cape edges still show excess deformation at close range.",
+    "Finger shapes and some rider/tool contacts need art refinement.",
+    "Only the listed idle/walk clips were reviewed; other packaged clips are not approved.",
+    "Quadruped gait is locally authored; the earlier API quadruped rejections remain unresolved."
+  ],
+  "pieces": [
+    {
+      "piece": "soldier_red",
+      "previous_version": 13,
+      "version": 14,
+      "sha256": "fe6900b48498a71a45e66fc31aa48751ff07f64742e80cb9a481e58d040faed1",
+      "review_clips": [
+        "walk"
+      ],
+      "surface_audit": [
+        {
+          "clip": "walk",
+          "frames": [
+            0.0,
+            28.80000114440918
+          ],
+          "feet": {
+            "LeftFoot": {
+              "vertices": 105,
+              "min_surface_clearance_m": -0.00025869905948638916,
+              "max_surface_clearance_m": 0.04996681213378906,
+              "support_error_max_m": 0
+            },
+            "RightFoot": {
+              "vertices": 113,
+              "min_surface_clearance_m": -0.0003862529993057251,
+              "max_surface_clearance_m": 0.05961930751800537,
+              "support_error_max_m": 0
+            }
+          },
+          "pedestal_drift_m": 2.9802322387695312e-08,
+          "ankle_edge_stretch_p99": 1.1256358623504639,
+          "ankle_edge_stretch_max": 1.3090823888778687,
+          "worst_ankle_edge": {
+            "rest": [
+              [
+                -0.15782684087753296,
+                0.08825446665287018,
+                0.3297117352485657
+              ],
+              [
+                -0.15523333847522736,
+                0.08670119196176529,
+                0.33975568413734436
+              ]
+            ],
+            "weights": [
+              {
+                "RightLeg": 0.7323927283287048,
+                "RightFoot": 0.26760730147361755
+              },
+              {
+                "RightLeg": 0.9253528118133545,
+                "RightFoot": 0.07464717328548431
+              }
+            ]
+          },
+          "loop_vertex_jump_m": 0.0
+        }
+      ],
+      "sources_unchanged": true
+    },
+    {
+      "piece": "soldier_black",
+      "previous_version": 16,
+      "version": 19,
+      "sha256": "9a46f58d5092912e3bb8011ee2f80c5e8769dc6dfcff74dfdab5c08fc7821b3a",
+      "review_clips": [
+        "idle",
+        "walk"
+      ],
+      "surface_audit": [
+        {
+          "clip": "idle",
+          "frames": [
+            0.0,
+            95.19999694824219
+          ],
+          "feet": {
+            "RightFoot": {
+              "vertices": 37,
+              "min_surface_clearance_m": 0.0007435381412506104,
+              "max_surface_clearance_m": 0.0007435381412506104,
+              "support_error_max_m": 0
+            },
+            "LeftFoot": {
+              "vertices": 35,
+              "min_surface_clearance_m": 0.0007753372192382812,
+              "max_surface_clearance_m": 0.0007753372192382812,
+              "support_error_max_m": 0
+            }
+          },
+          "pedestal_drift_m": 3.003425064207477e-08,
+          "ankle_edge_stretch_p99": 1.0000042915344238,
+          "ankle_edge_stretch_max": 1.0000243186950684,
+          "worst_ankle_edge": {
+            "rest": [
+              [
+                0.4283345639705658,
+                0.0919409841299057,
+                0.27022719383239746
+              ],
+              [
+                0.4332915246486664,
+                0.09252238273620605,
+                0.27068620920181274
+              ]
+            ],
+            "weights": [
+              {
+                "LeftHand": 1.0
+              },
+              {
+                "LeftHand": 1.0
+              }
+            ]
+          },
+          "loop_vertex_jump_m": 0.0
+        },
+        {
+          "clip": "walk",
+          "frames": [
+            0.0,
+            28.80000114440918
+          ],
+          "feet": {
+            "RightFoot": {
+              "vertices": 37,
+              "min_surface_clearance_m": 0.0008089691400527954,
+              "max_surface_clearance_m": 0.022261247038841248,
+              "support_error_max_m": 0
+            },
+            "LeftFoot": {
+              "vertices": 35,
+              "min_surface_clearance_m": 0.0008731633424758911,
+              "max_surface_clearance_m": 0.03644557297229767,
+              "support_error_max_m": 0
+            }
+          },
+          "pedestal_drift_m": 3.003425064207477e-08,
+          "ankle_edge_stretch_p99": 3.1120853424072266,
+          "ankle_edge_stretch_max": 6.063921928405762,
+          "worst_ankle_edge": {
+            "rest": [
+              [
+                -0.09251593053340912,
+                0.05045114830136299,
+                0.40782609581947327
+              ],
+              [
+                -0.08914071321487427,
+                0.0506405271589756,
+                0.40884971618652344
+              ]
+            ],
+            "weights": [
+              {
+                "RightLeg": 0.5727521181106567,
+                "Hips": 0.38897180557250977,
+                "RightUpLeg": 0.0382760651409626
+              },
+              {
+                "Hips": 0.49458566308021545,
+                "RightLeg": 0.47174057364463806,
+                "RightUpLeg": 0.033673789352178574
+              }
+            ]
+          },
+          "loop_vertex_jump_m": 0.0
+        }
+      ],
+      "sources_unchanged": true
+    },
+    {
+      "piece": "general_black",
+      "previous_version": 8,
+      "version": 20,
+      "sha256": "efb7898f5a785d3288bed2508b9e8bb917002a982ac31cb6795a7712c0336924",
+      "review_clips": [
+        "idle",
+        "walk"
+      ],
+      "surface_audit": [
+        {
+          "clip": "idle",
+          "frames": [
+            0.0,
+            95.19999694824219
+          ],
+          "feet": {
+            "RightFoot": {
+              "vertices": 22,
+              "min_surface_clearance_m": 0.0005645155906677246,
+              "max_surface_clearance_m": 0.0005645155906677246,
+              "support_error_max_m": 0
+            },
+            "LeftFoot": {
+              "vertices": 22,
+              "min_surface_clearance_m": 0.0005324780941009521,
+              "max_surface_clearance_m": 0.0005324780941009521,
+              "support_error_max_m": 0
+            }
+          },
+          "pedestal_drift_m": 2.986047320518992e-08,
+          "ankle_edge_stretch_p99": 1.000006079673767,
+          "ankle_edge_stretch_max": 1.10422945022583,
+          "worst_ankle_edge": {
+            "rest": [
+              [
+                -0.24215476214885712,
+                -0.08965276181697845,
+                0.2396700084209442
+              ],
+              [
+                -0.23338277637958527,
+                -0.10615922510623932,
+                0.2289142608642578
+              ]
+            ],
+            "weights": [
+              {
+                "HeldWeapon": 0.8724805116653442,
+                "RightFoot": 0.12751948833465576
+              },
+              {
+                "RightFoot": 0.5258545875549316,
+                "HeldWeapon": 0.47414541244506836
+              }
+            ]
+          },
+          "loop_vertex_jump_m": 0.0
+        },
+        {
+          "clip": "walk",
+          "frames": [
+            0.0,
+            28.80000114440918
+          ],
+          "feet": {
+            "RightFoot": {
+              "vertices": 22,
+              "min_surface_clearance_m": 0.0003236830234527588,
+              "max_surface_clearance_m": 0.10866233706474304,
+              "support_error_max_m": 0
+            },
+            "LeftFoot": {
+              "vertices": 22,
+              "min_surface_clearance_m": 0.0006229132413864136,
+              "max_surface_clearance_m": 0.0901612937450409,
+              "support_error_max_m": 0
+            }
+          },
+          "pedestal_drift_m": 2.986047320518992e-08,
+          "ankle_edge_stretch_p99": 2.439624309539795,
+          "ankle_edge_stretch_max": 9.200263977050781,
+          "worst_ankle_edge": {
+            "rest": [
+              [
+                -0.24215476214885712,
+                -0.08965276181697845,
+                0.2396700084209442
+              ],
+              [
+                -0.22093240916728973,
+                -0.0789942666888237,
+                0.2450680285692215
+              ]
+            ],
+            "weights": [
+              {
+                "HeldWeapon": 0.8724805116653442,
+                "RightFoot": 0.12751948833465576
+              },
+              {
+                "RightFoot": 1.0
+              }
+            ]
+          },
+          "loop_vertex_jump_m": 0.0
+        }
+      ],
+      "sources_unchanged": true
+    },
+    {
+      "piece": "advisor_red",
+      "previous_version": 7,
+      "version": 8,
+      "sha256": "839d5f4f572f5ddd1089b90773da52073f96d49f6c082b6b60469e5661f9809c",
+      "review_clips": [
+        "idle"
+      ],
+      "surface_audit": [
+        {
+          "clip": "idle",
+          "frames": [
+            0.0,
+            95.19999694824219
+          ],
+          "feet": {
+            "LeftFoot": {
+              "vertices": 12,
+              "min_surface_clearance_m": 0.0009428113698959351,
+              "max_surface_clearance_m": 0.0009428113698959351,
+              "support_error_max_m": 0
+            },
+            "RightFoot": {
+              "vertices": 10,
+              "min_surface_clearance_m": 0.000922664999961853,
+              "max_surface_clearance_m": 0.000922664999961853,
+              "support_error_max_m": 0
+            }
+          },
+          "pedestal_drift_m": 3.0719530030864917e-08,
+          "ankle_edge_stretch_p99": 1.0000040531158447,
+          "ankle_edge_stretch_max": 1.000017762184143,
+          "worst_ankle_edge": {
+            "rest": [
+              [
+                -0.15344084799289703,
+                -0.1650131642818451,
+                0.2680356800556183
+              ],
+              [
+                -0.1484520137310028,
+                -0.15732263028621674,
+                0.27319496870040894
+              ]
+            ],
+            "weights": [
+              {
+                "Hips": 0.8627656102180481,
+                "RightFoot": 0.1372343897819519
+              },
+              {
+                "RightFoot": 1.0
+              }
+            ]
+          },
+          "loop_vertex_jump_m": 0.0
+        }
+      ],
+      "sources_unchanged": true
+    },
+    {
+      "piece": "horse_red",
+      "previous_version": 10,
+      "version": 12,
+      "sha256": "d901eff12a86762230404f41af334a504db132c31a3982fad595f7cc02557339",
+      "review_clips": [
+        "idle"
+      ],
+      "surface_audit": [
+        {
+          "clip": "idle",
+          "frames": [
+            0.0,
+            143.1999969482422
+          ],
+          "feet": {},
+          "pedestal_drift_m": 0,
+          "ankle_edge_stretch_p99": 1.1636934280395508,
+          "ankle_edge_stretch_max": 1.8194286823272705,
+          "worst_ankle_edge": {
+            "rest": [
+              [
+                0.028635360300540924,
+                0.3339085876941681,
+                0.29357388615608215
+              ],
+              [
+                0.030423445627093315,
+                0.32940253615379333,
+                0.29125237464904785
+              ]
+            ],
+            "weights": [
+              {
+                "HorseTail": 0.6739986538887024,
+                "HorseBack": 0.32600137591362
+              },
+              {
+                "HorseTail": 0.5441860556602478,
+                "HorseBack": 0.4558139443397522
+              }
+            ]
+          },
+          "loop_vertex_jump_m": 0.0
+        }
+      ],
+      "sources_unchanged": true
+    },
+    {
+      "piece": "horse_black",
+      "previous_version": 6,
+      "version": 8,
+      "sha256": "99e26c07162f05f8ad7e37295b57a92ec8fe95bbfdd5160669e2a1b5d026a3d9",
+      "review_clips": [
+        "idle"
+      ],
+      "surface_audit": [
+        {
+          "clip": "idle",
+          "frames": [
+            0.0,
+            143.1999969482422
+          ],
+          "feet": {},
+          "pedestal_drift_m": 0,
+          "ankle_edge_stretch_p99": 1.0838606357574463,
+          "ankle_edge_stretch_max": 1.2131866216659546,
+          "worst_ankle_edge": {
+            "rest": [
+              [
+                0.038616716861724854,
+                0.3570004403591156,
+                0.38764750957489014
+              ],
+              [
+                0.036874692887067795,
+                0.35543596744537354,
+                0.3866284489631653
+              ]
+            ],
+            "weights": [
+              {
+                "HorseTail": 0.8648912310600281,
+                "HorseBack": 0.13510876893997192
+              },
+              {
+                "HorseTail": 0.8263166546821594,
+                "HorseBack": 0.1736833155155182
+              }
+            ]
+          },
+          "loop_vertex_jump_m": 0.0
+        }
+      ],
+      "sources_unchanged": true
+    },
+    {
+      "piece": "cannon_red",
+      "previous_version": 11,
+      "version": 13,
+      "sha256": "753c5caff9a13af34cfe5056c5b0b3975006084364a0290854486faa4dda7446",
+      "review_clips": [
+        "idle"
+      ],
+      "surface_audit": [
+        {
+          "clip": "idle",
+          "frames": [
+            0.0,
+            143.1999969482422
+          ],
+          "feet": {},
+          "pedestal_drift_m": 0,
+          "ankle_edge_stretch_p99": 1.0000008344650269,
+          "ankle_edge_stretch_max": 1.000009536743164,
+          "worst_ankle_edge": {
+            "rest": [
+              [
+                -0.3067554831504822,
+                0.10555264353752136,
+                0.3657570481300354
+              ],
+              [
+                -0.30749374628067017,
+                0.10521093010902405,
+                0.359592080116272
+              ]
+            ],
+            "weights": [
+              {
+                "Native_Hips": 1.0
+              },
+              {
+                "Native_Hips": 1.0
+              }
+            ]
+          },
+          "loop_vertex_jump_m": 2.3914506641631306e-07
+        }
+      ],
+      "sources_unchanged": true
+    },
+    {
+      "piece": "cannon_black",
+      "previous_version": 9,
+      "version": 11,
+      "sha256": "fdb6fc11517b395df7ec3e842d8b0b9115d519b8ad16d7f7abbd44fa4262ed5b",
+      "review_clips": [
+        "idle"
+      ],
+      "surface_audit": [
+        {
+          "clip": "idle",
+          "frames": [
+            0.0,
+            143.1999969482422
+          ],
+          "feet": {},
+          "pedestal_drift_m": 0,
+          "ankle_edge_stretch_p99": 1.2278681993484497,
+          "ankle_edge_stretch_max": 4.638086318969727,
+          "worst_ankle_edge": {
+            "rest": [
+              [
+                -0.42125076055526733,
+                0.035162054002285004,
+                0.2907783091068268
+              ],
+              [
+                -0.4241955876350403,
+                0.04349645599722862,
+                0.2818043828010559
+              ]
+            ],
+            "weights": [
+              {
+                "Native_RightHand": 1.0
+              },
+              {
+                "Native_Hips": 1.0
+              }
+            ]
+          },
+          "loop_vertex_jump_m": 1.4227305200620322e-07
+        }
+      ],
+      "sources_unchanged": true
+    },
+    {
+      "piece": "elephant_red",
+      "previous_version": 3,
+      "version": 8,
+      "sha256": "d08fe3a88371ee193499ef5cb3ca03c41a55f94c6cfcd89b9d2f44d59fa4d96b",
+      "review_clips": [
+        "idle",
+        "walk"
+      ],
+      "surface_audit": [
+        {
+          "clip": "idle",
+          "frames": [
+            0.0,
+            143.1999969482422
+          ],
+          "feet": {
+            "ElephantRLFoot": {
+              "vertices": 29,
+              "min_surface_clearance_m": 0.0008863359689712524,
+              "max_surface_clearance_m": 0.0008863359689712524,
+              "support_error_max_m": 0
+            },
+            "ElephantFRFoot": {
+              "vertices": 23,
+              "min_surface_clearance_m": 0.0007101893424987793,
+              "max_surface_clearance_m": 0.0007101893424987793,
+              "support_error_max_m": 0
+            },
+            "ElephantRRFoot": {
+              "vertices": 28,
+              "min_surface_clearance_m": 0.0010899752378463745,
+              "max_surface_clearance_m": 0.0010899752378463745,
+              "support_error_max_m": 0
+            },
+            "ElephantFLFoot": {
+              "vertices": 31,
+              "min_surface_clearance_m": 0.0010752230882644653,
+              "max_surface_clearance_m": 0.0010752230882644653,
+              "support_error_max_m": 0
+            }
+          },
+          "pedestal_drift_m": 0,
+          "ankle_edge_stretch_p99": 1.0358577966690063,
+          "ankle_edge_stretch_max": 1.7279309034347534,
+          "worst_ankle_edge": {
+            "rest": [
+              [
+                0.026413436979055405,
+                0.24375584721565247,
+                0.45025673508644104
+              ],
+              [
+                0.0317838080227375,
+                0.23652291297912598,
+                0.44586610794067383
+              ]
+            ],
+            "weights": [
+              {
+                "ElephantTail": 0.9332490563392639,
+                "Body": 0.06459455192089081,
+                "ElephantRRUpper": 0.002156392438337207
+              },
+              {
+                "Body": 0.9734826683998108,
+                "ElephantRRUpper": 0.026517370715737343
+              }
+            ]
+          },
+          "loop_vertex_jump_m": 0.0
+        },
+        {
+          "clip": "walk",
+          "frames": [
+            0.0,
+            67.19999694824219
+          ],
+          "feet": {
+            "ElephantRLFoot": {
+              "vertices": 29,
+              "min_surface_clearance_m": 0.0008857995271682739,
+              "max_surface_clearance_m": 0.02661001682281494,
+              "support_error_max_m": 0.0008864104747772217
+            },
+            "ElephantFRFoot": {
+              "vertices": 23,
+              "min_surface_clearance_m": 0.0007049590349197388,
+              "max_surface_clearance_m": 0.02643364667892456,
+              "support_error_max_m": 0.0015653520822525024
+            },
+            "ElephantRRFoot": {
+              "vertices": 28,
+              "min_surface_clearance_m": 0.0010893940925598145,
+              "max_surface_clearance_m": 0.026813581585884094,
+              "support_error_max_m": 0.0010900050401687622
+            },
+            "ElephantFLFoot": {
+              "vertices": 31,
+              "min_surface_clearance_m": 0.0010700225830078125,
+              "max_surface_clearance_m": 0.026798680424690247,
+              "support_error_max_m": 0.0019304752349853516
+            }
+          },
+          "pedestal_drift_m": 0,
+          "ankle_edge_stretch_p99": 1.4456565380096436,
+          "ankle_edge_stretch_max": 2.2593538761138916,
+          "worst_ankle_edge": {
+            "rest": [
+              [
+                -0.07749195396900177,
+                -0.08825825899839401,
+                0.37779051065444946
+              ],
+              [
+                -0.07361899316310883,
+                -0.09335619956254959,
+                0.3738384544849396
+              ]
+            ],
+            "weights": [
+              {
+                "Body": 0.67912757396698,
+                "ElephantFLUpper": 0.32087242603302
+              },
+              {
+                "ElephantFLUpper": 0.530646026134491,
+                "Body": 0.4693540036678314
+              }
+            ]
+          },
+          "loop_vertex_jump_m": 0.0
+        }
+      ],
+      "sources_unchanged": true
+    },
+    {
+      "piece": "elephant_black",
+      "previous_version": 3,
+      "version": 8,
+      "sha256": "d15a9f75c2f453ccb2dd059e7f8fd3c244eb461560c64fa0c074362f093e765e",
+      "review_clips": [
+        "idle",
+        "walk"
+      ],
+      "surface_audit": [
+        {
+          "clip": "idle",
+          "frames": [
+            0.0,
+            143.1999969482422
+          ],
+          "feet": {
+            "ElephantFRFoot": {
+              "vertices": 21,
+              "min_surface_clearance_m": 0.0011391863226890564,
+              "max_surface_clearance_m": 0.0011391863226890564,
+              "support_error_max_m": 0
+            },
+            "ElephantRRFoot": {
+              "vertices": 21,
+              "min_surface_clearance_m": 0.0010494515299797058,
+              "max_surface_clearance_m": 0.0010494515299797058,
+              "support_error_max_m": 0
+            },
+            "ElephantFLFoot": {
+              "vertices": 22,
+              "min_surface_clearance_m": 0.0010666772723197937,
+              "max_surface_clearance_m": 0.0010666772723197937,
+              "support_error_max_m": 0
+            },
+            "ElephantRLFoot": {
+              "vertices": 20,
+              "min_surface_clearance_m": 0.0010146945714950562,
+              "max_surface_clearance_m": 0.0010146945714950562,
+              "support_error_max_m": 0
+            }
+          },
+          "pedestal_drift_m": 0,
+          "ankle_edge_stretch_p99": 1.0172450542449951,
+          "ankle_edge_stretch_max": 1.912104606628418,
+          "worst_ankle_edge": {
+            "rest": [
+              [
+                0.011653758585453033,
+                0.37371763586997986,
+                0.3121586740016937
+              ],
+              [
+                0.004910861141979694,
+                0.3638330101966858,
+                0.3070548474788666
+              ]
+            ],
+            "weights": [
+              {
+                "ElephantTail": 1.0
+              },
+              {
+                "Body": 1.0
+              }
+            ]
+          },
+          "loop_vertex_jump_m": 0.0
+        },
+        {
+          "clip": "walk",
+          "frames": [
+            0.0,
+            67.19999694824219
+          ],
+          "feet": {
+            "ElephantFRFoot": {
+              "vertices": 21,
+              "min_surface_clearance_m": 0.0011365562677383423,
+              "max_surface_clearance_m": 0.02290591597557068,
+              "support_error_max_m": 0.0015366151928901672
+            },
+            "ElephantRRFoot": {
+              "vertices": 21,
+              "min_surface_clearance_m": 0.001049041748046875,
+              "max_surface_clearance_m": 0.022816196084022522,
+              "support_error_max_m": 0.0010494515299797058
+            },
+            "ElephantFLFoot": {
+              "vertices": 22,
+              "min_surface_clearance_m": 0.001064009964466095,
+              "max_surface_clearance_m": 0.02283334732055664,
+              "support_error_max_m": 0.0014640465378761292
+            },
+            "ElephantRLFoot": {
+              "vertices": 20,
+              "min_surface_clearance_m": 0.0010142549872398376,
+              "max_surface_clearance_m": 0.022781431674957275,
+              "support_error_max_m": 0.0010146647691726685
+            }
+          },
+          "pedestal_drift_m": 0,
+          "ankle_edge_stretch_p99": 1.1936593055725098,
+          "ankle_edge_stretch_max": 2.1666769981384277,
+          "worst_ankle_edge": {
+            "rest": [
+              [
+                0.0029128259047865868,
+                0.25927308201789856,
+                0.2636113464832306
+              ],
+              [
+                -0.005725886672735214,
+                0.269256055355072,
+                0.2634641230106354
+              ]
+            ],
+            "weights": [
+              {
+                "Body": 0.7810672521591187,
+                "ElephantRRLower": 0.10477351397275925,
+                "ElephantRRUpper": 0.05759676918387413,
+                "ElephantRLLower": 0.05656247213482857
+              },
+              {
+                "Body": 0.43373653292655945,
+                "ElephantRLLower": 0.29376548528671265,
+                "ElephantRLUpper": 0.23799632489681244,
+                "ElephantRRLower": 0.03450164571404457
+              }
+            ]
+          },
+          "loop_vertex_jump_m": 0.0
+        }
+      ],
+      "sources_unchanged": true
+    }
+  ]
+}

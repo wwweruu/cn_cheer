@@ -1,0 +1,1116 @@
+{
+  "idleMoving": 32,
+  "lockedDuringCapture": true,
+  "approach": [
+    {
+      "pieceId": 12,
+      "asset": "soldier_red",
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 1.531442042576654,
+        "front": 0.3852096709934694,
+        "baseHeight": 0.11485815319324905
+      },
+      "motion": {
+        "clip": "idle",
+        "progress": 0,
+        "opacity": 1,
+        "token": 3
+      },
+      "position": [
+        -4.2,
+        0.25,
+        1.5750000000000002
+      ],
+      "poseSignature": 3373.3724091444406
+    },
+    {
+      "pieceId": 13,
+      "asset": "soldier_red",
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 1.531442042576654,
+        "front": 0.3852096709934694,
+        "baseHeight": 0.11485815319324905
+      },
+      "motion": {
+        "clip": "idle",
+        "progress": 0,
+        "opacity": 1,
+        "token": 3
+      },
+      "position": [
+        -2.1,
+        0.25,
+        1.5750000000000002
+      ],
+      "poseSignature": 3371.7125453457106
+    },
+    {
+      "pieceId": 14,
+      "asset": "soldier_red",
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 1.531442042576654,
+        "front": 0.3852096709934694,
+        "baseHeight": 0.11485815319324905
+      },
+      "motion": {
+        "clip": "walk",
+        "progress": 0.9412727272510527,
+        "opacity": 1,
+        "token": 3
+      },
+      "position": [
+        0,
+        0.25,
+        0.4358947430626455
+      ],
+      "poseSignature": 3287.9495359826424
+    },
+    {
+      "pieceId": 15,
+      "asset": "soldier_red",
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 1.531442042576654,
+        "front": 0.3852096709934694,
+        "baseHeight": 0.11485815319324905
+      },
+      "motion": {
+        "clip": "idle",
+        "progress": 0,
+        "opacity": 1,
+        "token": 3
+      },
+      "position": [
+        2.1,
+        0.25,
+        1.5750000000000002
+      ],
+      "poseSignature": 3375.517116232731
+    },
+    {
+      "pieceId": 16,
+      "asset": "soldier_red",
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 1.531442042576654,
+        "front": 0.3852096709934694,
+        "baseHeight": 0.11485815319324905
+      },
+      "motion": {
+        "clip": "idle",
+        "progress": 0,
+        "opacity": 1,
+        "token": 3
+      },
+      "position": [
+        4.2,
+        0.25,
+        1.5750000000000002
+      ],
+      "poseSignature": 3377.81407059221
+    },
+    {
+      "pieceId": 17,
+      "asset": "soldier_black",
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 1.4108322803178914,
+        "front": 0.42550238015869885,
+        "baseHeight": 0.10581242102384185
+      },
+      "motion": {
+        "clip": "idle",
+        "progress": 0,
+        "opacity": 1,
+        "token": 3
+      },
+      "position": [
+        -4.2,
+        0.25,
+        -1.5750000000000002
+      ],
+      "poseSignature": 3165.2604482477
+    },
+    {
+      "pieceId": 18,
+      "asset": "soldier_black",
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 1.4108322803178914,
+        "front": 0.42550238015869885,
+        "baseHeight": 0.10581242102384185
+      },
+      "motion": {
+        "clip": "idle",
+        "progress": 0,
+        "opacity": 1,
+        "token": 3
+      },
+      "position": [
+        -2.1,
+        0.25,
+        -1.5750000000000002
+      ],
+      "poseSignature": 3171.444260799197
+    },
+    {
+      "pieceId": 20,
+      "asset": "soldier_black",
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 1.4108322803178914,
+        "front": 0.42550238015869885,
+        "baseHeight": 0.10581242102384185
+      },
+      "motion": {
+        "clip": "idle",
+        "progress": 0,
+        "opacity": 1,
+        "token": 3
+      },
+      "position": [
+        2.1,
+        0.25,
+        -1.5750000000000002
+      ],
+      "poseSignature": 3173.08367455807
+    },
+    {
+      "pieceId": 21,
+      "asset": "soldier_black",
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 1.4108322803178914,
+        "front": 0.42550238015869885,
+        "baseHeight": 0.10581242102384185
+      },
+      "motion": {
+        "clip": "idle",
+        "progress": 0,
+        "opacity": 1,
+        "token": 3
+      },
+      "position": [
+        4.2,
+        0.25,
+        -1.5750000000000002
+      ],
+      "poseSignature": 3172.089457216993
+    },
+    {
+      "pieceId": 19,
+      "asset": "soldier_black",
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 1.4108322803178914,
+        "front": 0.42550238015869885,
+        "baseHeight": 0.10581242102384185
+      },
+      "motion": {
+        "clip": "idle",
+        "progress": 0,
+        "opacity": 1,
+        "token": 3
+      },
+      "position": [
+        0,
+        0.25,
+        -0.525
+      ],
+      "poseSignature": 3169.2480460109155
+    }
+  ],
+  "hit": [
+    {
+      "pieceId": 14,
+      "asset": "soldier_red",
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 1.531442042576654,
+        "front": 0.3852096709934694,
+        "baseHeight": 0.11485815319324905
+      },
+      "motion": {
+        "clip": "attack",
+        "progress": 0.6058518518783428,
+        "opacity": 1,
+        "token": 3
+      },
+      "position": [
+        0,
+        0.25,
+        0.435
+      ],
+      "poseSignature": 3315.8070078882133
+    },
+    {
+      "pieceId": 19,
+      "asset": "soldier_black",
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 1.4108322803178914,
+        "front": 0.42550238015869885,
+        "baseHeight": 0.10581242102384185
+      },
+      "motion": {
+        "clip": "hit",
+        "progress": 0.0459814815388782,
+        "opacity": 1,
+        "token": 3
+      },
+      "position": [
+        0,
+        0.25,
+        -0.525
+      ],
+      "poseSignature": 3155.6586920524246
+    }
+  ],
+  "death": [
+    {
+      "pieceId": 19,
+      "asset": "soldier_black",
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 1.4108322803178914,
+        "front": 0.42550238015869885,
+        "baseHeight": 0.10581242102384185
+      },
+      "motion": {
+        "clip": "death",
+        "progress": 0.6353488372277842,
+        "opacity": 0.9988159999941588,
+        "token": 3
+      },
+      "position": [
+        0,
+        0.25,
+        -0.525
+      ],
+      "poseSignature": 2489.069480452046
+    }
+  ],
+  "afterRestart": [
+    {
+      "pieceId": 1,
+      "asset": "chariot_red",
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 1.060037207852006,
+        "front": 0.32421865058398747,
+        "baseHeight": 0.07950279058890045
+      },
+      "motion": {
+        "clip": "idle",
+        "progress": 0,
+        "opacity": 1,
+        "token": null
+      },
+      "position": [
+        -4.2,
+        0.25,
+        4.7250000000000005
+      ],
+      "poseSignature": 354.993407636932
+    },
+    {
+      "pieceId": 2,
+      "asset": "horse_red",
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 1.0399746419560538,
+        "front": 0.26535179310260837,
+        "baseHeight": 0.07799809814670404
+      },
+      "motion": {
+        "clip": "idle",
+        "progress": 0,
+        "opacity": 1,
+        "token": null
+      },
+      "position": [
+        -3.1500000000000004,
+        0.25,
+        4.7250000000000005
+      ],
+      "poseSignature": 197.0424595321407
+    },
+    {
+      "pieceId": 3,
+      "asset": "elephant_red",
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 1.1342543065547943,
+        "front": 0.25480401515960693,
+        "baseHeight": 0.08506907299160957
+      },
+      "motion": {
+        "clip": "idle",
+        "progress": 0,
+        "opacity": 1,
+        "token": null
+      },
+      "position": [
+        -2.1,
+        0.25,
+        4.7250000000000005
+      ],
+      "poseSignature": 33.00655645798092
+    },
+    {
+      "pieceId": 4,
+      "asset": "advisor_red",
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 1.7204840300543331,
+        "front": 0.3682376064009008,
+        "baseHeight": 0.12903630225407497
+      },
+      "motion": {
+        "clip": "idle",
+        "progress": 0,
+        "opacity": 1,
+        "token": null
+      },
+      "position": [
+        -1.05,
+        0.25,
+        4.7250000000000005
+      ],
+      "poseSignature": 4406.08956015229
+    },
+    {
+      "pieceId": 5,
+      "asset": "general_red",
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 1.4147676526471589,
+        "front": 0.3596610048489047,
+        "baseHeight": 0.10610757394853691
+      },
+      "motion": {
+        "clip": "idle",
+        "progress": 0,
+        "opacity": 1,
+        "token": null
+      },
+      "position": [
+        0,
+        0.25,
+        4.7250000000000005
+      ],
+      "poseSignature": 3358.3543463247106
+    },
+    {
+      "pieceId": 6,
+      "asset": "advisor_red",
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 1.7204840300543331,
+        "front": 0.3682376064009008,
+        "baseHeight": 0.12903630225407497
+      },
+      "motion": {
+        "clip": "idle",
+        "progress": 0,
+        "opacity": 1,
+        "token": null
+      },
+      "position": [
+        1.05,
+        0.25,
+        4.7250000000000005
+      ],
+      "poseSignature": 4406.306574912228
+    },
+    {
+      "pieceId": 7,
+      "asset": "elephant_red",
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 1.1342543065547943,
+        "front": 0.25480401515960693,
+        "baseHeight": 0.08506907299160957
+      },
+      "motion": {
+        "clip": "idle",
+        "progress": 0,
+        "opacity": 1,
+        "token": null
+      },
+      "position": [
+        2.1,
+        0.25,
+        4.7250000000000005
+      ],
+      "poseSignature": 33.2000952108406
+    },
+    {
+      "pieceId": 8,
+      "asset": "horse_red",
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 1.0399746419560538,
+        "front": 0.26535179310260837,
+        "baseHeight": 0.07799809814670404
+      },
+      "motion": {
+        "clip": "idle",
+        "progress": 0,
+        "opacity": 1,
+        "token": null
+      },
+      "position": [
+        3.1500000000000004,
+        0.25,
+        4.7250000000000005
+      ],
+      "poseSignature": 196.27860169204826
+    },
+    {
+      "pieceId": 9,
+      "asset": "chariot_red",
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 1.060037207852006,
+        "front": 0.32421865058398747,
+        "baseHeight": 0.07950279058890045
+      },
+      "motion": {
+        "clip": "idle",
+        "progress": 0,
+        "opacity": 1,
+        "token": null
+      },
+      "position": [
+        4.2,
+        0.25,
+        4.7250000000000005
+      ],
+      "poseSignature": 347.8054285217666
+    },
+    {
+      "pieceId": 10,
+      "asset": "cannon_red",
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 1.0822291885526143,
+        "front": 0.45149998357537685,
+        "baseHeight": 0.08116718914144606
+      },
+      "motion": {
+        "clip": "idle",
+        "progress": 0,
+        "opacity": 1,
+        "token": null
+      },
+      "position": [
+        -3.1500000000000004,
+        0.25,
+        2.625
+      ],
+      "muzzle": [
+        -3.2930000066757206,
+        1.1079999351418266,
+        3.029999965412027
+      ],
+      "poseSignature": 147.53135409559349
+    },
+    {
+      "pieceId": 11,
+      "asset": "cannon_red",
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 1.0822291885526143,
+        "front": 0.45149998357537685,
+        "baseHeight": 0.08116718914144606
+      },
+      "motion": {
+        "clip": "idle",
+        "progress": 0,
+        "opacity": 1,
+        "token": null
+      },
+      "position": [
+        3.1500000000000004,
+        0.25,
+        2.625
+      ],
+      "muzzle": [
+        3.00699999332428,
+        1.1079999351418266,
+        3.029999965412027
+      ],
+      "poseSignature": 147.63452551461037
+    },
+    {
+      "pieceId": 12,
+      "asset": "soldier_red",
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 1.531442042576654,
+        "front": 0.3852096709934694,
+        "baseHeight": 0.11485815319324905
+      },
+      "motion": {
+        "clip": "idle",
+        "progress": 0,
+        "opacity": 1,
+        "token": null
+      },
+      "position": [
+        -4.2,
+        0.25,
+        1.5750000000000002
+      ],
+      "poseSignature": 3377.1912115482264
+    },
+    {
+      "pieceId": 13,
+      "asset": "soldier_red",
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 1.531442042576654,
+        "front": 0.3852096709934694,
+        "baseHeight": 0.11485815319324905
+      },
+      "motion": {
+        "clip": "idle",
+        "progress": 0,
+        "opacity": 1,
+        "token": null
+      },
+      "position": [
+        -2.1,
+        0.25,
+        1.5750000000000002
+      ],
+      "poseSignature": 3369.309102004292
+    },
+    {
+      "pieceId": 14,
+      "asset": "soldier_red",
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 1.531442042576654,
+        "front": 0.3852096709934694,
+        "baseHeight": 0.11485815319324905
+      },
+      "motion": {
+        "clip": "idle",
+        "progress": 0,
+        "opacity": 1,
+        "token": null
+      },
+      "position": [
+        0,
+        0.25,
+        0.525
+      ],
+      "poseSignature": 3373.1895845846207
+    },
+    {
+      "pieceId": 15,
+      "asset": "soldier_red",
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 1.531442042576654,
+        "front": 0.3852096709934694,
+        "baseHeight": 0.11485815319324905
+      },
+      "motion": {
+        "clip": "idle",
+        "progress": 0,
+        "opacity": 1,
+        "token": null
+      },
+      "position": [
+        2.1,
+        0.25,
+        1.5750000000000002
+      ],
+      "poseSignature": 3380.7088957868355
+    },
+    {
+      "pieceId": 16,
+      "asset": "soldier_red",
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 1.531442042576654,
+        "front": 0.3852096709934694,
+        "baseHeight": 0.11485815319324905
+      },
+      "motion": {
+        "clip": "idle",
+        "progress": 0,
+        "opacity": 1,
+        "token": null
+      },
+      "position": [
+        4.2,
+        0.25,
+        1.5750000000000002
+      ],
+      "poseSignature": 3377.1812728188393
+    },
+    {
+      "pieceId": 17,
+      "asset": "soldier_black",
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 1.4108322803178914,
+        "front": 0.42550238015869885,
+        "baseHeight": 0.10581242102384185
+      },
+      "motion": {
+        "clip": "idle",
+        "progress": 0,
+        "opacity": 1,
+        "token": null
+      },
+      "position": [
+        -4.2,
+        0.25,
+        -1.5750000000000002
+      ],
+      "poseSignature": 3172.2038661231554
+    },
+    {
+      "pieceId": 18,
+      "asset": "soldier_black",
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 1.4108322803178914,
+        "front": 0.42550238015869885,
+        "baseHeight": 0.10581242102384185
+      },
+      "motion": {
+        "clip": "idle",
+        "progress": 0,
+        "opacity": 1,
+        "token": null
+      },
+      "position": [
+        -2.1,
+        0.25,
+        -1.5750000000000002
+      ],
+      "poseSignature": 3165.950369776483
+    },
+    {
+      "pieceId": 19,
+      "asset": "soldier_black",
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 1.4108322803178914,
+        "front": 0.42550238015869885,
+        "baseHeight": 0.10581242102384185
+      },
+      "motion": {
+        "clip": "idle",
+        "progress": 0,
+        "opacity": 1,
+        "token": null
+      },
+      "position": [
+        0,
+        0.25,
+        -1.5750000000000002
+      ],
+      "poseSignature": 3167.1536741443524
+    },
+    {
+      "pieceId": 20,
+      "asset": "soldier_black",
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 1.4108322803178914,
+        "front": 0.42550238015869885,
+        "baseHeight": 0.10581242102384185
+      },
+      "motion": {
+        "clip": "idle",
+        "progress": 0,
+        "opacity": 1,
+        "token": null
+      },
+      "position": [
+        2.1,
+        0.25,
+        -1.5750000000000002
+      ],
+      "poseSignature": 3170.706563452213
+    },
+    {
+      "pieceId": 21,
+      "asset": "soldier_black",
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 1.4108322803178914,
+        "front": 0.42550238015869885,
+        "baseHeight": 0.10581242102384185
+      },
+      "motion": {
+        "clip": "idle",
+        "progress": 0,
+        "opacity": 1,
+        "token": null
+      },
+      "position": [
+        4.2,
+        0.25,
+        -1.5750000000000002
+      ],
+      "poseSignature": 3173.151396369426
+    },
+    {
+      "pieceId": 22,
+      "asset": "cannon_black",
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 1.2831608845246107,
+        "front": 0.45056711091865853,
+        "baseHeight": 0.0962370663393458
+      },
+      "motion": {
+        "clip": "idle",
+        "progress": 0,
+        "opacity": 1,
+        "token": null
+      },
+      "position": [
+        -3.1500000000000004,
+        0.25,
+        -2.625
+      ],
+      "muzzle": [
+        -3.1500000000000004,
+        1.4949999847794062,
+        -2.632999958422938
+      ],
+      "poseSignature": 144.02307065082198
+    },
+    {
+      "pieceId": 23,
+      "asset": "cannon_black",
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 1.2831608845246107,
+        "front": 0.45056711091865853,
+        "baseHeight": 0.0962370663393458
+      },
+      "motion": {
+        "clip": "idle",
+        "progress": 0,
+        "opacity": 1,
+        "token": null
+      },
+      "position": [
+        3.1500000000000004,
+        0.25,
+        -2.625
+      ],
+      "muzzle": [
+        3.1500000000000004,
+        1.4949999847794062,
+        -2.632999958422938
+      ],
+      "poseSignature": 145.33688190856097
+    },
+    {
+      "pieceId": 24,
+      "asset": "chariot_black",
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 0.800678103736643,
+        "front": 0.42449055752572995,
+        "baseHeight": 0.060050857780248226
+      },
+      "motion": {
+        "clip": "idle",
+        "progress": 0,
+        "opacity": 1,
+        "token": null
+      },
+      "position": [
+        -4.2,
+        0.25,
+        -4.7250000000000005
+      ],
+      "poseSignature": 347.82791595328615
+    },
+    {
+      "pieceId": 25,
+      "asset": "horse_black",
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 0.9021006781154168,
+        "front": 0.2679018284476377,
+        "baseHeight": 0.06765755085865625
+      },
+      "motion": {
+        "clip": "idle",
+        "progress": 0,
+        "opacity": 1,
+        "token": null
+      },
+      "position": [
+        -3.1500000000000004,
+        0.25,
+        -4.7250000000000005
+      ],
+      "poseSignature": 193.85082179334597
+    },
+    {
+      "pieceId": 26,
+      "asset": "elephant_black",
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 0.8676553471141233,
+        "front": 0.11552386730909348,
+        "baseHeight": 0.06507415103355925
+      },
+      "motion": {
+        "clip": "idle",
+        "progress": 0,
+        "opacity": 1,
+        "token": null
+      },
+      "position": [
+        -2.1,
+        0.25,
+        -4.7250000000000005
+      ],
+      "poseSignature": 31.216677992712327
+    },
+    {
+      "pieceId": 27,
+      "asset": "advisor_black",
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 1.432865188364825,
+        "front": 0.395120403279653,
+        "baseHeight": 0.10746488912736187
+      },
+      "motion": {
+        "clip": "idle",
+        "progress": 0,
+        "opacity": 1,
+        "token": null
+      },
+      "position": [
+        -1.05,
+        0.25,
+        -4.7250000000000005
+      ],
+      "poseSignature": 3691.742169087747
+    },
+    {
+      "pieceId": 28,
+      "asset": "general_black",
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 1.713671320379226,
+        "front": 0.36122205046068007,
+        "baseHeight": 0.12852534902844195
+      },
+      "motion": {
+        "clip": "idle",
+        "progress": 0,
+        "opacity": 1,
+        "token": null
+      },
+      "position": [
+        0,
+        0.25,
+        -4.7250000000000005
+      ],
+      "poseSignature": 4355.795496310658
+    },
+    {
+      "pieceId": 29,
+      "asset": "advisor_black",
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 1.432865188364825,
+        "front": 0.395120403279653,
+        "baseHeight": 0.10746488912736187
+      },
+      "motion": {
+        "clip": "idle",
+        "progress": 0,
+        "opacity": 1,
+        "token": null
+      },
+      "position": [
+        1.05,
+        0.25,
+        -4.7250000000000005
+      ],
+      "poseSignature": 3686.228307903982
+    },
+    {
+      "pieceId": 30,
+      "asset": "elephant_black",
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 0.8676553471141233,
+        "front": 0.11552386730909348,
+        "baseHeight": 0.06507415103355925
+      },
+      "motion": {
+        "clip": "idle",
+        "progress": 0,
+        "opacity": 1,
+        "token": null
+      },
+      "position": [
+        2.1,
+        0.25,
+        -4.7250000000000005
+      ],
+      "poseSignature": 31.34328466645052
+    },
+    {
+      "pieceId": 31,
+      "asset": "horse_black",
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 0.9021006781154168,
+        "front": 0.2679018284476377,
+        "baseHeight": 0.06765755085865625
+      },
+      "motion": {
+        "clip": "idle",
+        "progress": 0,
+        "opacity": 1,
+        "token": null
+      },
+      "position": [
+        3.1500000000000004,
+        0.25,
+        -4.7250000000000005
+      ],
+      "poseSignature": 193.0194214046388
+    },
+    {
+      "pieceId": 32,
+      "asset": "chariot_black",
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 0.800678103736643,
+        "front": 0.42449055752572995,
+        "baseHeight": 0.060050857780248226
+      },
+      "motion": {
+        "clip": "idle",
+        "progress": 0,
+        "opacity": 1,
+        "token": null
+      },
+      "position": [
+        4.2,
+        0.25,
+        -4.7250000000000005
+      ],
+      "poseSignature": 340.59935085869216
+    }
+  ],
+  "blackCapture": [
+    {
+      "pieceId": 19,
+      "asset": "soldier_black",
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 1.4108322803178914,
+        "front": 0.42550238015869885,
+        "baseHeight": 0.10581242102384185
+      },
+      "motion": {
+        "clip": "attack",
+        "progress": 0.6079999999646787,
+        "opacity": 1,
+        "token": 11
+      },
+      "position": [
+        0,
+        0.25,
+        -0.435
+      ],
+      "poseSignature": 3150.5109796575885
+    },
+    {
+      "pieceId": 14,
+      "asset": "soldier_red",
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 1.531442042576654,
+        "front": 0.3852096709934694,
+        "baseHeight": 0.11485815319324905
+      },
+      "motion": {
+        "clip": "hit",
+        "progress": 0.05055555555555533,
+        "opacity": 1,
+        "token": 11
+      },
+      "position": [
+        0,
+        0.25,
+        0.525
+      ],
+      "poseSignature": 3340.721262018723
+    }
+  ],
+  "errors": []
+}

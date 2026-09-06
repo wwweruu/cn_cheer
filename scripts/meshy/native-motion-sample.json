@@ -1,0 +1,12 @@
+{
+  "jobs": [
+    {
+      "piece": "shared-motion",
+      "role": "infantry-walk",
+      "operation": "generate",
+      "prompt": "An armored guard walks forward at a steady measured pace. Natural alternating footfalls, stable planted feet, clear knee flexion and restrained torso rotation. Right hand holds a vertical spear beside the shoulder, left forearm holds a shield. Full body locomotion.",
+      "mode": "prime",
+      "duration": 4
+    }
+  ]
+}

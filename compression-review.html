@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>红帅 · 游戏运行版本</title><link rel="icon" href="data:," /></head>
+  <body data-review-root="/assets/review/general_red/compression/" data-normalize="true">
+    <main class="review-shell">
+      <section class="stage" aria-label="棋子三维预览">
+        <div class="stage-heading"><span>完整高模 / 运行版本</span><span id="status" role="status">准备载入…</span></div>
+        <div id="viewport"></div>
+        <div class="views" aria-label="视角"><button data-view="front">正面</button><button data-view="quarter" aria-pressed="true">45°</button><button data-view="back">披风背面</button><button data-view="detail">脸部与珠串</button><button data-view="base">底座与靴子</button></div>
+        <p class="gesture">拖动旋转 · 滚轮缩放 · 右键平移</p>
+      </section>
+      <aside>
+        <p class="eyebrow">游戏模型 <span>运行版本检查</span></p>
+        <h1>红方 · 帅</h1>
+        <p class="intro">从已验收的完整高模制作。切换版本，比较冠冕、披风、靴子和底座在不同精度下的表现。</p>
+        <label for="quality">模型版本</label>
+        <select id="quality"><option value="desktop">WebP 对照 · 2K / 约 2 万面</option><option value="mobile">KTX2 压缩 · 2K / 约 2 万面</option></select>
+        <dl><div><dt>当前三角面</dt><dd id="triangles">—</dd></div><div><dt>文件体积</dt><dd id="size">—</dd></div><div><dt>源模型</dt><dd>完整 301 万面</dd></div><div><dt>源贴图</dt><dd id="texture-spec">8K 色彩 / 4K PBR</dd></div></dl>
+        <div class="toggles"><label><input type="checkbox" id="rotate" /> 自动旋转</label><label><input type="checkbox" id="wireframe" /> 查看线框</label><label><input type="checkbox" id="grid" /> 显示棋格尺度</label></div>
+        <div class="review-note"><strong>完整源模型继续保留</strong><p>三个运行版本保留底座和披风结构。远景版重新展开 UV 并烘焙贴图，供小尺寸显示使用；近距离检查应选择桌面版或源高模。</p></div>
+        <div class="links"><a id="download" download>下载当前版本 GLB</a><a href="/master-review.html">查看已验收的 8K 源模型 ↗</a></div>
+        <p class="footnote">展示时统一高度以方便比较；下载文件已按棋盘尺度整理，底座底面居中。</p>
+      </aside>
+    </main>
+    <script type="module" src="/src/review/main.ts"></script>
+  </body>
+</html>

@@ -7,6 +7,7 @@ export default defineConfig({
   workers: 1,
   reporter: "list",
   use: {
+    channel: process.env.CN_CHESS_BROWSER_CHANNEL || undefined,
     baseURL: "http://127.0.0.1:4173",
     trace: "retain-on-failure",
   },

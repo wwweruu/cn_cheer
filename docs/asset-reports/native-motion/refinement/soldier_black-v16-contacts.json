@@ -1,0 +1,82 @@
+{
+  "piece": "soldier_black",
+  "version": 16,
+  "file": "assets\\generated\\meshy\\soldier_black\\motion\\runtime\\v16\\soldier_black_mobile.glb",
+  "clips": [
+    {
+      "clip": "idle",
+      "frames": [
+        0.0,
+        95.19999694824219
+      ],
+      "feet": {
+        "RightFoot": {
+          "vertices": 55,
+          "min_surface_clearance_m": 0.0008548200130462646,
+          "max_surface_clearance_m": 0.0008548200130462646,
+          "support_error_max_m": 0
+        },
+        "LeftFoot": {
+          "vertices": 66,
+          "min_surface_clearance_m": 0.0006688833236694336,
+          "max_surface_clearance_m": 0.0006688833236694336,
+          "support_error_max_m": 0
+        }
+      },
+      "pedestal_drift_m": 3.003425064207477e-08,
+      "ankle_edge_stretch_p99": 1.0000065565109253,
+      "ankle_edge_stretch_max": 1.0000360012054443,
+      "loop_vertex_jump_m": 0.065278559923172
+    },
+    {
+      "clip": "walk",
+      "frames": [
+        0.0,
+        29.600000381469727
+      ],
+      "feet": {
+        "RightFoot": {
+          "vertices": 55,
+          "min_surface_clearance_m": 0.0008631646633148193,
+          "max_surface_clearance_m": 0.024106159806251526,
+          "support_error_max_m": 0
+        },
+        "LeftFoot": {
+          "vertices": 66,
+          "min_surface_clearance_m": 0.0006915777921676636,
+          "max_surface_clearance_m": 0.03344409167766571,
+          "support_error_max_m": 0
+        }
+      },
+      "pedestal_drift_m": 3.003425064207477e-08,
+      "ankle_edge_stretch_p99": 6.407800197601318,
+      "ankle_edge_stretch_max": 30.875980377197266,
+      "loop_vertex_jump_m": 0.09500759840011597
+    },
+    {
+      "clip": "idle",
+      "frames": [
+        0.0,
+        95.19999694824219
+      ],
+      "feet": {
+        "RightFoot": {
+          "vertices": 55,
+          "min_surface_clearance_m": 0.0008548200130462646,
+          "max_surface_clearance_m": 0.0008548200130462646,
+          "support_error_max_m": 0
+        },
+        "LeftFoot": {
+          "vertices": 66,
+          "min_surface_clearance_m": 0.0006688833236694336,
+          "max_surface_clearance_m": 0.0006688833236694336,
+          "support_error_max_m": 0
+        }
+      },
+      "pedestal_drift_m": 3.003425064207477e-08,
+      "ankle_edge_stretch_p99": 1.0000065565109253,
+      "ankle_edge_stretch_max": 1.0000360012054443,
+      "loop_vertex_jump_m": 0.065278559923172
+    }
+  ]
+}

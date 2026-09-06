@@ -1,404 +1,153 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import { useFrame } from "@react-three/fiber";
-import { useGLTF } from "@react-three/drei";
-import {
-  CanvasTexture,
-  Color,
-  DoubleSide,
-  Group,
-  LinearFilter,
-  SRGBColorSpace,
-} from "three";
+import { useFrame, useThree } from "@react-three/fiber";
+import { AnimationMixer, Box3, CanvasTexture, Group, LinearFilter, Mesh, SkinnedMesh, SRGBColorSpace, Vector3 } from "three";
+import { clone } from 'three/addons/utils/SkeletonUtils.js';
+import { attackerPosition, CAPTURE, clamp, ease, motionPose, playbackSeconds } from './moveTimeline';
 import { boardToWorld } from "../game/coordinates";
-import { getModelUrl, MODEL_URLS } from "../assets/manifest";
-import type { EffectLevel, MoveRecord, Piece, PieceType } from "../game/types";
+import { useRuntimeAsset } from "../assets/runtimeAssets";
+import { choosePieceTier, type ModelTier } from "../assets/quality";
+import type { EffectLevel, ModelQuality, MovePlayback, Piece, PieceType } from "../game/types";
 
 interface ArmoredPieceProps {
-  piece: Piece;
-  selected: boolean;
-  move: MoveRecord | null;
-  effects: EffectLevel;
+  piece: Piece; selected: boolean; move: MovePlayback | null; effects: EffectLevel; quality: ModelQuality;
   onClick: () => void;
-  onMoveComplete: () => void;
 }
-
 const LABELS: Record<PieceType, { red: string; black: string }> = {
-  general: { red: "帅", black: "将" },
-  advisor: { red: "仕", black: "士" },
-  elephant: { red: "相", black: "象" },
-  horse: { red: "马", black: "马" },
-  chariot: { red: "车", black: "车" },
-  cannon: { red: "炮", black: "炮" },
-  soldier: { red: "兵", black: "卒" },
+  general: { red: "帅", black: "将" }, advisor: { red: "仕", black: "士" },
+  elephant: { red: "相", black: "象" }, horse: { red: "马", black: "马" },
+  chariot: { red: "车", black: "车" }, cannon: { red: "炮", black: "炮" }, soldier: { red: "兵", black: "卒" },
 };
-
-const labelTextureCache = new Map<string, CanvasTexture>();
-
-function getLabelTexture(piece: Piece) {
-  const cacheKey = `${piece.camp}-${piece.type}`;
-  const cached = labelTextureCache.get(cacheKey);
-  if (cached) return cached;
-
+const labels = new Map<string, CanvasTexture>();
+function labelTexture(piece: Piece) {
+  const key = `${piece.type}_${piece.camp}`;
+  if (labels.has(key)) return labels.get(key)!;
   const canvas = document.createElement("canvas");
-  canvas.width = 256;
-  canvas.height = 256;
-  const context = canvas.getContext("2d");
-  if (!context) throw new Error("无法创建棋子文字纹理");
-
-  const red = piece.camp === "red";
-  context.clearRect(0, 0, 256, 256);
-  context.beginPath();
-  context.arc(128, 128, 114, 0, Math.PI * 2);
-  context.fillStyle = red ? "#e1d4bd" : "#d6ddd9";
-  context.fill();
-  context.lineWidth = 13;
-  context.strokeStyle = red ? "#8f2925" : "#263331";
-  context.stroke();
-  context.beginPath();
-  context.arc(128, 128, 91, 0, Math.PI * 2);
-  context.lineWidth = 3;
-  context.strokeStyle = red ? "rgba(143,41,37,.48)" : "rgba(38,51,49,.52)";
-  context.stroke();
-  context.fillStyle = red ? "#7f1f1d" : "#172321";
-  context.font = "700 132px KaiTi, STKaiti, serif";
-  context.textAlign = "center";
-  context.textBaseline = "middle";
-  context.fillText(LABELS[piece.type][piece.camp], 128, 136);
-
+  canvas.width = 256; canvas.height = 128;
+  const context = canvas.getContext("2d")!;
+  context.fillStyle = piece.camp === "red" ? "#392b27" : "#242b2b";
+  context.fillRect(0, 0, 256, 128);
+  context.strokeStyle = piece.camp === "red" ? "#b69958" : "#98a29c";
+  context.lineWidth = 5; context.strokeRect(4, 4, 248, 120);
+  context.fillStyle = piece.camp === "red" ? "#e0c78c" : "#d2d8d3";
+  context.font = "700 106px KaiTi, STKaiti, serif";
+  context.textAlign = "center"; context.textBaseline = "middle";
+  context.fillText(LABELS[piece.type][piece.camp], 128, 70);
   const texture = new CanvasTexture(canvas);
-  texture.colorSpace = SRGBColorSpace;
-  texture.minFilter = LinearFilter;
-  texture.magFilter = LinearFilter;
-  texture.needsUpdate = true;
-  labelTextureCache.set(cacheKey, texture);
-  return texture;
+  texture.colorSpace = SRGBColorSpace; texture.minFilter = LinearFilter;
+  labels.set(key, texture); return texture;
 }
-
-const theme = {
-  red: {
-    armor: "#7d2725",
-    armorLight: "#a94b3f",
-    metal: "#b9a36f",
-    cloth: "#5a1819",
-    dark: "#32181a",
-    ring: "#df7a62",
-  },
-  black: {
-    armor: "#34413e",
-    armorLight: "#5b6b66",
-    metal: "#a6aeaa",
-    cloth: "#222e2b",
-    dark: "#151e1c",
-    ring: "#9cb5ad",
-  },
-} as const;
-
-function Weapon({ type, camp }: { type: PieceType; camp: Piece["camp"] }) {
-  const colors = theme[camp];
-
-  if (type === "soldier") {
-    return (
-      <group position={[0.31, 0.88, 0]} rotation={[0, 0, -0.08]}>
-        <mesh castShadow>
-          <cylinderGeometry args={[0.022, 0.026, 1.15, 8]} />
-          <meshStandardMaterial color={colors.metal} metalness={0.7} roughness={0.28} />
-        </mesh>
-        <mesh position={[0, 0.65, 0]} castShadow>
-          <coneGeometry args={[0.075, 0.25, 5]} />
-          <meshStandardMaterial color={colors.metal} metalness={0.84} roughness={0.2} />
-        </mesh>
-      </group>
-    );
-  }
-
-  if (type === "cannon") {
-    return (
-      <group position={[0, 0.86, -0.03]} rotation={[0, 0, Math.PI / 2]}>
-        <mesh castShadow>
-          <cylinderGeometry args={[0.095, 0.13, 0.74, 12]} />
-          <meshStandardMaterial color={colors.metal} metalness={0.82} roughness={0.26} />
-        </mesh>
-        <mesh position={[0, 0.39, 0]} castShadow>
-          <torusGeometry args={[0.13, 0.035, 8, 16]} />
-          <meshStandardMaterial color={colors.dark} metalness={0.5} roughness={0.36} />
-        </mesh>
-      </group>
-    );
-  }
-
-  if (type === "advisor") {
-    return (
-      <group position={[0, 1.03, 0.02]}>
-        <mesh rotation={[0, 0, 0.72]} castShadow>
-          <boxGeometry args={[0.045, 0.74, 0.07]} />
-          <meshStandardMaterial color={colors.metal} metalness={0.78} roughness={0.2} />
-        </mesh>
-        <mesh rotation={[0, 0, -0.72]} castShadow>
-          <boxGeometry args={[0.045, 0.74, 0.07]} />
-          <meshStandardMaterial color={colors.metal} metalness={0.78} roughness={0.2} />
-        </mesh>
-      </group>
-    );
-  }
-
-  return null;
-}
-
-function HelmetCrest({ type, camp }: { type: PieceType; camp: Piece["camp"] }) {
-  const colors = theme[camp];
-
-  if (type === "general") {
-    return (
-      <group position={[0, 1.46, 0]}>
-        <mesh castShadow>
-          <boxGeometry args={[0.42, 0.1, 0.17]} />
-          <meshStandardMaterial color={colors.metal} metalness={0.72} roughness={0.24} />
-        </mesh>
-        {[-0.16, 0, 0.16].map((x) => (
-          <mesh key={x} position={[x, 0.13, 0]} castShadow>
-            <boxGeometry args={[0.045, 0.3, 0.05]} />
-            <meshStandardMaterial color={colors.metal} metalness={0.72} roughness={0.24} />
-          </mesh>
-        ))}
-      </group>
-    );
-  }
-
-  if (type === "horse") {
-    return (
-      <group position={[0, 1.43, -0.02]}>
-        <mesh rotation={[0.16, 0, 0]} castShadow>
-          <coneGeometry args={[0.12, 0.46, 6]} />
-          <meshStandardMaterial color={colors.armorLight} metalness={0.42} roughness={0.45} />
-        </mesh>
-        <mesh position={[0, 0.13, -0.13]} rotation={[0.3, 0, 0]} castShadow>
-          <boxGeometry args={[0.08, 0.34, 0.06]} />
-          <meshStandardMaterial color={colors.ring} roughness={0.65} />
-        </mesh>
-      </group>
-    );
-  }
-
-  if (type === "chariot") {
-    return (
-      <group position={[0, 1.39, 0]}>
-        <mesh castShadow>
-          <cylinderGeometry args={[0.25, 0.28, 0.18, 8]} />
-          <meshStandardMaterial color={colors.metal} metalness={0.76} roughness={0.3} />
-        </mesh>
-        {[-0.16, 0.16].map((x) => (
-          <mesh key={x} position={[x, 0.16, 0]} castShadow>
-            <boxGeometry args={[0.1, 0.22, 0.18]} />
-            <meshStandardMaterial color={colors.armor} metalness={0.48} roughness={0.38} />
-          </mesh>
-        ))}
-      </group>
-    );
-  }
-
-  if (type === "elephant") {
-    return (
-      <group position={[0, 1.35, 0.01]}>
-        {[-1, 1].map((side) => (
-          <mesh
-            key={side}
-            position={[side * 0.22, 0.02, 0.05]}
-            rotation={[Math.PI / 2, 0, side * 0.38]}
-            castShadow
-          >
-            <coneGeometry args={[0.055, 0.28, 8]} />
-            <meshStandardMaterial color={colors.metal} metalness={0.8} roughness={0.2} />
-          </mesh>
-        ))}
-      </group>
-    );
-  }
-
-  return (
-    <mesh position={[0, 1.44, 0]} castShadow>
-      <coneGeometry args={[0.11, type === "advisor" ? 0.27 : 0.2, 6]} />
-      <meshStandardMaterial color={colors.metal} metalness={0.7} roughness={0.26} />
-    </mesh>
-  );
-}
-
-function ArmorBody({ piece }: { piece: Piece }) {
-  const colors = theme[piece.camp];
-  const black = piece.camp === "black";
-  const broad = piece.type === "elephant" || piece.type === "chariot";
-  const short = piece.type === "soldier";
-
-  return (
-    <group scale={short ? 0.88 : 1} position={[0, short ? 0.03 : 0, 0]}>
-      <mesh position={[0, 0.82, 0]} castShadow>
-        <cylinderGeometry args={[broad ? 0.31 : 0.25, 0.34, 0.58, black ? 6 : 10]} />
-        <meshStandardMaterial color={colors.cloth} roughness={0.64} metalness={0.12} />
-      </mesh>
-      <mesh position={[0, 0.91, 0.18]} rotation={[-0.08, 0, 0]} castShadow>
-        <boxGeometry args={[broad ? 0.52 : 0.43, 0.37, 0.1]} />
-        <meshStandardMaterial color={colors.armor} roughness={0.34} metalness={0.48} />
-      </mesh>
-      {[-1, 1].map((side) => (
-        <mesh
-          key={side}
-          position={[side * (broad ? 0.37 : 0.31), 1.03, 0]}
-          rotation={[0, 0, side * (black ? 0.2 : 0.08)]}
-          castShadow
-        >
-          {black ? (
-            <octahedronGeometry args={[broad ? 0.2 : 0.16, 0]} />
-          ) : (
-            <sphereGeometry args={[broad ? 0.2 : 0.17, 12, 8]} />
-          )}
-          <meshStandardMaterial color={colors.armorLight} roughness={0.35} metalness={0.52} />
-        </mesh>
-      ))}
-      <mesh position={[0, 1.22, 0]} castShadow>
-        <sphereGeometry args={[0.19, 16, 10]} />
-        <meshStandardMaterial color={colors.dark} roughness={0.42} metalness={0.38} />
-      </mesh>
-      <mesh position={[0, 1.34, 0]} castShadow>
-        <cylinderGeometry args={[0.22, 0.19, 0.18, black ? 6 : 12]} />
-        <meshStandardMaterial color={colors.armorLight} roughness={0.3} metalness={0.56} />
-      </mesh>
-      <HelmetCrest type={piece.type} camp={piece.camp} />
-      <Weapon type={piece.type} camp={piece.camp} />
-    </group>
-  );
-}
-
-/** 二期正式 GLB 棋子：manifest 命中时替换一期程序化造型。
- *  模型原点在底座底面中心（对应一期 group 内 y=0.02 处），面向 three.js +Z；
- *  红方在高 rank（+Z 侧），需转向 -Z 面向黑方。 */
-function GlbModel({ url, camp }: { url: string; camp: Piece["camp"] }) {
-  const { scene } = useGLTF(url);
-  const cloned = useMemo(() => scene.clone(true), [scene]);
-  return (
-    <primitive
-      object={cloned}
-      position={[0, 0.02, 0]}
-      rotation={[0, camp === "red" ? Math.PI : 0, 0]}
-    />
-  );
-}
-
-export function ArmoredPiece({
-  piece,
-  selected,
-  move,
-  effects,
-  onClick,
-  onMoveComplete,
-}: ArmoredPieceProps) {
-  const group = useRef<Group>(null);
-  const completionSent = useRef<number | null>(null);
-  const animationStart = useRef(0);
-  const [hovered, setHovered] = useState(false);
-  const modelUrl = getModelUrl(piece);
-  const labelTexture = useMemo(
-    () => (modelUrl ? null : getLabelTexture(piece)),
-    [piece, modelUrl],
-  );
-  const colors = theme[piece.camp];
-  const activeMove = move?.piece.id === piece.id ? move : null;
-
-  useEffect(() => {
-    if (activeMove) {
-      animationStart.current = performance.now();
-      completionSent.current = null;
+function modelDimensions(scene: Group) {
+  if (scene.userData.pieceDimensions) return scene.userData.pieceDimensions as { height: number; front: number; baseHeight: number };
+  scene.updateMatrixWorld(true);
+  const box = new Box3().setFromObject(scene);
+  const height = box.max.y-box.min.y;
+  const baseHeight = Math.min(.13, height*.075);
+  const point = new Vector3(); let front = 0;
+  scene.traverse(object => {
+    if (!(object instanceof Mesh)) return;
+    const position = object.geometry.getAttribute("position");
+    for (let i=0;i<position.count;i++) {
+      object.getVertexPosition(i,point).applyMatrix4(object.matrixWorld);
+      if (point.y<baseHeight && Math.abs(point.x)<.12) front=Math.max(front,point.z);
     }
-  }, [activeMove]);
+  });
+  return scene.userData.pieceDimensions = { height, front, baseHeight };
+}
 
+export function ArmoredPiece({ piece, selected, move, effects, quality, onClick }: ArmoredPieceProps) {
+  const group = useRef<Group>(null);
+  const [hovered, setHovered] = useState(false);
+  const [tier, setTier] = useState<ModelTier>("distant");
+  const lastTierCheck = useRef(0);
+  const { camera, size } = useThree();
+  const asset = useRuntimeAsset("motion", `${piece.type}_${piece.camp}`, tier);
+  const animated = useMemo(() => {
+    if(!asset.value)return null;
+    const model=clone(asset.value);const mixer=new AnimationMixer(model);
+    const actions=Object.fromEntries(asset.value.animations.map(clip=>{
+      const action=mixer.clipAction(clip);action.play();action.paused=true;return [clip.name,action];
+    }));
+    const materials:import('three').Material[]=[];
+    model.traverse(object=>{if(object instanceof Mesh){
+      object.frustumCulled=false;
+      const copies=(Array.isArray(object.material)?object.material:[object.material]).map(material=>{const copy=material.clone();materials.push(copy);return copy;});
+      object.material=Array.isArray(object.material)?copies:copies[0];
+    }});
+    return {model,mixer,actions,materials};
+  },[asset.value]);
+  useEffect(()=>{
+    if(!animated)return;
+    Object.values(animated.actions).forEach(action=>action.play());
+    return ()=>{animated.mixer.stopAllAction();animated.materials.forEach(material=>material.dispose());animated.model.traverse(object=>{if(object instanceof SkinnedMesh)object.skeleton.dispose();});};
+  },[animated]);
+  const model=animated?.model;
+  const dimensions = useMemo(() => asset.value ? modelDimensions(asset.value) : { height: 1.5, front: .42, baseHeight: .1 }, [asset.value]);
+  const label = useMemo(() => labelTexture(piece), [piece]);
+  const projected = useMemo(() => [new Vector3(), new Vector3()], []);
+  const activeMove = move?.piece.id === piece.id ? move : null;
+  const red = piece.camp === "red";
   useFrame(({ clock }) => {
     if (!group.current) return;
     const target = boardToWorld(piece.position);
-    let x = target[0];
-    let y = 0.24;
-    let z = target[2];
-
+    let [x, , z] = target; let y = .25;
+    const t=move?playbackSeconds(move):0;
+    const captured=move?.captured?.id===piece.id;
+    let opacity=1;
     if (activeMove) {
-      const from = boardToWorld(activeMove.from);
-      const duration = effects === "off" ? 90 : activeMove.captured ? 720 : 480;
-      const rawProgress = Math.min(1, (performance.now() - animationStart.current) / duration);
-      const progress = 1 - Math.pow(1 - rawProgress, 3);
-      x = from[0] + (target[0] - from[0]) * progress;
-      z = from[2] + (target[2] - from[2]) * progress;
-      const arcScale = piece.type === "horse" ? 1.05 : activeMove.captured ? 0.64 : 0.36;
-      y += effects === "off" ? 0 : Math.sin(Math.PI * rawProgress) * arcScale;
-      group.current.rotation.y = Math.sin(rawProgress * Math.PI) * 0.14;
-
-      if (rawProgress >= 1 && completionSent.current !== activeMove.id) {
-        completionSent.current = activeMove.id;
-        onMoveComplete();
-      }
+      [x,y,z]=attackerPosition(activeMove,t);
+      const from=boardToWorld(activeMove.from);
+      // The red cannon's barrel faces the opposite way to its standing crew.
+      const barrelFacing=piece.type==='cannon'&&red?Math.PI:0;
+      let angle=Math.atan2(target[0]-from[0],target[2]-from[2])-(red?Math.PI:0)+barrelFacing;
+      angle=Math.atan2(Math.sin(angle),Math.cos(angle));
+      const turn=activeMove.captured?ease(t/.18)*(1-ease((t-CAPTURE.settle)/(CAPTURE.end-CAPTURE.settle))):Math.sin(Math.PI*clamp(t/.65));
+      group.current.rotation.y=activeMove.effectLevel==='off'?0:angle*turn;
     } else {
-      group.current.rotation.y = 0;
-      if (selected && effects !== "off") y += 0.055 + Math.sin(clock.elapsedTime * 4.4) * 0.025;
+      group.current.rotation.y=0;
     }
-
-    const targetScale = selected ? 1.06 : hovered ? 1.025 : 1;
-    const scale = group.current.scale.x + (targetScale - group.current.scale.x) * 0.18;
-    group.current.scale.setScalar(scale);
-    group.current.position.set(x, y, z);
+    if(captured&&move?.effectLevel!=='off')opacity=1-ease((t-CAPTURE.fade)/(CAPTURE.gone-CAPTURE.fade));
+    group.current.visible=opacity>.001;
+    const pose=motionPose(move,piece.id,t);
+    if(animated){
+      const phase=(piece.id*.731)%4;
+      for(const [name,action] of Object.entries(animated.actions)){
+        action.enabled=true;
+        const duration=action.getClip().duration;
+        action.time=name==='idle'?(effects==='off'?0:(clock.elapsedTime*.72+phase)%duration):Math.min(duration-.001,pose.progress*duration);
+        action.setEffectiveWeight(name==='idle'?1-pose.weight:name===pose.clip?pose.weight:0);
+      }
+      animated.mixer.update(0);
+      animated.materials.forEach(material=>{
+        const transparent=opacity<.999;
+        if(material.transparent!==transparent){material.transparent=transparent;material.needsUpdate=true;}
+        material.opacity=opacity;material.depthWrite=!transparent;
+      });
+    }
+    group.current.userData.motion={clip:pose.weight>.1?pose.clip:'idle',progress:pose.progress,opacity,token:move?.token??null};
+    const targetScale=selected?1.025:hovered?1.012:1;
+    group.current.scale.setScalar(group.current.scale.x+(targetScale-group.current.scale.x)*.18);
+    group.current.position.set(x,y,z);
+    if (clock.elapsedTime-lastTierCheck.current>.5) {
+      lastTierCheck.current=clock.elapsedTime;
+      projected[0].set(x,y,z).project(camera); projected[1].set(x,y+dimensions.height,z).project(camera);
+      const pixels=Math.abs(projected[0].y-projected[1].y)*size.height/2;
+      const mobile=matchMedia("(pointer: coarse)").matches || size.width<700;
+      const next=choosePieceTier(pixels,selected,quality,mobile,tier);
+      if (next!==tier) setTier(next);
+    }
   });
-
-  return (
-    <group
-      ref={group}
-      onClick={(event) => {
-        event.stopPropagation();
-        onClick();
-      }}
-      onPointerEnter={(event) => {
-        event.stopPropagation();
-        setHovered(true);
-      }}
-      onPointerLeave={() => setHovered(false)}
-    >
-      {(selected || hovered) && (
-        <mesh position={[0, 0.02, 0]} rotation={[-Math.PI / 2, 0, 0]}>
-          <ringGeometry args={[0.4, 0.49, 40]} />
-          <meshBasicMaterial color={selected ? colors.ring : "#c8bfa9"} transparent opacity={0.82} />
-        </mesh>
-      )}
-      {modelUrl ? (
-        <GlbModel url={modelUrl} camp={piece.camp} />
-      ) : (
-        <>
-          <mesh position={[0, 0.17, 0]} castShadow receiveShadow>
-            <cylinderGeometry args={[0.42, 0.46, 0.3, piece.camp === "black" ? 10 : 20]} />
-            <meshStandardMaterial
-              color={colors.dark}
-              metalness={0.46}
-              roughness={0.42}
-              emissive={selected ? new Color(colors.armor) : new Color("#050706")}
-              emissiveIntensity={selected ? 0.24 : 0}
-            />
-          </mesh>
-          <mesh position={[0, 0.34, 0]} rotation={[Math.PI / 2, 0, 0]} castShadow>
-            <torusGeometry args={[0.35, 0.036, 8, piece.camp === "black" ? 10 : 20]} />
-            <meshStandardMaterial color={colors.metal} metalness={0.76} roughness={0.24} />
-          </mesh>
-          <ArmorBody piece={piece} />
-          {labelTexture && (
-            <mesh position={[0, 0.342, 0.12]} rotation={[-Math.PI / 2, 0, 0]}>
-              <circleGeometry args={[0.205, 36]} />
-              <meshBasicMaterial
-                map={labelTexture}
-                transparent
-                side={DoubleSide}
-                toneMapped={false}
-              />
-            </mesh>
-          )}
-        </>
-      )}
-      <mesh position={[0, 0.72, 0]} visible={false}>
-        <cylinderGeometry args={[0.53, 0.53, 1.65, 12]} />
-        <meshBasicMaterial transparent opacity={0} />
-      </mesh>
-    </group>
-  );
+  return <group ref={group} name={`piece-${piece.id}`} userData={{ pieceId: piece.id, asset: `${piece.type}_${piece.camp}`, tier, status: asset.status, nameplate:dimensions }}
+    onClick={event=>{event.stopPropagation();onClick();}}
+    onPointerEnter={event=>{event.stopPropagation();setHovered(true);}} onPointerLeave={()=>setHovered(false)}>
+    {(selected||hovered) && <mesh position={[0,.015,0]} rotation={[-Math.PI/2,0,0]}>
+      <ringGeometry args={[.4,.49,40]}/><meshBasicMaterial color={selected?(red?"#df7a62":"#9cb5ad"):"#c8bfa9"} transparent opacity={.82}/>
+    </mesh>}
+    {model ? <group rotation={[0,red?Math.PI:0,0]} dispose={null}>
+      <primitive object={model} dispose={null}/>
+    </group> : <group>
+      <mesh position={[0,.105,0]} castShadow receiveShadow><cylinderGeometry args={[.40,.44,.21,24]}/><meshStandardMaterial color={red?"#642e29":"#303c39"} metalness={.3} roughness={.65}/></mesh>
+      <mesh position={[0,.214,0]} rotation={[-Math.PI/2,0,red?0:Math.PI]}><planeGeometry args={[.42,.23]}/><meshBasicMaterial map={label}/></mesh>
+    </group>}
+    <mesh position={[0,.5,0]} visible={false}><cylinderGeometry args={[.47,.47,1,12]}/><meshBasicMaterial/></mesh>
+  </group>;
 }
-
-MODEL_URLS.forEach((url) => useGLTF.preload(url));

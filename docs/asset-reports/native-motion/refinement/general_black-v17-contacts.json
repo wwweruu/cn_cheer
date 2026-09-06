@@ -1,0 +1,104 @@
+{
+  "piece": "general_black",
+  "version": 17,
+  "file": "assets\\generated\\meshy\\general_black\\motion\\runtime\\v17\\general_black_mobile.glb",
+  "clips": [
+    {
+      "clip": "idle",
+      "frames": [
+        0.0,
+        95.19999694824219
+      ],
+      "feet": {
+        "RightFoot": {
+          "vertices": 13,
+          "min_surface_clearance_m": 0.0005645155906677246,
+          "max_surface_clearance_m": 0.0005645155906677246,
+          "support_error_max_m": 0
+        },
+        "LeftFoot": {
+          "vertices": 13,
+          "min_surface_clearance_m": 0.0005324780941009521,
+          "max_surface_clearance_m": 0.0005324780941009521,
+          "support_error_max_m": 0
+        }
+      },
+      "pedestal_drift_m": 2.986047320518992e-08,
+      "ankle_edge_stretch_p99": 1.0000064373016357,
+      "ankle_edge_stretch_max": 2.712150812149048,
+      "worst_ankle_edge": {
+        "rest": [
+          [
+            -0.24215464293956757,
+            -0.08965279906988144,
+            0.23966991901397705
+          ],
+          [
+            -0.22093240916728973,
+            -0.0789942666888237,
+            0.2450680285692215
+          ]
+        ],
+        "weights": [
+          {
+            "RightHand": 0.8724805116653442,
+            "RightFoot": 0.12751948833465576
+          },
+          {
+            "RightFoot": 1.0
+          }
+        ]
+      },
+      "loop_vertex_jump_m": 0.0
+    },
+    {
+      "clip": "walk",
+      "frames": [
+        0.0,
+        28.80000114440918
+      ],
+      "feet": {
+        "RightFoot": {
+          "vertices": 13,
+          "min_surface_clearance_m": 0.001007169485092163,
+          "max_surface_clearance_m": 0.10690009593963623,
+          "support_error_max_m": 0
+        },
+        "LeftFoot": {
+          "vertices": 13,
+          "min_surface_clearance_m": 0.0008440464735031128,
+          "max_surface_clearance_m": 0.088931143283844,
+          "support_error_max_m": 0
+        }
+      },
+      "pedestal_drift_m": 2.986047320518992e-08,
+      "ankle_edge_stretch_p99": 2.721371650695801,
+      "ankle_edge_stretch_max": 8.853376388549805,
+      "worst_ankle_edge": {
+        "rest": [
+          [
+            0.12418317794799805,
+            0.06479780375957489,
+            0.24834342300891876
+          ],
+          [
+            0.12036727368831635,
+            0.04532153531908989,
+            0.2564563751220703
+          ]
+        ],
+        "weights": [
+          {
+            "Hips": 0.6822667121887207,
+            "LeftFoot": 0.3177332878112793
+          },
+          {
+            "LeftFoot": 0.969990074634552,
+            "Hips": 0.030009940266609192
+          }
+        ]
+      },
+      "loop_vertex_jump_m": 0.0
+    }
+  ]
+}

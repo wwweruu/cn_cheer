@@ -1,8 +1,9 @@
 import { useMemo, useRef } from "react";
 import { useFrame, useThree } from "@react-three/fiber";
-import { Line } from "@react-three/drei";
 import {
   CanvasTexture,
+  BufferGeometry,
+  Float32BufferAttribute,
   DoubleSide,
   LinearFilter,
   Mesh,
@@ -11,6 +12,8 @@ import {
 } from "three";
 import { BOARD_SPACING, boardToWorld, positionKey } from "../game/coordinates";
 import type { MoveRecord, Position } from "../game/types";
+import { BattlefieldTerrain } from "./BattlefieldTerrain";
+import { Surface } from "./Surface";
 
 interface BattlefieldBoardProps {
   selected: Position | null;
@@ -19,8 +22,6 @@ interface BattlefieldBoardProps {
   onPositionClick: (position: Position) => void;
 }
 
-const lineColor = "#bcb09a";
-
 function makeRiverTexture() {
   const canvas = document.createElement("canvas");
   canvas.width = 1024;
@@ -28,7 +29,7 @@ function makeRiverTexture() {
   const context = canvas.getContext("2d");
   if (!context) throw new Error("无法创建楚河汉界纹理");
   context.clearRect(0, 0, canvas.width, canvas.height);
-  context.fillStyle = "rgba(200, 194, 172, .82)";
+  context.fillStyle = "rgba(216, 206, 176, .95)";
   context.font = "600 80px KaiTi, STKaiti, serif";
   context.textAlign = "center";
   context.textBaseline = "middle";
@@ -54,25 +55,25 @@ function GridLines() {
     for (let rank = 0; rank < 10; rank += 1) {
       const z = (rank - 4.5) * BOARD_SPACING;
       result.push([
-        [xMin, 0.28, z],
-        [xMax, 0.28, z],
+        [xMin, 0.258, z],
+        [xMax, 0.258, z],
       ]);
     }
     for (let file = 0; file < 9; file += 1) {
       const x = (file - 4) * BOARD_SPACING;
       if (file === 0 || file === 8) {
         result.push([
-          [x, 0.28, zMin],
-          [x, 0.28, zMax],
+          [x, 0.258, zMin],
+          [x, 0.258, zMax],
         ]);
       } else {
         result.push([
-          [x, 0.28, zMin],
-          [x, 0.28, riverNorth],
+          [x, 0.258, zMin],
+          [x, 0.258, riverNorth],
         ]);
         result.push([
-          [x, 0.28, riverSouth],
-          [x, 0.28, zMax],
+          [x, 0.258, riverSouth],
+          [x, 0.258, zMax],
         ]);
       }
     }
@@ -82,12 +83,12 @@ function GridLines() {
       const leftX = -BOARD_SPACING;
       const rightX = BOARD_SPACING;
       result.push([
-        [leftX, 0.285, startZ],
-        [rightX, 0.285, endZ],
+        [leftX, 0.259, startZ],
+        [rightX, 0.259, endZ],
       ]);
       result.push([
-        [rightX, 0.285, startZ],
-        [leftX, 0.285, endZ],
+        [rightX, 0.259, startZ],
+        [leftX, 0.259, endZ],
       ]);
     };
     palace(0, 2);
@@ -95,20 +96,18 @@ function GridLines() {
     return result;
   }, [riverNorth, riverSouth, xMax, xMin, zMax, zMin]);
 
-  return (
-    <>
-      {lines.map((points, index) => (
-        <Line
-          key={index}
-          points={points}
-          color={lineColor}
-          lineWidth={1.25}
-          transparent
-          opacity={0.83}
-        />
-      ))}
-    </>
-  );
+  const geometry = useMemo(() => {
+    const vertices: number[] = [],uvs:number[]=[];
+    for (const [a,b] of lines) {
+      const dx=b[0]-a[0], dz=b[2]-a[2], length=Math.hypot(dx,dz);
+      const px=-dz/length*.082, pz=dx/length*.082;
+      const corners=[[a[0]+px,a[1],a[2]+pz],[a[0]-px,a[1],a[2]-pz],[b[0]-px,b[1],b[2]-pz],[b[0]+px,b[1],b[2]+pz]];
+      const uv=[[0,0],[1,0],[1,length*2],[0,length*2]];
+      for (const index of [0,1,2,0,2,3]) {vertices.push(...corners[index]);uvs.push(...uv[index]);}
+    }
+    const result=new BufferGeometry();result.setAttribute("position",new Float32BufferAttribute(vertices,3));result.setAttribute('uv',new Float32BufferAttribute(uvs,2));result.computeVertexNormals();return result;
+  }, [lines]);
+  return <mesh geometry={geometry} renderOrder={-1} receiveShadow><Surface asset="battlefield_earth" tint="#ead9b9" wornPath/></mesh>;
 }
 
 function LastMoveMarker({ position }: { position: Position }) {
@@ -147,6 +146,7 @@ function LegalMoveHitTarget({
   return (
     <mesh
       ref={mesh}
+      visible={false}
       onClick={(event) => {
         event.stopPropagation();
         onClick();
@@ -176,24 +176,13 @@ export function BattlefieldBoard({
 
   return (
     <group>
-      <mesh position={[0, -0.08, 0]} castShadow receiveShadow>
-        <boxGeometry args={[10.25, 0.62, 11.35]} />
-        <meshStandardMaterial color="#151b1a" metalness={0.34} roughness={0.54} />
-      </mesh>
-      <mesh position={[0, 0.16, 0]} receiveShadow>
-        <boxGeometry args={[9.55, 0.18, 10.65]} />
-        <meshStandardMaterial color="#343a35" metalness={0.08} roughness={0.73} />
-      </mesh>
-      <mesh position={[0, 0.265, 0]} rotation={[-Math.PI / 2, 0, 0]}>
-        <planeGeometry args={[8.45, 0.96]} />
-        <meshStandardMaterial color="#1c2b29" metalness={0.22} roughness={0.52} />
-      </mesh>
-      <mesh position={[0, 0.288, 0]} rotation={[-Math.PI / 2, 0, 0]}>
-        <planeGeometry args={[8.05, 0.82]} />
+      <BattlefieldTerrain />
+      <mesh position={[0, 0.07, 0]} rotation={[-Math.PI / 2, 0, 0]}>
+        <planeGeometry args={[8.05, 0.6]} />
         <meshBasicMaterial
           map={riverTexture}
           transparent
-          opacity={0.9}
+          opacity={0.55}
           side={DoubleSide}
           toneMapped={false}
           depthWrite={false}
@@ -201,17 +190,6 @@ export function BattlefieldBoard({
       </mesh>
       <GridLines />
 
-      {[
-        [-4.86, 0.25, 0, 0.2, 10.9],
-        [4.86, 0.25, 0, 0.2, 10.9],
-        [0, 0.25, -5.4, 9.55, 0.2],
-        [0, 0.25, 5.4, 9.55, 0.2],
-      ].map(([x, y, z, width, depth], index) => (
-        <mesh key={index} position={[x, y, z]} castShadow>
-          <boxGeometry args={[width, 0.34, depth]} />
-          <meshStandardMaterial color="#716758" metalness={0.62} roughness={0.32} />
-        </mesh>
-      ))}
 
       {lastMove && (
         <>
@@ -255,6 +233,7 @@ export function BattlefieldBoard({
               </mesh>
             )}
             <mesh
+              visible={false}
               position={[0, 0.16, 0]}
               onClick={(event) => {
                 event.stopPropagation();

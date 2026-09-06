@@ -1,0 +1,198 @@
+[
+  {
+    "mode": "desktop",
+    "effect": "full",
+    "frames": 240,
+    "p95": 5.700000047683716,
+    "median": 5.599999964237213,
+    "projectile": null,
+    "draws": 103,
+    "triangles": 1463170,
+    "textures": 126,
+    "geometries": 39,
+    "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4060 (0x00002882) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "camera": [
+      9.827999999999996,
+      13.027499999999998,
+      16.730999999999998
+    ],
+    "assetStats": {
+      "total": 23,
+      "loading": 0,
+      "failed": 0,
+      "fallback": 0,
+      "ready": 23
+    },
+    "estimatedResidentTextureMiB": 394.4184214274089,
+    "errors": []
+  },
+  {
+    "mode": "desktop",
+    "effect": "reduced",
+    "frames": 240,
+    "p95": 5.700000047683716,
+    "median": 5.599999964237213,
+    "projectile": null,
+    "draws": 100,
+    "triangles": 1463164,
+    "textures": 126,
+    "geometries": 39,
+    "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4060 (0x00002882) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "camera": [
+      9.827999999999996,
+      13.027499999999998,
+      16.730999999999998
+    ],
+    "assetStats": {
+      "total": 23,
+      "loading": 0,
+      "failed": 0,
+      "fallback": 0,
+      "ready": 23
+    },
+    "estimatedResidentTextureMiB": 394.4184214274089,
+    "errors": []
+  },
+  {
+    "mode": "desktop",
+    "effect": "off",
+    "frames": 240,
+    "p95": 5.799999952316284,
+    "median": 5.599999964237213,
+    "projectile": null,
+    "draws": 100,
+    "triangles": 1463164,
+    "textures": 126,
+    "geometries": 39,
+    "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4060 (0x00002882) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "camera": [
+      9.827999999999996,
+      13.027499999999998,
+      16.730999999999998
+    ],
+    "assetStats": {
+      "total": 23,
+      "loading": 0,
+      "failed": 0,
+      "fallback": 0,
+      "ready": 23
+    },
+    "estimatedResidentTextureMiB": 394.4184214274089,
+    "errors": []
+  },
+  {
+    "mode": "desktop",
+    "topLayout": {
+      "camera": [
+        0,
+        23.985,
+        0.5030999999999427
+      ],
+      "all90PointsVisible": true,
+      "topRowSkew": 0
+    }
+  },
+  {
+    "mode": "desktop",
+    "capture_and_undo": true,
+    "errors": []
+  },
+  {
+    "mode": "mobile",
+    "effect": "full",
+    "frames": 240,
+    "p95": 5.800000011920929,
+    "median": 5.5,
+    "projectile": null,
+    "draws": 103,
+    "triangles": 1051130,
+    "textures": 126,
+    "geometries": 39,
+    "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4060 (0x00002882) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "camera": [
+      0.010000000000001908,
+      23,
+      9.999999999999993
+    ],
+    "assetStats": {
+      "total": 23,
+      "loading": 0,
+      "failed": 0,
+      "fallback": 0,
+      "ready": 23
+    },
+    "estimatedResidentTextureMiB": 250.41842142740884,
+    "errors": []
+  },
+  {
+    "mode": "mobile",
+    "effect": "reduced",
+    "frames": 240,
+    "p95": 5.699999988079071,
+    "median": 5.599999964237213,
+    "projectile": null,
+    "draws": 100,
+    "triangles": 1051124,
+    "textures": 126,
+    "geometries": 39,
+    "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4060 (0x00002882) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "camera": [
+      0.01000000000000334,
+      23,
+      9.999999999999993
+    ],
+    "assetStats": {
+      "total": 23,
+      "loading": 0,
+      "failed": 0,
+      "fallback": 0,
+      "ready": 23
+    },
+    "estimatedResidentTextureMiB": 250.41842142740884,
+    "errors": []
+  },
+  {
+    "mode": "mobile",
+    "effect": "off",
+    "frames": 240,
+    "p95": 5.799999952316284,
+    "median": 5.599999964237213,
+    "projectile": null,
+    "draws": 100,
+    "triangles": 1051124,
+    "textures": 126,
+    "geometries": 39,
+    "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4060 (0x00002882) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "camera": [
+      0.01000000000000477,
+      23,
+      9.999999999999993
+    ],
+    "assetStats": {
+      "total": 23,
+      "loading": 0,
+      "failed": 0,
+      "fallback": 0,
+      "ready": 23
+    },
+    "estimatedResidentTextureMiB": 250.41842142740884,
+    "errors": []
+  },
+  {
+    "mode": "mobile",
+    "topLayout": {
+      "camera": [
+        0,
+        28,
+        0.6500000000002171
+      ],
+      "all90PointsVisible": true,
+      "topRowSkew": 0
+    }
+  },
+  {
+    "mode": "mobile",
+    "capture_and_undo": true,
+    "errors": []
+  }
+]

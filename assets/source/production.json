@@ -1,0 +1,197 @@
+{
+  "projects": [
+    {
+      "asset": "general_red",
+      "source_project": "assets/generated/meshy/general_red/runtime/v1/general_red_source.blend",
+      "source_project_sha256": "20e54e64483664e7fc55ec401bc325a86b11c3ba15213dd5d011e1a0fcfa8072"
+    },
+    {
+      "asset": "general_black",
+      "source_project": "assets/generated/meshy/general_black/runtime/v1/general_black_source.blend",
+      "source_project_sha256": "44ee49a198e0088a1f0a96b7098287cc2fece6ad52ed4b77f9a14d8cd3b9e3d2"
+    },
+    {
+      "asset": "advisor_red",
+      "source_project": "assets/generated/meshy/advisor_red/runtime/v1/advisor_red_source.blend",
+      "source_project_sha256": "1d02033f541ff3aba9738325fb5feb167ddd9b245ba61bcd4a3d7f16a55a01fd"
+    },
+    {
+      "asset": "advisor_black",
+      "source_project": "assets/generated/meshy/advisor_black/runtime/v1/advisor_black_source.blend",
+      "source_project_sha256": "fc15d46649012f712157c318c456f0ec6411de21cd302f465ec7bf763e6a8fb3"
+    },
+    {
+      "asset": "elephant_red",
+      "source_project": "assets/generated/meshy/elephant_red/runtime/v1/elephant_red_source.blend",
+      "source_project_sha256": "3e503433f3e985285aeb62cd60f162a599a0224b9c5da414a54a283cbb593386"
+    },
+    {
+      "asset": "elephant_black",
+      "source_project": "assets/generated/meshy/elephant_black/runtime/v1/elephant_black_source.blend",
+      "source_project_sha256": "45cd5066e1408a124a0cf6a0a9a04ae92d0639942d539fc5a407e70a798fec1a"
+    },
+    {
+      "asset": "horse_red",
+      "source_project": "assets/generated/meshy/horse_red/runtime/v1/horse_red_source.blend",
+      "source_project_sha256": "e2bd4d4ee4999afdfe4a7de8056a9dcfa07f305125389963ff6a8a82cca2f801"
+    },
+    {
+      "asset": "horse_black",
+      "source_project": "assets/generated/meshy/horse_black/runtime/v1/horse_black_source.blend",
+      "source_project_sha256": "e9a305884a69cfa632e8d9b97b04baa963bfed67d4ece011ccf36aa60eb61ed5"
+    },
+    {
+      "asset": "chariot_red",
+      "source_project": "assets/generated/meshy/chariot_red/runtime/v1/chariot_red_source.blend",
+      "source_project_sha256": "fd7d09f1bd1683ca9fda93ad8ce3178b8436db97e0605ad87f9ba124bf5a79fd"
+    },
+    {
+      "asset": "chariot_black",
+      "source_project": "assets/generated/meshy/chariot_black/runtime/v1/chariot_black_source.blend",
+      "source_project_sha256": "92bdca35de5689d5062585d188584d0eeee2434636754a20cd25fe51c4aa9aa7"
+    },
+    {
+      "asset": "cannon_red",
+      "source_project": "assets/generated/meshy/cannon_red/runtime/v1/cannon_red_source.blend",
+      "source_project_sha256": "d7c288a8b573cb39389789d137ea9b8cbb8ae52dfa933a507ac36981cfae2060"
+    },
+    {
+      "asset": "cannon_black",
+      "source_project": "assets/generated/meshy/cannon_black/runtime/v1/cannon_black_source.blend",
+      "source_project_sha256": "e11a6d10b8cde3ca0af82b7531fdc6c5f11e01fea7aeb8fa73a312d26ae0ad9e"
+    },
+    {
+      "asset": "soldier_red",
+      "source_project": "assets/generated/meshy/soldier_red/runtime/v1/soldier_red_source.blend",
+      "source_project_sha256": "7a9f9fabbdd7f59f4b76219272f8dcb1471b787b6437e60dd727a83b9f48a15c"
+    },
+    {
+      "asset": "soldier_black",
+      "source_project": "assets/generated/meshy/soldier_black/runtime/v1/soldier_black_source.blend",
+      "source_project_sha256": "0f05187798e9905a957bd51ec4f75a83df190b5cb26e86e14396c7f705b7bc7f"
+    },
+    {
+      "asset": "board_main",
+      "source_project": "assets/generated/meshy/scene/board_main/runtime/v1/board_main_source.blend",
+      "source_project_sha256": "a766202b0e3a52ed7d2e1a8e310b6b9a68dcb45c28ce507dee0181935c6a3616"
+    },
+    {
+      "asset": "camp_red",
+      "source_project": "assets/generated/meshy/scene/camp_red/runtime/v1/camp_red_source.blend",
+      "source_project_sha256": "a9b868eafba8b147c9d5e0043f8055bc66e1bbad804449bbecf8568259e90bfd"
+    },
+    {
+      "asset": "camp_black",
+      "source_project": "assets/generated/meshy/scene/camp_black/runtime/v1/camp_black_source.blend",
+      "source_project_sha256": "b9a5d657302604de910d1bd2bca32c0b6b2eb6eaad35c903c41a474e65553434"
+    },
+    {
+      "asset": "watchtower",
+      "source_project": "assets/generated/meshy/scene/watchtower/runtime/v1/watchtower_source.blend",
+      "source_project_sha256": "c8710ae0a1374123b9f36f33d85aa4db6cabe2926571c54bd0fe4e5c0aa0ef54"
+    }
+  ],
+  "animation_projects": [
+    {
+      "asset": "general_red",
+      "source_project": "assets/generated/meshy/general_red/motion/runtime/v2/general_red_animation_source.blend",
+      "source_project_sha256": "8fc63d604dcf728123c14b8e83d4006d075bd68ff5800a42d6bc9c75a9e86e60"
+    },
+    {
+      "asset": "general_black",
+      "source_project": "assets/generated/meshy/general_black/motion/runtime/v4/general_black_animation_source.blend",
+      "source_project_sha256": "2be7806860f6f405022c2835b998621d51506849fcb4345782f0536b0c12a795"
+    },
+    {
+      "asset": "advisor_red",
+      "source_project": "assets/generated/meshy/advisor_red/motion/runtime/v4/advisor_red_animation_source.blend",
+      "source_project_sha256": "3d83a4357c8bb648db859e1b287052d0ff58fa2b60dc9602f046a529aedc16d8"
+    },
+    {
+      "asset": "advisor_black",
+      "source_project": "assets/generated/meshy/advisor_black/motion/runtime/v2/advisor_black_animation_source.blend",
+      "source_project_sha256": "a129cdc07809a000a821ce52aebeddf8f39e73a6c9e4ff65a10984ccc845a8d3"
+    },
+    {
+      "asset": "elephant_red",
+      "source_project": "assets/generated/meshy/elephant_red/motion/runtime/v1/elephant_red_animation_source.blend",
+      "source_project_sha256": "6f3ffd9918e7ebd6d1e99888325e32ecb0f0b4f69f1e6028d6033a406ae40a27"
+    },
+    {
+      "asset": "elephant_black",
+      "source_project": "assets/generated/meshy/elephant_black/motion/runtime/v1/elephant_black_animation_source.blend",
+      "source_project_sha256": "0936a10e8da42ae7374f0a72d8a78795e44a20eaa1261112bce70e42bb274182"
+    },
+    {
+      "asset": "horse_red",
+      "source_project": "assets/generated/meshy/horse_red/motion/runtime/v6/horse_red_animation_source.blend",
+      "source_project_sha256": "978e167b406d74c557f1dec0916c98254b54a228f87e28b7e041f3e268bf860f"
+    },
+    {
+      "asset": "horse_black",
+      "source_project": "assets/generated/meshy/horse_black/motion/runtime/v4/horse_black_animation_source.blend",
+      "source_project_sha256": "0f6a5b3f45c32f35fc1aaef19a880953640052113a760970bee863210f48843f"
+    },
+    {
+      "asset": "chariot_red",
+      "source_project": "assets/generated/meshy/chariot_red/motion/runtime/v6/chariot_red_animation_source.blend",
+      "source_project_sha256": "68f147fd4b2b5aec9f29ab92bd5fd2f3e8617d89be442de37e87663257d8ab6d"
+    },
+    {
+      "asset": "chariot_black",
+      "source_project": "assets/generated/meshy/chariot_black/motion/runtime/v4/chariot_black_animation_source.blend",
+      "source_project_sha256": "f633e904f9b120911ff944fa360ea5ee6ecbc46396bd2aa9a095dd4ff9c44559"
+    },
+    {
+      "asset": "cannon_red",
+      "source_project": "assets/generated/meshy/cannon_red/motion/runtime/v6/cannon_red_animation_source.blend",
+      "source_project_sha256": "5193f7a5a6ccc08dc5256795911d616589de55844ce4a82a9d230c51dba87fd1"
+    },
+    {
+      "asset": "cannon_black",
+      "source_project": "assets/generated/meshy/cannon_black/motion/runtime/v7/cannon_black_animation_source.blend",
+      "source_project_sha256": "5f01f7a7f6a76c8134a93a4df69a0c666fd64114b94bd50e0386e25df7371169"
+    },
+    {
+      "asset": "soldier_red",
+      "source_project": "assets/generated/meshy/soldier_red/motion/runtime/v6/soldier_red_animation_source.blend",
+      "source_project_sha256": "80583530e694a6f05d8c0d943222aa6ca9cc5b9b155e604b4b2016ebb4b1b48e"
+    },
+    {
+      "asset": "soldier_black",
+      "source_project": "assets/generated/meshy/soldier_black/motion/runtime/v11/soldier_black_animation_source.blend",
+      "source_project_sha256": "4a80b1d3843047f8553a9f16ad11fe064f0e9e546d5173853d584e747c06d176"
+    }
+  ],
+  "surfaces": [
+    {
+      "asset": "ground_dirt",
+      "source_maps": "assets/generated/meshy/scene/ground_dirt/surface/v1/finished"
+    },
+    {
+      "asset": "ground_stone",
+      "source_maps": "assets/generated/meshy/scene/ground_stone/surface/v1/finished"
+    },
+    {
+      "asset": "weathered_wood",
+      "source_maps": "assets/generated/meshy/scene/weathered_wood/surface/v1/finished"
+    },
+    {
+      "asset": "aged_metal",
+      "source_maps": "assets/generated/meshy/scene/aged_metal/surface/v1/finished"
+    },
+    {
+      "asset": "fabric_red",
+      "source_maps": "assets/generated/meshy/scene/fabric_red/surface/v1/finished"
+    },
+    {
+      "asset": "fabric_black",
+      "source_maps": "assets/generated/meshy/scene/fabric_black/surface/v1/finished"
+    },
+    {
+      "asset": "battlefield_earth",
+      "source_maps": "assets/generated/meshy/scene/battlefield_earth/surface/v1/finished"
+    }
+  ],
+  "inventory": "docs/asset-reports/production.json"
+}

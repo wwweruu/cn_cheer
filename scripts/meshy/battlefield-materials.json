@@ -1,0 +1,10 @@
+{
+  "assets": [
+    {
+      "id": "battlefield_earth",
+      "kind": "surface",
+      "model": "assets/source/environment/material_carrier.glb",
+      "prompt": "Photorealistic ancient military battlefield ground material, top down orthographic 2 by 2 meter patch of compact damp gray brown earth, olive moss, tiny irregular gravel, dried broken grass and scuffed worn soil. Clearly visible rough mottled medium size clumps, tiny stony grit and shallow irregular cracks. Cold desaturated earthy gray and olive brown palette, NO orange, no smooth sand, no clean uniform color. Realistic macro surface breakup at several scales. Flat tileable PBR material covering the whole UV square, matching opposite edges. Neutral even light, no baked lighting, no perspective, no objects or large rocks, no symbols, no borders."
+    }
+  ]
+}

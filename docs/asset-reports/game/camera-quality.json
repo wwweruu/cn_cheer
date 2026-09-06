@@ -1,0 +1,26 @@
+[
+  {
+    "mode": "desktop",
+    "highSelectedTier": "desktop",
+    "lowAllDistant": true,
+    "camera": [
+      9.336599999904298,
+      12.398624999814814,
+      15.894450000195414
+    ],
+    "errors": [],
+    "duplicateRequests": []
+  },
+  {
+    "mode": "mobile",
+    "highSelectedTier": "mobile",
+    "lowAllDistant": true,
+    "camera": [
+      0.009499999308011861,
+      21.872499998764702,
+      9.500000002786306
+    ],
+    "errors": [],
+    "duplicateRequests": []
+  }
+]

@@ -1,0 +1,187 @@
+{
+  "moves": [
+    {
+      "asset": "horse_red",
+      "pieceId": 2,
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 1.0399746419560538,
+        "front": 0.26535179310260837,
+        "baseHeight": 0.07799809814670404
+      },
+      "motion": {
+        "clip": "run",
+        "progress": 0.2,
+        "opacity": 1,
+        "token": 1
+      },
+      "position": [
+        -3.0408000000000004,
+        0.25,
+        4.506600000000001
+      ],
+      "poseSignature": 191.11636929071594
+    },
+    {
+      "asset": "horse_black",
+      "pieceId": 25,
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 0.9021006781154168,
+        "front": 0.2679018284476377,
+        "baseHeight": 0.06765755085865625
+      },
+      "motion": {
+        "clip": "run",
+        "progress": 0.1943076923260322,
+        "opacity": 1,
+        "token": 2
+      },
+      "position": [
+        -3.046476218329477,
+        0.25,
+        -4.517952436658954
+      ],
+      "poseSignature": 189.35526438463165
+    },
+    {
+      "asset": "chariot_red",
+      "pieceId": 1,
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 1.060037207852006,
+        "front": 0.32421865058398747,
+        "baseHeight": 0.07950279058890045
+      },
+      "motion": {
+        "clip": "walk",
+        "progress": 0.19492307690473704,
+        "opacity": 1,
+        "token": 3
+      },
+      "position": [
+        -4.2,
+        0.25,
+        4.516737097294707
+      ],
+      "poseSignature": 335.77160911259097
+    },
+    {
+      "asset": "chariot_black",
+      "pieceId": 24,
+      "tier": "distant",
+      "status": "ready",
+      "nameplate": {
+        "height": 0.800678103736643,
+        "front": 0.42449055752572995,
+        "baseHeight": 0.060050857780248226
+      },
+      "motion": {
+        "clip": "walk",
+        "progress": 0.11015384619052593,
+        "opacity": 1,
+        "token": 4
+      },
+      "position": [
+        -4.2,
+        0.25,
+        -4.654170308277685
+      ],
+      "poseSignature": 336.9044064339242
+    }
+  ],
+  "captures": [
+    {
+      "camp": "red",
+      "attacker": {
+        "pieceId": 10,
+        "asset": "cannon_red",
+        "tier": "distant",
+        "status": "ready",
+        "nameplate": {
+          "height": 1.0822291885526143,
+          "front": 0.45149998357537685,
+          "baseHeight": 0.08116718914144606
+        },
+        "motion": {
+          "clip": "attack",
+          "progress": 0.38170370371253387,
+          "opacity": 1,
+          "token": 6
+        },
+        "position": [
+          -3.1500000000000004,
+          0.25,
+          2.625
+        ],
+        "muzzle": [
+          -3.0069999933242744,
+          1.0857037038352741,
+          2.257270353456858
+        ],
+        "poseSignature": 146.70350427508907
+      },
+      "projectile": {
+        "visible": true,
+        "position": [
+          -3.0235343690961543,
+          1.7966352724688213,
+          1.423198938565278
+        ],
+        "launchOrigin": [
+          -3.0069999933242735,
+          1.1037961497192827,
+          2.2270270683423616
+        ]
+      }
+    },
+    {
+      "camp": "black",
+      "attacker": {
+        "pieceId": 22,
+        "asset": "cannon_black",
+        "tier": "distant",
+        "status": "ready",
+        "nameplate": {
+          "height": 1.2831608845246107,
+          "front": 0.45056711091865853,
+          "baseHeight": 0.0962370663393458
+        },
+        "motion": {
+          "clip": "attack",
+          "progress": 0.36970370367721267,
+          "opacity": 1,
+          "token": 9
+        },
+        "position": [
+          -3.1500000000000004,
+          0.25,
+          -2.625
+        ],
+        "muzzle": [
+          -3.1500000000000004,
+          1.4390830115943918,
+          -2.408890288556725
+        ],
+        "poseSignature": 127.74604017133446
+      },
+      "projectile": {
+        "visible": true,
+        "position": [
+          -3.1500000000000004,
+          1.814015971283117,
+          -1.9639710015601066
+        ],
+        "launchOrigin": [
+          -3.1500000000000004,
+          1.4459852872408194,
+          -2.421813757927325
+        ]
+      }
+    }
+  ],
+  "errors": []
+}

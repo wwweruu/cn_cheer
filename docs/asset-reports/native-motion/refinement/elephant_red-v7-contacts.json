@@ -1,0 +1,130 @@
+{
+  "piece": "elephant_red",
+  "version": 7,
+  "file": "assets\\generated\\meshy\\elephant_red\\motion\\runtime\\v7\\elephant_red_mobile.glb",
+  "clips": [
+    {
+      "clip": "idle",
+      "frames": [
+        0.0,
+        143.1999969482422
+      ],
+      "feet": {
+        "ElephantRLFoot": {
+          "vertices": 29,
+          "min_surface_clearance_m": 0.0008863359689712524,
+          "max_surface_clearance_m": 0.0008863359689712524,
+          "support_error_max_m": 0
+        },
+        "ElephantFRFoot": {
+          "vertices": 23,
+          "min_surface_clearance_m": 0.0007101893424987793,
+          "max_surface_clearance_m": 0.0007101893424987793,
+          "support_error_max_m": 0
+        },
+        "ElephantRRFoot": {
+          "vertices": 28,
+          "min_surface_clearance_m": 0.0010899752378463745,
+          "max_surface_clearance_m": 0.0010899752378463745,
+          "support_error_max_m": 0
+        },
+        "ElephantFLFoot": {
+          "vertices": 31,
+          "min_surface_clearance_m": 0.0010752230882644653,
+          "max_surface_clearance_m": 0.0010752230882644653,
+          "support_error_max_m": 0
+        }
+      },
+      "pedestal_drift_m": 0,
+      "ankle_edge_stretch_p99": 1.0358577966690063,
+      "ankle_edge_stretch_max": 1.7279309034347534,
+      "worst_ankle_edge": {
+        "rest": [
+          [
+            0.026413436979055405,
+            0.24375584721565247,
+            0.45025673508644104
+          ],
+          [
+            0.0317838080227375,
+            0.23652291297912598,
+            0.44586610794067383
+          ]
+        ],
+        "weights": [
+          {
+            "ElephantTail": 0.9332490563392639,
+            "Body": 0.062355127185583115,
+            "ElephantRRUpper": 0.00439581461250782
+          },
+          {
+            "Body": 0.9577494859695435,
+            "ElephantRRUpper": 0.04225049167871475
+          }
+        ]
+      },
+      "loop_vertex_jump_m": 0.0
+    },
+    {
+      "clip": "walk",
+      "frames": [
+        0.0,
+        67.19999694824219
+      ],
+      "feet": {
+        "ElephantRLFoot": {
+          "vertices": 29,
+          "min_surface_clearance_m": 0.0008857995271682739,
+          "max_surface_clearance_m": 0.02661001682281494,
+          "support_error_max_m": 0.0008864104747772217
+        },
+        "ElephantFRFoot": {
+          "vertices": 23,
+          "min_surface_clearance_m": 0.0007049590349197388,
+          "max_surface_clearance_m": 0.02643364667892456,
+          "support_error_max_m": 0.0015653520822525024
+        },
+        "ElephantRRFoot": {
+          "vertices": 28,
+          "min_surface_clearance_m": 0.0010893940925598145,
+          "max_surface_clearance_m": 0.026813581585884094,
+          "support_error_max_m": 0.0010900050401687622
+        },
+        "ElephantFLFoot": {
+          "vertices": 31,
+          "min_surface_clearance_m": 0.0010700225830078125,
+          "max_surface_clearance_m": 0.026798680424690247,
+          "support_error_max_m": 0.0019304752349853516
+        }
+      },
+      "pedestal_drift_m": 0,
+      "ankle_edge_stretch_p99": 2.1914279460906982,
+      "ankle_edge_stretch_max": 8.015792846679688,
+      "worst_ankle_edge": {
+        "rest": [
+          [
+            0.07044770568609238,
+            0.07300898432731628,
+            0.3710086941719055
+          ],
+          [
+            0.07098402082920074,
+            0.06064723804593086,
+            0.37005698680877686
+          ]
+        ],
+        "weights": [
+          {
+            "ElephantRRUpper": 0.9900071024894714,
+            "Body": 0.009992917068302631
+          },
+          {
+            "ElephantFRUpper": 0.9903082847595215,
+            "Body": 0.009691717103123665
+          }
+        ]
+      },
+      "loop_vertex_jump_m": 0.0
+    }
+  ]
+}

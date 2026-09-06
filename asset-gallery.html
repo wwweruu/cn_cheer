@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/><title>玄甲棋局 · 棋子检视</title><link rel="icon" href="data:,"/></head>
+<body data-production-gallery="true" data-normalize="true">
+<main class="review-shell">
+  <section class="stage" aria-label="棋子三维预览">
+    <div class="stage-heading"><span>玄甲棋局 / 棋子检视</span><span id="status" role="status">准备载入…</span></div>
+    <div id="viewport"></div>
+    <div class="views" aria-label="视角"><button data-view="front">正面</button><button data-view="quarter" aria-pressed="true">45°</button><button data-view="back">背面</button><button data-view="detail">上部细节</button><button data-view="base">底座</button></div>
+    <p class="gesture">拖动旋转 · 滚轮缩放 · 右键平移</p>
+  </section>
+  <aside>
+    <p class="eyebrow">14 枚棋子 <span>运行版本</span></p><h1 id="piece-title">红方 · 帅</h1>
+    <label for="asset">选择棋子</label>
+    <select id="asset"><option value="general_red">红方 · 帅</option><option value="general_black">黑方 · 将</option><option value="advisor_red">红方 · 仕</option><option value="advisor_black">黑方 · 士</option><option value="elephant_red">红方 · 相</option><option value="elephant_black">黑方 · 象</option><option value="horse_red">红方 · 马</option><option value="horse_black">黑方 · 马</option><option value="chariot_red">红方 · 车</option><option value="chariot_black">黑方 · 车</option><option value="cannon_red">红方 · 炮</option><option value="cannon_black">黑方 · 炮</option><option value="soldier_red">红方 · 兵</option><option value="soldier_black">黑方 · 卒</option></select>
+    <p class="intro">查看完整底座、披风、坐骑与战车结构，比较三个运行精度。每次仅载入当前棋子。</p>
+    <label for="quality">模型精度</label><select id="quality"><option value="desktop">近景 · 4K / 约 6 万面</option><option value="mobile">中景 · 2K / 约 2 万面</option><option value="lod2">远景 · 1K / 约 1.2 万面</option></select>
+    <dl><div><dt>当前三角面</dt><dd id="triangles">—</dd></div><div><dt>文件体积</dt><dd id="size">—</dd></div></dl>
+    <div class="toggles"><label><input type="checkbox" id="rotate"/> 自动旋转</label><label><input type="checkbox" id="wireframe"/> 查看线框</label><label><input type="checkbox" id="grid"/> 显示棋格尺度</label></div>
+    <div class="review-note"><strong>完整高模与 8K 源贴图已归档</strong><p>此处展示游戏运行文件。远景用于整盘观看，放大细查请选择近景。游戏中的棋名另以字体生成。</p></div>
+    <div class="links"><a id="download" download>下载当前 GLB</a><a href="/">返回棋局 ↗</a><a href="/master-review.html">红帅源高模 ↗</a></div>
+    <p class="footnote">检视时统一显示高度；下载模型保留各自棋盘尺度。</p>
+  </aside>
+</main><script type="module" src="/src/review/main.ts"></script>
+</body></html>

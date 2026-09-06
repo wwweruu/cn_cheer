@@ -1,0 +1,43 @@
+{
+  "piece": "horse_red",
+  "version": 12,
+  "file": "assets\\generated\\meshy\\horse_red\\motion\\runtime\\v12\\horse_red_mobile.glb",
+  "clips": [
+    {
+      "clip": "idle",
+      "frames": [
+        0.0,
+        143.1999969482422
+      ],
+      "feet": {},
+      "pedestal_drift_m": 0,
+      "ankle_edge_stretch_p99": 1.1636934280395508,
+      "ankle_edge_stretch_max": 1.8194286823272705,
+      "worst_ankle_edge": {
+        "rest": [
+          [
+            0.028635360300540924,
+            0.3339085876941681,
+            0.29357388615608215
+          ],
+          [
+            0.030423445627093315,
+            0.32940253615379333,
+            0.29125237464904785
+          ]
+        ],
+        "weights": [
+          {
+            "HorseTail": 0.6739986538887024,
+            "HorseBack": 0.32600137591362
+          },
+          {
+            "HorseTail": 0.5441860556602478,
+            "HorseBack": 0.4558139443397522
+          }
+        ]
+      },
+      "loop_vertex_jump_m": 0.0
+    }
+  ]
+}

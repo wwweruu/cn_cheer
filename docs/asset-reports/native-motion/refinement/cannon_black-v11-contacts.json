@@ -1,0 +1,41 @@
+{
+  "piece": "cannon_black",
+  "version": 11,
+  "file": "assets\\generated\\meshy\\cannon_black\\motion\\runtime\\v11\\cannon_black_mobile.glb",
+  "clips": [
+    {
+      "clip": "idle",
+      "frames": [
+        0.0,
+        143.1999969482422
+      ],
+      "feet": {},
+      "pedestal_drift_m": 0,
+      "ankle_edge_stretch_p99": 1.2278681993484497,
+      "ankle_edge_stretch_max": 4.638086318969727,
+      "worst_ankle_edge": {
+        "rest": [
+          [
+            -0.42125076055526733,
+            0.035162054002285004,
+            0.2907783091068268
+          ],
+          [
+            -0.4241955876350403,
+            0.04349645599722862,
+            0.2818043828010559
+          ]
+        ],
+        "weights": [
+          {
+            "Native_RightHand": 1.0
+          },
+          {
+            "Native_Hips": 1.0
+          }
+        ]
+      },
+      "loop_vertex_jump_m": 1.4227305200620322e-07
+    }
+  ]
+}

@@ -1,0 +1,773 @@
+{
+  "files": [
+    {
+      "source": "assets\\generated\\meshy\\general_red\\runtime\\v1\\general_red_desktop.glb",
+      "path": "/assets/models/production/general_red/desktop.webp.glb",
+      "bytes": 10453516,
+      "sha256": "1da9c399048b368b1498b8e049e2918708ae103541d447f04be1652e44fc7078"
+    },
+    {
+      "source": "assets\\generated\\meshy\\general_red\\runtime\\ktx-v1\\general_red_desktop.glb",
+      "path": "/assets/models/production/general_red/desktop.glb",
+      "bytes": 30327892,
+      "sha256": "7c489ca43c988613212d703e369b5b6896f04a85393467d2cb0d4fdc47e73a64"
+    },
+    {
+      "source": "assets\\generated\\meshy\\general_red\\runtime\\v1\\general_red_mobile.glb",
+      "path": "/assets/models/production/general_red/mobile.webp.glb",
+      "bytes": 3155696,
+      "sha256": "e5e06b402013461953c9eec2c15cc659bbc029e50f5bbf6f4db5b5a657ba9643"
+    },
+    {
+      "source": "assets\\generated\\meshy\\general_red\\runtime\\ktx-v1\\general_red_mobile.glb",
+      "path": "/assets/models/production/general_red/mobile.glb",
+      "bytes": 8476392,
+      "sha256": "ff51fd5af2f8216c2c64731154e6995ba187c7f5f28790799c246519ba3a4a85"
+    },
+    {
+      "source": "assets\\generated\\meshy\\general_red\\runtime\\distant-webp-1k\\model.glb",
+      "path": "/assets/models/production/general_red/distant.webp.glb",
+      "bytes": 1624272,
+      "sha256": "8e30c445630d797bc57e15876f9c7e6b229d90b5d5bc502709ebd6d14a8f728c"
+    },
+    {
+      "source": "assets\\generated\\meshy\\general_red\\runtime\\ktx-v1\\general_red_distant.glb",
+      "path": "/assets/models/production/general_red/distant.glb",
+      "bytes": 3058648,
+      "sha256": "e4e17f3c29f79bcc46e16dcd3e2f7ecddb2fc66caeeecc15ab354d49de8f4991"
+    },
+    {
+      "source": "assets\\generated\\meshy\\general_black\\runtime\\v1\\general_black_desktop.glb",
+      "path": "/assets/models/production/general_black/desktop.webp.glb",
+      "bytes": 9684808,
+      "sha256": "1a7ca5fb83e1dec1ee36bb216d25fc30f45796ce0c3c64d05e9f47ac583e0d9c"
+    },
+    {
+      "source": "assets\\generated\\meshy\\general_black\\runtime\\ktx-v1\\general_black_desktop.glb",
+      "path": "/assets/models/production/general_black/desktop.glb",
+      "bytes": 27650708,
+      "sha256": "9102fbf70d495f08a74c6f7653787c957cddbb4e9b90f8a7488eb2df929a8f62"
+    },
+    {
+      "source": "assets\\generated\\meshy\\general_black\\runtime\\v1\\general_black_mobile.glb",
+      "path": "/assets/models/production/general_black/mobile.webp.glb",
+      "bytes": 3067752,
+      "sha256": "9be039531fd58a46de76f6d79c1cf6df7fa2a46aed8e22dc3ca69e7dca662bb9"
+    },
+    {
+      "source": "assets\\generated\\meshy\\general_black\\runtime\\ktx-v1\\general_black_mobile.glb",
+      "path": "/assets/models/production/general_black/mobile.glb",
+      "bytes": 7927948,
+      "sha256": "774dc2f1164dfff654b8852ab823c26feeb74f0f19b0f45543fc586bc3a098c3"
+    },
+    {
+      "source": "assets\\generated\\meshy\\general_black\\runtime\\distant-webp-1k\\model.glb",
+      "path": "/assets/models/production/general_black/distant.webp.glb",
+      "bytes": 1743512,
+      "sha256": "dbc53f1677f78359f4821c980e62028f7122f3a73f50f174dbff0172a8712244"
+    },
+    {
+      "source": "assets\\generated\\meshy\\general_black\\runtime\\ktx-v1\\general_black_distant.glb",
+      "path": "/assets/models/production/general_black/distant.glb",
+      "bytes": 3062028,
+      "sha256": "102b31710aaba9bb6115e39938b078d2f3834d4b856e91ff9d39a62989d10cc9"
+    },
+    {
+      "source": "assets\\generated\\meshy\\advisor_red\\runtime\\v1\\advisor_red_desktop.glb",
+      "path": "/assets/models/production/advisor_red/desktop.webp.glb",
+      "bytes": 8418284,
+      "sha256": "5aacbb14c46b57b5216ad7119fc41204aceec142a3b2ef6d8ac9140adb41d63a"
+    },
+    {
+      "source": "assets\\generated\\meshy\\advisor_red\\runtime\\ktx-v1\\advisor_red_desktop.glb",
+      "path": "/assets/models/production/advisor_red/desktop.glb",
+      "bytes": 26059232,
+      "sha256": "f4b9873917a227c7db27a6149afeaed1331101880e4c4a510e79a339fce5bf3c"
+    },
+    {
+      "source": "assets\\generated\\meshy\\advisor_red\\runtime\\v1\\advisor_red_mobile.glb",
+      "path": "/assets/models/production/advisor_red/mobile.webp.glb",
+      "bytes": 2581908,
+      "sha256": "92a899619750cdb949dc9d7bbaf07bd10d0aafd1ef106cd74ee48c85a63b9b55"
+    },
+    {
+      "source": "assets\\generated\\meshy\\advisor_red\\runtime\\ktx-v1\\advisor_red_mobile.glb",
+      "path": "/assets/models/production/advisor_red/mobile.glb",
+      "bytes": 7284148,
+      "sha256": "cfcf43a3e0858f0bd1bbb66fc1ed5c5e06bcfa74d747e41dacbbf547b23d2274"
+    },
+    {
+      "source": "assets\\generated\\meshy\\advisor_red\\runtime\\distant-webp-1k\\model.glb",
+      "path": "/assets/models/production/advisor_red/distant.webp.glb",
+      "bytes": 1128948,
+      "sha256": "e3120272a912c6a0b1e261176348970dbbebc0f1d282dc89a87a9dde67725423"
+    },
+    {
+      "source": "assets\\generated\\meshy\\advisor_red\\runtime\\ktx-v1\\advisor_red_distant.glb",
+      "path": "/assets/models/production/advisor_red/distant.glb",
+      "bytes": 2412336,
+      "sha256": "fdac5a8d409124ec20f3bb89e33d13455885ad16524471d4691483ffb9e01db6"
+    },
+    {
+      "source": "assets\\generated\\meshy\\advisor_black\\runtime\\v1\\advisor_black_desktop.glb",
+      "path": "/assets/models/production/advisor_black/desktop.webp.glb",
+      "bytes": 10468840,
+      "sha256": "735d0583d9222f767f7f83fa153d4ed01c4430c5365a23b7bb0ed962032e8e00"
+    },
+    {
+      "source": "assets\\generated\\meshy\\advisor_black\\runtime\\ktx-v1\\advisor_black_desktop.glb",
+      "path": "/assets/models/production/advisor_black/desktop.glb",
+      "bytes": 31486748,
+      "sha256": "fb584b6e339fe36a5d35e6c62b577ba27734e8b0be9b48a3f84bf51029d40549"
+    },
+    {
+      "source": "assets\\generated\\meshy\\advisor_black\\runtime\\v1\\advisor_black_mobile.glb",
+      "path": "/assets/models/production/advisor_black/mobile.webp.glb",
+      "bytes": 3139788,
+      "sha256": "19690eb45c7ffd8736e1e86661480ec29486d3b2180a1e46c8616ecdf4a97345"
+    },
+    {
+      "source": "assets\\generated\\meshy\\advisor_black\\runtime\\ktx-v1\\advisor_black_mobile.glb",
+      "path": "/assets/models/production/advisor_black/mobile.glb",
+      "bytes": 8680980,
+      "sha256": "f8fcec93fb7f4b55a3dde0d2ca3541716561f78142976a3ddcd9a8391ee03924"
+    },
+    {
+      "source": "assets\\generated\\meshy\\advisor_black\\runtime\\distant-webp-1k\\model.glb",
+      "path": "/assets/models/production/advisor_black/distant.webp.glb",
+      "bytes": 1500144,
+      "sha256": "e5b4b3c28a8772add62772ac5b2d9adb5b24be9202ae96666e2189683fa3dc1a"
+    },
+    {
+      "source": "assets\\generated\\meshy\\advisor_black\\runtime\\ktx-v1\\advisor_black_distant.glb",
+      "path": "/assets/models/production/advisor_black/distant.glb",
+      "bytes": 2742044,
+      "sha256": "6a285f492887116fb55fa2f452908270ba692d09ced2c8c2004a68fb0202f330"
+    },
+    {
+      "source": "assets\\generated\\meshy\\elephant_red\\runtime\\v1\\elephant_red_desktop.glb",
+      "path": "/assets/models/production/elephant_red/desktop.webp.glb",
+      "bytes": 11448076,
+      "sha256": "ec222b24023527ca0035fc8276b76fa237379133d3422ab0e797dd121de4ef3b"
+    },
+    {
+      "source": "assets\\generated\\meshy\\elephant_red\\runtime\\ktx-v1\\elephant_red_desktop.glb",
+      "path": "/assets/models/production/elephant_red/desktop.glb",
+      "bytes": 34132880,
+      "sha256": "283766af1867addda8119c77ac22527816052ae1f9ebfba25f24e280e2e720a4"
+    },
+    {
+      "source": "assets\\generated\\meshy\\elephant_red\\runtime\\v1\\elephant_red_mobile.glb",
+      "path": "/assets/models/production/elephant_red/mobile.webp.glb",
+      "bytes": 3561812,
+      "sha256": "1eedf65339859893ddc7e4886ba151956d483fabedc1e9da50332b5d42f0a9c2"
+    },
+    {
+      "source": "assets\\generated\\meshy\\elephant_red\\runtime\\ktx-v1\\elephant_red_mobile.glb",
+      "path": "/assets/models/production/elephant_red/mobile.glb",
+      "bytes": 9715608,
+      "sha256": "7b5f6ef287a82a25f57bb6db4ff55231610095db1c848615712dd11d64f495ce"
+    },
+    {
+      "source": "assets\\generated\\meshy\\elephant_red\\runtime\\distant-webp-1k\\model.glb",
+      "path": "/assets/models/production/elephant_red/distant.webp.glb",
+      "bytes": 1827972,
+      "sha256": "92a7361d664aa7900b04fea947cdbbb27fb0f242985ff3dd6b6ba4a5b6beaf4c"
+    },
+    {
+      "source": "assets\\generated\\meshy\\elephant_red\\runtime\\ktx-v1\\elephant_red_distant.glb",
+      "path": "/assets/models/production/elephant_red/distant.glb",
+      "bytes": 3187540,
+      "sha256": "a250aa6ecd809cbccef89dea96577eb6cff997459b6e3380816b5b972d256aed"
+    },
+    {
+      "source": "assets\\generated\\meshy\\elephant_black\\runtime\\v1\\elephant_black_desktop.glb",
+      "path": "/assets/models/production/elephant_black/desktop.webp.glb",
+      "bytes": 13435264,
+      "sha256": "a279b9e65b23ed1eb6bedc7d62ea4fb8cc1be21c799252d413b7aaa7670f89cf"
+    },
+    {
+      "source": "assets\\generated\\meshy\\elephant_black\\runtime\\ktx-v1\\elephant_black_desktop.glb",
+      "path": "/assets/models/production/elephant_black/desktop.glb",
+      "bytes": 37267780,
+      "sha256": "1333a19481c0c94b245732700db112c10a05a9dfeafa401e5f98f1932c2067e9"
+    },
+    {
+      "source": "assets\\generated\\meshy\\elephant_black\\runtime\\v1\\elephant_black_mobile.glb",
+      "path": "/assets/models/production/elephant_black/mobile.webp.glb",
+      "bytes": 4228916,
+      "sha256": "392e4279e4c0672c772703fe17afa36d3caa808dc402ecc31f9b6e52fd2fc5c0"
+    },
+    {
+      "source": "assets\\generated\\meshy\\elephant_black\\runtime\\ktx-v1\\elephant_black_mobile.glb",
+      "path": "/assets/models/production/elephant_black/mobile.glb",
+      "bytes": 10628480,
+      "sha256": "e254fb0f7506d8da61a9e7a321082fbe448582c541ee5fb42d4d4f55ebd04652"
+    },
+    {
+      "source": "assets\\generated\\meshy\\elephant_black\\runtime\\distant-webp-1k\\model.glb",
+      "path": "/assets/models/production/elephant_black/distant.webp.glb",
+      "bytes": 2131068,
+      "sha256": "5b76b1f88307cb19677ff02712d16710a38a565abb84b47f26ab4a819d0fb5b2"
+    },
+    {
+      "source": "assets\\generated\\meshy\\elephant_black\\runtime\\ktx-v1\\elephant_black_distant.glb",
+      "path": "/assets/models/production/elephant_black/distant.glb",
+      "bytes": 3220196,
+      "sha256": "f5c8881bbc3655af75720cd215dcef7351f6865d581bba663426c8adfba311f4"
+    },
+    {
+      "source": "assets\\generated\\meshy\\horse_red\\runtime\\v1\\horse_red_desktop.glb",
+      "path": "/assets/models/production/horse_red/desktop.webp.glb",
+      "bytes": 10821200,
+      "sha256": "e8adcbcd5213a14c09cfa6be00894dd18929db9533b48fee9d394412a9887fc7"
+    },
+    {
+      "source": "assets\\generated\\meshy\\horse_red\\runtime\\ktx-v1\\horse_red_desktop.glb",
+      "path": "/assets/models/production/horse_red/desktop.glb",
+      "bytes": 32206928,
+      "sha256": "76b058983d124eeeca336fac250b2ce8ed1a0abe50678f91b1f7607b8b98c5fa"
+    },
+    {
+      "source": "assets\\generated\\meshy\\horse_red\\runtime\\v1\\horse_red_mobile.glb",
+      "path": "/assets/models/production/horse_red/mobile.webp.glb",
+      "bytes": 3312724,
+      "sha256": "88f39739eb17a0bbe13d16b59a367faa7a689470d1e653832d59748dd22b79ff"
+    },
+    {
+      "source": "assets\\generated\\meshy\\horse_red\\runtime\\ktx-v1\\horse_red_mobile.glb",
+      "path": "/assets/models/production/horse_red/mobile.glb",
+      "bytes": 9083044,
+      "sha256": "be2cb56fcbff77136051a5ed2ae9c7bc43371296d2897c090efcdc5d149d4c91"
+    },
+    {
+      "source": "assets\\generated\\meshy\\horse_red\\runtime\\distant-webp-1k\\model.glb",
+      "path": "/assets/models/production/horse_red/distant.webp.glb",
+      "bytes": 1578560,
+      "sha256": "aef39973fb9db4f1b83b85ca82a841903aa6371a25d7e9ae9a7493c0eaa1938f"
+    },
+    {
+      "source": "assets\\generated\\meshy\\horse_red\\runtime\\ktx-v1\\horse_red_distant.glb",
+      "path": "/assets/models/production/horse_red/distant.glb",
+      "bytes": 3013480,
+      "sha256": "d8e3f984e2d007d83aa624d05fc9b639d9aeb4cc1b8dcf0eb3f09e8db9646d90"
+    },
+    {
+      "source": "assets\\generated\\meshy\\horse_black\\runtime\\v1\\horse_black_desktop.glb",
+      "path": "/assets/models/production/horse_black/desktop.webp.glb",
+      "bytes": 11168288,
+      "sha256": "1e85d189b4ef875554b888bf68d6015950741e026167042c743b37ad58dc1356"
+    },
+    {
+      "source": "assets\\generated\\meshy\\horse_black\\runtime\\ktx-v1\\horse_black_desktop.glb",
+      "path": "/assets/models/production/horse_black/desktop.glb",
+      "bytes": 32298152,
+      "sha256": "5c695f8a08fab73ebdffde447a15347f722581aaa4daa03ef46cf60b46f71969"
+    },
+    {
+      "source": "assets\\generated\\meshy\\horse_black\\runtime\\v1\\horse_black_mobile.glb",
+      "path": "/assets/models/production/horse_black/mobile.webp.glb",
+      "bytes": 3468160,
+      "sha256": "7f01db997a242553732e21155d3cca02825e27b1ea3858955af0b7d9d94835bc"
+    },
+    {
+      "source": "assets\\generated\\meshy\\horse_black\\runtime\\ktx-v1\\horse_black_mobile.glb",
+      "path": "/assets/models/production/horse_black/mobile.glb",
+      "bytes": 9180604,
+      "sha256": "938f03659bc01490255ca0c2cb9f15957c57ff3622c273f7a2058aab37d64cbb"
+    },
+    {
+      "source": "assets\\generated\\meshy\\horse_black\\runtime\\distant-webp-1k\\model.glb",
+      "path": "/assets/models/production/horse_black/distant.webp.glb",
+      "bytes": 1738252,
+      "sha256": "9ef4068a724aac43e80455056c3ac074d88334bc3d1c9b1723556cbf7b08cc1e"
+    },
+    {
+      "source": "assets\\generated\\meshy\\horse_black\\runtime\\ktx-v1\\horse_black_distant.glb",
+      "path": "/assets/models/production/horse_black/distant.glb",
+      "bytes": 3078924,
+      "sha256": "f06110724a42924d7cc6fffe6fa040e4f16c1d1d51cd27d828424272847d9c5d"
+    },
+    {
+      "source": "assets\\generated\\meshy\\chariot_red\\runtime\\v1\\chariot_red_desktop.glb",
+      "path": "/assets/models/production/chariot_red/desktop.webp.glb",
+      "bytes": 12500412,
+      "sha256": "c644055d70c5a8c227a5a8ba4dc3cf7a8d595e7a03b373165b4e9397c77598f7"
+    },
+    {
+      "source": "assets\\generated\\meshy\\chariot_red\\runtime\\ktx-v1\\chariot_red_desktop.glb",
+      "path": "/assets/models/production/chariot_red/desktop.glb",
+      "bytes": 35544252,
+      "sha256": "1215646ed10b59253e6d9bdaf79e5fe4ad83b6c9cde7d5eee63b15d783f049d7"
+    },
+    {
+      "source": "assets\\generated\\meshy\\chariot_red\\runtime\\v1\\chariot_red_mobile.glb",
+      "path": "/assets/models/production/chariot_red/mobile.webp.glb",
+      "bytes": 3958612,
+      "sha256": "8579768f561855d402e56e19ac13bd4f6bc4ccb2148b2c5d20f6c39afee78bbe"
+    },
+    {
+      "source": "assets\\generated\\meshy\\chariot_red\\runtime\\ktx-v1\\chariot_red_mobile.glb",
+      "path": "/assets/models/production/chariot_red/mobile.glb",
+      "bytes": 10314068,
+      "sha256": "0c79a879d774c77e24bda8bae262c8b505e663d25f7d3e6dd9b2c2c6855391f1"
+    },
+    {
+      "source": "assets\\generated\\meshy\\chariot_red\\runtime\\distant-webp-1k\\model.glb",
+      "path": "/assets/models/production/chariot_red/distant.webp.glb",
+      "bytes": 1927708,
+      "sha256": "c1f74225573b06748e632d391f138dd610a3d447023bbc92c2395732aba611ea"
+    },
+    {
+      "source": "assets\\generated\\meshy\\chariot_red\\runtime\\ktx-v1\\chariot_red_distant.glb",
+      "path": "/assets/models/production/chariot_red/distant.glb",
+      "bytes": 3336260,
+      "sha256": "48d971cfcee87b32e2689577ffd795a896fcf6ca5f1fe8ebfda9b142ddd4f6ae"
+    },
+    {
+      "source": "assets\\generated\\meshy\\chariot_black\\runtime\\v1\\chariot_black_desktop.glb",
+      "path": "/assets/models/production/chariot_black/desktop.webp.glb",
+      "bytes": 10005680,
+      "sha256": "e8b1c5a9c69fb5c87165b91b8e1cbb698b81759a92989b2be3a2e467a3bf0a9a"
+    },
+    {
+      "source": "assets\\generated\\meshy\\chariot_black\\runtime\\ktx-v1\\chariot_black_desktop.glb",
+      "path": "/assets/models/production/chariot_black/desktop.glb",
+      "bytes": 29960720,
+      "sha256": "2e82e9dfab3a65b0bf55cca7b3a6dabf76cc42c2fc6cbb0bce532f1e0307aa90"
+    },
+    {
+      "source": "assets\\generated\\meshy\\chariot_black\\runtime\\v1\\chariot_black_mobile.glb",
+      "path": "/assets/models/production/chariot_black/mobile.webp.glb",
+      "bytes": 3234388,
+      "sha256": "ede58f0ef3853f98de8118aaa4c3927a217a9123aa9026f1235304919dee06d9"
+    },
+    {
+      "source": "assets\\generated\\meshy\\chariot_black\\runtime\\ktx-v1\\chariot_black_mobile.glb",
+      "path": "/assets/models/production/chariot_black/mobile.glb",
+      "bytes": 8764748,
+      "sha256": "d68e8ff05f52f352f67f395a4c4e4b96f2ad979842f9cd7b8a2967d809dea4d0"
+    },
+    {
+      "source": "assets\\generated\\meshy\\chariot_black\\runtime\\distant-webp-1k\\model.glb",
+      "path": "/assets/models/production/chariot_black/distant.webp.glb",
+      "bytes": 1825724,
+      "sha256": "34b189998631681656ebf398fd2c239103c0f9672c483656253fb264576ee080"
+    },
+    {
+      "source": "assets\\generated\\meshy\\chariot_black\\runtime\\ktx-v1\\chariot_black_distant.glb",
+      "path": "/assets/models/production/chariot_black/distant.glb",
+      "bytes": 3131692,
+      "sha256": "1eb149b8bfb580a3cef74a3113f2839037586223a12c856e7a1d4af83f135c10"
+    },
+    {
+      "source": "assets\\generated\\meshy\\cannon_red\\runtime\\v1\\cannon_red_desktop.glb",
+      "path": "/assets/models/production/cannon_red/desktop.webp.glb",
+      "bytes": 11687376,
+      "sha256": "7a55c1f65074ecc31a17a0d684b0bcf09cc172ba4738186c9a20663a31cbb3c7"
+    },
+    {
+      "source": "assets\\generated\\meshy\\cannon_red\\runtime\\ktx-v1\\cannon_red_desktop.glb",
+      "path": "/assets/models/production/cannon_red/desktop.glb",
+      "bytes": 33587716,
+      "sha256": "ad368d10e626f2835b7ea2ac1ac55f34f548cba8eeb87f1a0e245e5b9bdccc96"
+    },
+    {
+      "source": "assets\\generated\\meshy\\cannon_red\\runtime\\v1\\cannon_red_mobile.glb",
+      "path": "/assets/models/production/cannon_red/mobile.webp.glb",
+      "bytes": 3435420,
+      "sha256": "c5e2dd2743198c7256ba7fec218df15467723170c0c6d10f9cedefe46aaddbe3"
+    },
+    {
+      "source": "assets\\generated\\meshy\\cannon_red\\runtime\\ktx-v1\\cannon_red_mobile.glb",
+      "path": "/assets/models/production/cannon_red/mobile.glb",
+      "bytes": 9292580,
+      "sha256": "2028a5770410e7d14b7d107bb181fdb1c56de249b03d8a79be3d74c51582b9ba"
+    },
+    {
+      "source": "assets\\generated\\meshy\\cannon_red\\runtime\\distant-webp-1k\\model.glb",
+      "path": "/assets/models/production/cannon_red/distant.webp.glb",
+      "bytes": 1607220,
+      "sha256": "ebd70958bd4137f8db32f25aa1620e2b65e2e6ff004fab978b531f68afad7659"
+    },
+    {
+      "source": "assets\\generated\\meshy\\cannon_red\\runtime\\ktx-v1\\cannon_red_distant.glb",
+      "path": "/assets/models/production/cannon_red/distant.glb",
+      "bytes": 3045088,
+      "sha256": "cda2196de68e9e30b08ba31ba3a226613ba10d6fc01935099513da1806c2d519"
+    },
+    {
+      "source": "assets\\generated\\meshy\\cannon_black\\runtime\\v1\\cannon_black_desktop.glb",
+      "path": "/assets/models/production/cannon_black/desktop.webp.glb",
+      "bytes": 9675480,
+      "sha256": "dff44a3059cf9ab12730136e89f8cd13977d2ccc7aaa8f20e629cbd54569298c"
+    },
+    {
+      "source": "assets\\generated\\meshy\\cannon_black\\runtime\\ktx-v1\\cannon_black_desktop.glb",
+      "path": "/assets/models/production/cannon_black/desktop.glb",
+      "bytes": 27663548,
+      "sha256": "d9f187d1892884b62adb05ea08400a992fe4c72b1f87be445d5160e17d7b192a"
+    },
+    {
+      "source": "assets\\generated\\meshy\\cannon_black\\runtime\\v1\\cannon_black_mobile.glb",
+      "path": "/assets/models/production/cannon_black/mobile.webp.glb",
+      "bytes": 3022988,
+      "sha256": "bc2bff08b53dd03742c0a9c29d4d01ed2c2f678c5a830c0783311da35a43bae1"
+    },
+    {
+      "source": "assets\\generated\\meshy\\cannon_black\\runtime\\ktx-v1\\cannon_black_mobile.glb",
+      "path": "/assets/models/production/cannon_black/mobile.glb",
+      "bytes": 7911604,
+      "sha256": "c772ee58ff8fc5bb6dab871917716ed83d14b1cb25fdb98dbf19c3ca47573d21"
+    },
+    {
+      "source": "assets\\generated\\meshy\\cannon_black\\runtime\\distant-webp-1k\\model.glb",
+      "path": "/assets/models/production/cannon_black/distant.webp.glb",
+      "bytes": 1695748,
+      "sha256": "8b0e59d3bac62e7965925622e8d36e14a4a9206e0cdf1b025555c9c87ca40b0d"
+    },
+    {
+      "source": "assets\\generated\\meshy\\cannon_black\\runtime\\ktx-v1\\cannon_black_distant.glb",
+      "path": "/assets/models/production/cannon_black/distant.glb",
+      "bytes": 3047364,
+      "sha256": "6e246c9835e7ae323376ed465197f6f9099b11d74c3f0f9a451b1d52a5e3ee3a"
+    },
+    {
+      "source": "assets\\generated\\meshy\\soldier_red\\runtime\\v1\\soldier_red_desktop.glb",
+      "path": "/assets/models/production/soldier_red/desktop.webp.glb",
+      "bytes": 12768848,
+      "sha256": "61ab69976c6d467d5e4587bce568678fbcb310880959a9a823e95b1f0bafa1d7"
+    },
+    {
+      "source": "assets\\generated\\meshy\\soldier_red\\runtime\\ktx-v1\\soldier_red_desktop.glb",
+      "path": "/assets/models/production/soldier_red/desktop.glb",
+      "bytes": 35681944,
+      "sha256": "62cb09d8e58a4b7b6b0abdd8c5d32355fd0e973e0d0f5778492917771b3636e1"
+    },
+    {
+      "source": "assets\\generated\\meshy\\soldier_red\\runtime\\v1\\soldier_red_mobile.glb",
+      "path": "/assets/models/production/soldier_red/mobile.webp.glb",
+      "bytes": 3623612,
+      "sha256": "489f57c3d16e64fe991eff10570e9ecf5f1063e4ff677719d298f5d26361e84f"
+    },
+    {
+      "source": "assets\\generated\\meshy\\soldier_red\\runtime\\ktx-v1\\soldier_red_mobile.glb",
+      "path": "/assets/models/production/soldier_red/mobile.glb",
+      "bytes": 9621072,
+      "sha256": "e0d231125009cef9a2cf1c86167031fbfea7bef0e143e36f0db7cd0bdc20de2b"
+    },
+    {
+      "source": "assets\\generated\\meshy\\soldier_red\\runtime\\distant-webp-1k\\model.glb",
+      "path": "/assets/models/production/soldier_red/distant.webp.glb",
+      "bytes": 1502728,
+      "sha256": "b7a48605869a0c35dcac8abc6ac0f1d3d9765eab320d02cb7450a03f9b63c0cd"
+    },
+    {
+      "source": "assets\\generated\\meshy\\soldier_red\\runtime\\ktx-v1\\soldier_red_distant.glb",
+      "path": "/assets/models/production/soldier_red/distant.glb",
+      "bytes": 2925688,
+      "sha256": "8be66b040c8c46a1b921b760025c077220190cfb8a4d1f4cfdfad9ba8086b641"
+    },
+    {
+      "source": "assets\\generated\\meshy\\soldier_black\\runtime\\v1\\soldier_black_desktop.glb",
+      "path": "/assets/models/production/soldier_black/desktop.webp.glb",
+      "bytes": 14123980,
+      "sha256": "b5c6d1dc47b911e9d9e4e7edb185c33166b0d00e90ee231c3a0447de6d60e325"
+    },
+    {
+      "source": "assets\\generated\\meshy\\soldier_black\\runtime\\ktx-v1\\soldier_black_desktop.glb",
+      "path": "/assets/models/production/soldier_black/desktop.glb",
+      "bytes": 37364712,
+      "sha256": "5ee7e09dd421193171fa57134be20a1f9f8d4ca70c0f2ee97e3c187ee5c7196f"
+    },
+    {
+      "source": "assets\\generated\\meshy\\soldier_black\\runtime\\v1\\soldier_black_mobile.glb",
+      "path": "/assets/models/production/soldier_black/mobile.webp.glb",
+      "bytes": 4141816,
+      "sha256": "9afdd8dd20e8e787cf3c5619cc9d9d11f9137a14ad0ab60697eec95b07da19c3"
+    },
+    {
+      "source": "assets\\generated\\meshy\\soldier_black\\runtime\\ktx-v1\\soldier_black_mobile.glb",
+      "path": "/assets/models/production/soldier_black/mobile.glb",
+      "bytes": 10127488,
+      "sha256": "44abab73ad533ada134e4edbcb844310aa5c50de3a2c5ed41daf396f7e673de1"
+    },
+    {
+      "source": "assets\\generated\\meshy\\soldier_black\\runtime\\distant-webp-1k\\model.glb",
+      "path": "/assets/models/production/soldier_black/distant.webp.glb",
+      "bytes": 1581636,
+      "sha256": "94199843f3cd8bef7de0f900d8004e72dc580b5d76183dbfa2b552a1846fc9cc"
+    },
+    {
+      "source": "assets\\generated\\meshy\\soldier_black\\runtime\\ktx-v1\\soldier_black_distant.glb",
+      "path": "/assets/models/production/soldier_black/distant.glb",
+      "bytes": 2958016,
+      "sha256": "0f22c5a28cb51ba013406f7e59ad6906128436cdb709829db40460a972609788"
+    },
+    {
+      "source": "assets\\generated\\meshy\\scene\\board_main\\runtime\\rebaked-desktop-v1\\model.glb",
+      "path": "/assets/board/production/board_main/desktop.webp.glb",
+      "bytes": 7702968,
+      "sha256": "8c191bb70596090645ee9c9f846f94ec0777fd7326b74b01fd6de625d4283f94"
+    },
+    {
+      "source": "assets\\generated\\meshy\\scene\\board_main\\runtime\\ktx-v2\\board_main_desktop.glb",
+      "path": "/assets/board/production/board_main/desktop.glb",
+      "bytes": 20178916,
+      "sha256": "8433143a8bb44185f69aa70e250fb78d48e9ebb3472234b17bfb6c07e36d658d"
+    },
+    {
+      "source": "assets\\generated\\meshy\\scene\\board_main\\runtime\\rebaked-mobile-v1\\model.glb",
+      "path": "/assets/board/production/board_main/mobile.webp.glb",
+      "bytes": 2585364,
+      "sha256": "86c55ce7f79ddaf8ac09518e5e4896bef726d305a2b64d60e5ceaa64e7b64b18"
+    },
+    {
+      "source": "assets\\generated\\meshy\\scene\\board_main\\runtime\\ktx-v2\\board_main_mobile.glb",
+      "path": "/assets/board/production/board_main/mobile.glb",
+      "bytes": 6465812,
+      "sha256": "9ea8c41d2bb58db3825ddea8950da208feb9c052479954258dff2b076c9af329"
+    },
+    {
+      "source": "assets\\generated\\meshy\\scene\\camp_red\\runtime\\v1\\camp_red_desktop.glb",
+      "path": "/assets/board/production/camp_red/desktop.webp.glb",
+      "bytes": 7033296,
+      "sha256": "e4d723d1535047d6dc5f5570970c69f9461b581eec0881bffe264d2699d412a8"
+    },
+    {
+      "source": "assets\\generated\\meshy\\scene\\camp_red\\runtime\\ktx-v1\\camp_red_desktop.glb",
+      "path": "/assets/board/production/camp_red/desktop.glb",
+      "bytes": 24238384,
+      "sha256": "fe781b962cdff21e36920c76703a1b8a3c288596b907088163174b5297db47d4"
+    },
+    {
+      "source": "assets\\generated\\meshy\\scene\\camp_red\\runtime\\v1\\camp_red_mobile.glb",
+      "path": "/assets/board/production/camp_red/mobile.webp.glb",
+      "bytes": 2024560,
+      "sha256": "cbf7f5de9398bb74053103206b26f0ce2ed7bbab20b5641bd0fbcd2483bf9442"
+    },
+    {
+      "source": "assets\\generated\\meshy\\scene\\camp_red\\runtime\\ktx-v1\\camp_red_mobile.glb",
+      "path": "/assets/board/production/camp_red/mobile.glb",
+      "bytes": 6560740,
+      "sha256": "49a28945ac8855b17b7194caef39c9023bc6bde6d2cc82773a250c3faec4a606"
+    },
+    {
+      "source": "assets\\generated\\meshy\\scene\\camp_black\\runtime\\v1\\camp_black_desktop.glb",
+      "path": "/assets/board/production/camp_black/desktop.webp.glb",
+      "bytes": 7169176,
+      "sha256": "339826f8e97b2c37a3516cafda6712a6336e1c1a15538e0a4192a0a119398ebe"
+    },
+    {
+      "source": "assets\\generated\\meshy\\scene\\camp_black\\runtime\\ktx-v1\\camp_black_desktop.glb",
+      "path": "/assets/board/production/camp_black/desktop.glb",
+      "bytes": 23141028,
+      "sha256": "0236928c5bcd6a1e0b36e205b1393b6cc7baeaacf0003ad9f5b8f223c91848d7"
+    },
+    {
+      "source": "assets\\generated\\meshy\\scene\\camp_black\\runtime\\v1\\camp_black_mobile.glb",
+      "path": "/assets/board/production/camp_black/mobile.webp.glb",
+      "bytes": 1935596,
+      "sha256": "e57fe723d0cfdf5a4d4e616fe0c212d98a76d439689e022d8d1b5a58e7dab239"
+    },
+    {
+      "source": "assets\\generated\\meshy\\scene\\camp_black\\runtime\\ktx-v1\\camp_black_mobile.glb",
+      "path": "/assets/board/production/camp_black/mobile.glb",
+      "bytes": 6065080,
+      "sha256": "7e678ba33c1508f1719ac6dc3449dbae76e782b2339819c09af42123216a4a22"
+    },
+    {
+      "source": "assets\\generated\\meshy\\scene\\watchtower\\runtime\\v1\\watchtower_desktop.glb",
+      "path": "/assets/board/production/watchtower/desktop.webp.glb",
+      "bytes": 10107992,
+      "sha256": "e20ae253e589d6daab8a968f3da3acc72b160419f3bd15208d6aedb34a3eb644"
+    },
+    {
+      "source": "assets\\generated\\meshy\\scene\\watchtower\\runtime\\ktx-v1\\watchtower_desktop.glb",
+      "path": "/assets/board/production/watchtower/desktop.glb",
+      "bytes": 31149460,
+      "sha256": "dff12a535e27b3f8212241a61f619869aec4c605525f2b3cf17bfe51a6df9c0f"
+    },
+    {
+      "source": "assets\\generated\\meshy\\scene\\watchtower\\runtime\\v1\\watchtower_mobile.glb",
+      "path": "/assets/board/production/watchtower/mobile.webp.glb",
+      "bytes": 3068252,
+      "sha256": "36d0a09af0bbcf5f5de12e0830a5ad68bea6c11809dbbaaec95c370925706a0d"
+    },
+    {
+      "source": "assets\\generated\\meshy\\scene\\watchtower\\runtime\\ktx-v1\\watchtower_mobile.glb",
+      "path": "/assets/board/production/watchtower/mobile.glb",
+      "bytes": 8614844,
+      "sha256": "25376fc4c7f393ecfa9e40900804945c253eb5f3b1908178b21c8519c5e480c8"
+    },
+    {
+      "source": "assets\\generated\\meshy\\scene\\ground_dirt\\surface\\v1\\finished\\runtime\\ground_dirt_desktop.glb",
+      "path": "/assets/environment/materials/ground_dirt/desktop.webp.glb",
+      "bytes": 8278408,
+      "sha256": "43275b93cdc389947a745c6cc37aeb1c457f503d7be63a5e9e02e4009c7eaf03"
+    },
+    {
+      "source": "assets\\generated\\meshy\\scene\\ground_dirt\\surface\\v1\\finished\\runtime\\ktx-v1\\ground_dirt_desktop.glb",
+      "path": "/assets/environment/materials/ground_dirt/desktop.glb",
+      "bytes": 24680292,
+      "sha256": "bed2c65e06911908d479f94f6c467878ded89834ce1caebb1ddaa815c177ef07"
+    },
+    {
+      "source": "assets\\generated\\meshy\\scene\\ground_dirt\\surface\\v1\\finished\\runtime\\ground_dirt_mobile.glb",
+      "path": "/assets/environment/materials/ground_dirt/mobile.webp.glb",
+      "bytes": 2362532,
+      "sha256": "8713007b816285dc971d38750cc14ec2e2bcf3de9f00a10d7532cd8565a3abbe"
+    },
+    {
+      "source": "assets\\generated\\meshy\\scene\\ground_dirt\\surface\\v1\\finished\\runtime\\ktx-v1\\ground_dirt_mobile.glb",
+      "path": "/assets/environment/materials/ground_dirt/mobile.glb",
+      "bytes": 6458912,
+      "sha256": "0276f82ddbff984b18d789579ff8d5fb83ed18e3a8b412bef6ebb85b731f1a14"
+    },
+    {
+      "source": "assets\\generated\\meshy\\scene\\ground_stone\\surface\\v1\\finished\\runtime\\ground_stone_desktop.glb",
+      "path": "/assets/environment/materials/ground_stone/desktop.webp.glb",
+      "bytes": 2102060,
+      "sha256": "e220dc4c68cf6c78ca0cda13d92f654eebf4a57167263b95e795fba686608140"
+    },
+    {
+      "source": "assets\\generated\\meshy\\scene\\ground_stone\\surface\\v1\\finished\\runtime\\ktx-v1\\ground_stone_desktop.glb",
+      "path": "/assets/environment/materials/ground_stone/desktop.glb",
+      "bytes": 9994036,
+      "sha256": "6077a7da12d1e01ce623fcdb4c7b10e15aefcf092b6b1a6d5807a56263dd617f"
+    },
+    {
+      "source": "assets\\generated\\meshy\\scene\\ground_stone\\surface\\v1\\finished\\runtime\\ground_stone_mobile.glb",
+      "path": "/assets/environment/materials/ground_stone/mobile.webp.glb",
+      "bytes": 556744,
+      "sha256": "b2686b8eb73ed4411ecdf6e8e8c2fc2e64f31376bb043b2edec0012a06a1ee0a"
+    },
+    {
+      "source": "assets\\generated\\meshy\\scene\\ground_stone\\surface\\v1\\finished\\runtime\\ktx-v1\\ground_stone_mobile.glb",
+      "path": "/assets/environment/materials/ground_stone/mobile.glb",
+      "bytes": 2428672,
+      "sha256": "42e9072cad666eb0a0b5b14b1a4d2e1e03267b4536b74da759228733d2dda36d"
+    },
+    {
+      "source": "assets\\generated\\meshy\\scene\\weathered_wood\\surface\\v1\\finished\\runtime\\weathered_wood_desktop.glb",
+      "path": "/assets/environment/materials/weathered_wood/desktop.webp.glb",
+      "bytes": 10869168,
+      "sha256": "243d4799a34bc3f71b92612d06ca6dac1e9be5254a38909b06db709ead0fa168"
+    },
+    {
+      "source": "assets\\generated\\meshy\\scene\\weathered_wood\\surface\\v1\\finished\\runtime\\ktx-v1\\weathered_wood_desktop.glb",
+      "path": "/assets/environment/materials/weathered_wood/desktop.glb",
+      "bytes": 29238228,
+      "sha256": "a3d9fcd1e8208a94ced18f08f03a2b1f7f3ca98cddbe003e873969971148de8b"
+    },
+    {
+      "source": "assets\\generated\\meshy\\scene\\weathered_wood\\surface\\v1\\finished\\runtime\\weathered_wood_mobile.glb",
+      "path": "/assets/environment/materials/weathered_wood/mobile.webp.glb",
+      "bytes": 3083752,
+      "sha256": "9141573904b59ab175617faa486e2a849107efe0ee0452cb78559167e76884b0"
+    },
+    {
+      "source": "assets\\generated\\meshy\\scene\\weathered_wood\\surface\\v1\\finished\\runtime\\ktx-v1\\weathered_wood_mobile.glb",
+      "path": "/assets/environment/materials/weathered_wood/mobile.glb",
+      "bytes": 7636136,
+      "sha256": "685095d98770d3ef118c7666afe16549ccd7188bb85ecd79bfb41c79f4149776"
+    },
+    {
+      "source": "assets\\generated\\meshy\\scene\\aged_metal\\surface\\v1\\finished\\runtime\\aged_metal_desktop.glb",
+      "path": "/assets/environment/materials/aged_metal/desktop.webp.glb",
+      "bytes": 3464576,
+      "sha256": "085b34f7f0d7688747f92f433f4c46aea4926133b2d934dc84a7225173ae0005"
+    },
+    {
+      "source": "assets\\generated\\meshy\\scene\\aged_metal\\surface\\v1\\finished\\runtime\\ktx-v1\\aged_metal_desktop.glb",
+      "path": "/assets/environment/materials/aged_metal/desktop.glb",
+      "bytes": 13433148,
+      "sha256": "07ae5adbb5fde0c9964973be38fc5ca6661d40431595a6f8c47e4aa145cb2b96"
+    },
+    {
+      "source": "assets\\generated\\meshy\\scene\\aged_metal\\surface\\v1\\finished\\runtime\\aged_metal_mobile.glb",
+      "path": "/assets/environment/materials/aged_metal/mobile.webp.glb",
+      "bytes": 801724,
+      "sha256": "b18a65828379d84338b6cba35c2e3806cfc6de5f026d2c06abe9420c6f041138"
+    },
+    {
+      "source": "assets\\generated\\meshy\\scene\\aged_metal\\surface\\v1\\finished\\runtime\\ktx-v1\\aged_metal_mobile.glb",
+      "path": "/assets/environment/materials/aged_metal/mobile.glb",
+      "bytes": 3441548,
+      "sha256": "058079e4d976c7dbf29804d0115714941d2ce29794ddc27268984b32d3e1d189"
+    },
+    {
+      "source": "assets\\generated\\meshy\\scene\\fabric_red\\surface\\v1\\finished\\runtime\\fabric_red_desktop.glb",
+      "path": "/assets/environment/materials/fabric_red/desktop.webp.glb",
+      "bytes": 7721976,
+      "sha256": "576e6ce00b65421b01eba0a779d909d2a0e6c94a4af635a983a1ae930bd4d51e"
+    },
+    {
+      "source": "assets\\generated\\meshy\\scene\\fabric_red\\surface\\v1\\finished\\runtime\\ktx-v1\\fabric_red_desktop.glb",
+      "path": "/assets/environment/materials/fabric_red/desktop.glb",
+      "bytes": 23137296,
+      "sha256": "efc673d09f03696a60bb838a5d43c42a264ab11163fc2b7b7bb93970db671cf9"
+    },
+    {
+      "source": "assets\\generated\\meshy\\scene\\fabric_red\\surface\\v1\\finished\\runtime\\fabric_red_mobile.glb",
+      "path": "/assets/environment/materials/fabric_red/mobile.webp.glb",
+      "bytes": 2049576,
+      "sha256": "53caa484dd8de7f224895184cb4f1f0756ec0a963be182083b9f00dd23c5e99b"
+    },
+    {
+      "source": "assets\\generated\\meshy\\scene\\fabric_red\\surface\\v1\\finished\\runtime\\ktx-v1\\fabric_red_mobile.glb",
+      "path": "/assets/environment/materials/fabric_red/mobile.glb",
+      "bytes": 6084112,
+      "sha256": "c885c7f9628f9945e0c15f4564e2ad1a27ac4e8f3ff0d2b2d4f631b4c8794307"
+    },
+    {
+      "source": "assets\\generated\\meshy\\scene\\fabric_black\\surface\\v1\\finished\\runtime\\fabric_black_desktop.glb",
+      "path": "/assets/environment/materials/fabric_black/desktop.webp.glb",
+      "bytes": 9982700,
+      "sha256": "37025552589f017a384452a39b8c11620d285fee46366ba7e076f335f0610bd9"
+    },
+    {
+      "source": "assets\\generated\\meshy\\scene\\fabric_black\\surface\\v1\\finished\\runtime\\ktx-v1\\fabric_black_desktop.glb",
+      "path": "/assets/environment/materials/fabric_black/desktop.glb",
+      "bytes": 28270584,
+      "sha256": "54518bac6cbcaf5e349c5647168a74914bfd6138ab7178ab74ab2f263232db5a"
+    },
+    {
+      "source": "assets\\generated\\meshy\\scene\\fabric_black\\surface\\v1\\finished\\runtime\\fabric_black_mobile.glb",
+      "path": "/assets/environment/materials/fabric_black/mobile.webp.glb",
+      "bytes": 3157384,
+      "sha256": "c82a3688374c6a59c3246d19740f02bc867ee67b5f75248acfed8320db837e3a"
+    },
+    {
+      "source": "assets\\generated\\meshy\\scene\\fabric_black\\surface\\v1\\finished\\runtime\\ktx-v1\\fabric_black_mobile.glb",
+      "path": "/assets/environment/materials/fabric_black/mobile.glb",
+      "bytes": 7651020,
+      "sha256": "182fd07fac86e27f47728eee32d3d5b69886f56e59c6666f8131cfc0ad563a0c"
+    },
+    {
+      "source": "assets\\generated\\meshy\\scene\\battlefield_earth\\surface\\v1\\finished\\runtime\\battlefield_earth_desktop.glb",
+      "path": "/assets/environment/materials/battlefield_earth/desktop.webp.glb",
+      "bytes": 3627668,
+      "sha256": "3efbbb3d037e3bbc7bdde8f29f52fefcec740274ee35999fd0b5f6472ff3e2ec"
+    },
+    {
+      "source": "assets\\generated\\meshy\\scene\\battlefield_earth\\surface\\v1\\finished\\runtime\\ktx-v1\\battlefield_earth_desktop.glb",
+      "path": "/assets/environment/materials/battlefield_earth/desktop.glb",
+      "bytes": 13360092,
+      "sha256": "84d23bd1b193ab43913dfb6aaabbb186431dcac9133c052a98df055a4ce56799"
+    },
+    {
+      "source": "assets\\generated\\meshy\\scene\\battlefield_earth\\surface\\v1\\finished\\runtime\\battlefield_earth_mobile.glb",
+      "path": "/assets/environment/materials/battlefield_earth/mobile.webp.glb",
+      "bytes": 698960,
+      "sha256": "481d392da06922fcbe2e2e5e90ae1f7fbb6800d7c600acf0f5851896a01da792"
+    },
+    {
+      "source": "assets\\generated\\meshy\\scene\\battlefield_earth\\surface\\v1\\finished\\runtime\\ktx-v1\\battlefield_earth_mobile.glb",
+      "path": "/assets/environment/materials/battlefield_earth/mobile.glb",
+      "bytes": 2986336,
+      "sha256": "1d15cff10c645d400553c471eeb9ede3072729a9e354f1ca822b9c09a779c9ba"
+    }
+  ],
+  "missing": []
+}

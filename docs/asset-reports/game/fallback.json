@@ -1,0 +1,38 @@
+[
+  {
+    "failure": "model",
+    "before": {
+      "total": 23,
+      "loading": 0,
+      "failed": 1,
+      "fallback": 0,
+      "ready": 22
+    },
+    "after": {
+      "total": 23,
+      "loading": 0,
+      "failed": 0,
+      "fallback": 0,
+      "ready": 23
+    },
+    "errors": []
+  },
+  {
+    "failure": "decoder",
+    "before": {
+      "total": 23,
+      "loading": 0,
+      "failed": 0,
+      "fallback": 23,
+      "ready": 23
+    },
+    "after": {
+      "total": 23,
+      "loading": 0,
+      "failed": 0,
+      "fallback": 23,
+      "ready": 23
+    },
+    "errors": []
+  }
+]

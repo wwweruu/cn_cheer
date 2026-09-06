@@ -1,0 +1,103 @@
+{
+  "report": [
+    {
+      "camp": "red",
+      "flight": {
+        "projectile": {
+          "visible": true,
+          "position": [
+            -3.0173228063168382,
+            1.5432867539726356,
+            1.7236677743380224
+          ],
+          "launchOrigin": [
+            -3.00699999332428,
+            1.1047696566802323,
+            2.225399757338761
+          ]
+        },
+        "pieces": [
+          {
+            "pieceId": 10,
+            "asset": "cannon_red",
+            "tier": "distant",
+            "status": "ready",
+            "nameplate": {
+              "height": 1.0822291885526143,
+              "front": 0.45149998357537685,
+              "baseHeight": 0.08116718914144606
+            },
+            "motion": {
+              "clip": "attack",
+              "progress": 0.3719259259435865,
+              "opacity": 1,
+              "token": 1
+            },
+            "position": [
+              -3.1500000000000004,
+              0.25,
+              2.625
+            ],
+            "muzzle": [
+              -3.00699999332428,
+              1.0949018360623644,
+              2.241894773519096
+            ],
+            "poseSignature": 147.63386361378278
+          }
+        ]
+      },
+      "qualityChangeDuringCapture": true
+    },
+    {
+      "camp": "black",
+      "flight": {
+        "projectile": {
+          "visible": true,
+          "position": [
+            3.1500000000000004,
+            1.6875660296531354,
+            -2.1225409323851756
+          ],
+          "launchOrigin": [
+            3.1500000000000004,
+            1.445985287261451,
+            -2.4218137579675867
+          ]
+        },
+        "pieces": [
+          {
+            "pieceId": 23,
+            "asset": "cannon_black",
+            "tier": "distant",
+            "status": "ready",
+            "nameplate": {
+              "height": 1.2831608845246107,
+              "front": 0.45056711091865853,
+              "baseHeight": 0.0962370663393458
+            },
+            "motion": {
+              "clip": "attack",
+              "progress": 0.36496296295413255,
+              "opacity": 1,
+              "token": 2
+            },
+            "position": [
+              3.1500000000000004,
+              0.25,
+              -2.625
+            ],
+            "muzzle": [
+              3.1500000000000004,
+              1.441418926745051,
+              -2.413150475865373
+            ],
+            "poseSignature": 125.5197566998011
+          }
+        ]
+      },
+      "qualityChangeDuringCapture": true
+    }
+  ],
+  "errors": []
+}
