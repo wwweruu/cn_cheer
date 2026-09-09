@@ -14,6 +14,7 @@ import { Xiangqi } from "elephantops/xiangqi";
 import { samePosition } from "../coordinates";
 import type {
   GameState,
+  MoveDisambiguation,
   MoveResult,
   Piece,
   PieceType,
@@ -42,6 +43,32 @@ function fromEngineSquare(square: Square): Position {
 
 function createPosition(fen: string): Xiangqi {
   return Xiangqi.fromSetup(parseFen(fen).unwrap()).unwrap();
+}
+
+/**
+ * Chinese notation disambiguation when identical pieces of the same camp share
+ * the origin file. The piece closer to the opponent is 前. Three or more pieces
+ * use 前/中/后; with more than three the middle ones all collapse to 中, which
+ * only happens when five pawns pile onto one file.
+ */
+function disambiguationFor(state: GameState, movingPiece: Piece, from: Position): MoveDisambiguation | undefined {
+  const column = state.pieces
+    .filter(
+      (piece) =>
+        piece.camp === movingPiece.camp &&
+        piece.type === movingPiece.type &&
+        piece.position.file === from.file,
+    )
+    .sort((left, right) =>
+      movingPiece.camp === "red"
+        ? left.position.rank - right.position.rank
+        : right.position.rank - left.position.rank,
+    );
+  const order = column.findIndex((piece) => piece.id === movingPiece.id);
+  if (order < 0 || column.length < 2) return undefined;
+  if (order === 0) return "front";
+  if (order === column.length - 1) return "back";
+  return "middle";
 }
 
 function readInitialPieces(position: Xiangqi): Piece[] {
@@ -119,6 +146,7 @@ export function tryMove(
       captured,
       givesCheck: nextState.inCheck,
       winner: nextState.winner,
+      disambiguation: disambiguationFor(state, movingPiece, from),
     },
   };
 }

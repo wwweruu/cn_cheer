@@ -83,11 +83,13 @@ export default function App() {
         winner={controller.game.winner}
         isDraw={controller.game.isDraw}
         moves={controller.moves}
+        fen={controller.game.fen}
         canUndo={controller.canUndo}
         settings={controller.settings}
         cameraMode={controller.cameraMode}
         onUndo={controller.undo}
         onRestart={controller.restart}
+        onImportFen={controller.importFen}
         onResetCamera={controller.resetCamera}
         onCameraModeChange={controller.setCameraMode}
         onSettingsChange={controller.updateSettings}

@@ -1,4 +1,4 @@
-import type { MoveRecord, PieceType } from "../game/types";
+import type { MoveDisambiguation, MoveRecord, PieceType } from "../game/types";
 
 const pieceLabels: Record<PieceType, { red: string; black: string }> = {
   general: { red: "帅", black: "将" },
@@ -10,11 +10,16 @@ const pieceLabels: Record<PieceType, { red: string; black: string }> = {
   soldier: { red: "兵", black: "卒" },
 };
 
+const disambiguationLabels: Record<MoveDisambiguation, string> = {
+  front: "前",
+  middle: "中",
+  back: "后",
+};
+
 const fileNames = ["一", "二", "三", "四", "五", "六", "七", "八", "九"];
 
 export function formatMoveLabel(move: MoveRecord) {
   const piece = pieceLabels[move.piece.type][move.piece.camp];
-  const fromFile = move.piece.camp === "red" ? 8 - move.from.file : move.from.file;
   const toFile = move.piece.camp === "red" ? 8 - move.to.file : move.to.file;
   const advances =
     move.piece.camp === "red"
@@ -30,5 +35,10 @@ export function formatMoveLabel(move: MoveRecord) {
     ? fileNames[toFile]
     : String(Math.abs(move.to.rank - move.from.rank));
 
+  if (move.disambiguation) {
+    return `${disambiguationLabels[move.disambiguation]}${piece}${action}${target}`;
+  }
+
+  const fromFile = move.piece.camp === "red" ? 8 - move.from.file : move.from.file;
   return `${piece}${fileNames[fromFile]}${action}${target}`;
 }
