@@ -133,7 +133,11 @@ export function useGameController() {
   const updateSettings = useCallback((next: Partial<GameSettings>) => {
     setSettingsState((current) => {
       const value = { ...current, ...next };
-      localStorage.setItem(SETTINGS_KEY, JSON.stringify(value));
+      try {
+        localStorage.setItem(SETTINGS_KEY, JSON.stringify(value));
+      } catch {
+        // Keep settings usable for this session when browser storage is unavailable.
+      }
       return value;
     });
   }, []);
