@@ -44,7 +44,7 @@ export default function App() {
             <small>赤军先行</small>
           </div>
         </div>
-        {controller.game.inCheck && !controller.game.winner && (
+        {controller.game.inCheck && !controller.game.winner && !controller.game.isDraw && (
           <div className="check-banner" role="status">
             将军
           </div>
@@ -67,10 +67,10 @@ export default function App() {
           />
         </SceneErrorBoundary>
         <AssetLoadingStatus />
-        {controller.game.winner && (
+        {(controller.game.winner || controller.game.isDraw) && (
           <div className="victory-band" role="status">
-            <span>{controller.game.winner === "red" ? "赤军" : "玄军"}</span>
-            <strong>破阵</strong>
+            <span>{controller.game.isDraw ? "双方和局" : controller.game.winner === "red" ? "赤军" : "玄军"}</span>
+            <strong>{controller.game.isDraw ? "和棋" : "破阵"}</strong>
             <button type="button" onClick={controller.restart}>
               再开一局
             </button>
@@ -81,6 +81,7 @@ export default function App() {
         turn={controller.game.turn}
         inCheck={controller.game.inCheck}
         winner={controller.game.winner}
+        isDraw={controller.game.isDraw}
         moves={controller.moves}
         fen={controller.game.fen}
         canUndo={controller.canUndo}

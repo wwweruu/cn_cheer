@@ -83,12 +83,14 @@ function readInitialPieces(position: Xiangqi): Piece[] {
 }
 
 function hydrateGameState(position: Xiangqi, pieces: Piece[]): GameState {
+  const outcome = position.outcome();
   return {
     fen: makeFen(position.toSetup()),
     pieces,
     turn: position.turn,
     inCheck: position.isCheck(),
-    winner: position.outcome()?.winner ?? null,
+    winner: outcome?.winner ?? null,
+    isDraw: outcome !== undefined && outcome.winner === undefined,
   };
 }
 
@@ -108,7 +110,7 @@ export function getPieceAt(state: GameState, position: Position): Piece | null {
 
 export function getLegalMoves(state: GameState, from: Position): Position[] {
   const piece = getPieceAt(state, from);
-  if (!piece || piece.camp !== state.turn || state.winner) return [];
+  if (!piece || piece.camp !== state.turn || state.winner || state.isDraw) return [];
   const position = createPosition(state.fen);
   return [...position.dests(toEngineSquare(from))].map(fromEngineSquare);
 }
@@ -120,7 +122,7 @@ export function tryMove(
   moveId: number,
 ): MoveResult | null {
   const movingPiece = getPieceAt(state, from);
-  if (!movingPiece || movingPiece.camp !== state.turn || state.winner) return null;
+  if (!movingPiece || movingPiece.camp !== state.turn || state.winner || state.isDraw) return null;
 
   const engine = createPosition(state.fen);
   const move = { from: toEngineSquare(from), to: toEngineSquare(to) };

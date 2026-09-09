@@ -1,5 +1,5 @@
 import { act, renderHook } from "@testing-library/react";
-import { beforeEach, describe, expect, it, vi } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { getPieceAt } from "./rules/xiangqiEngine";
 import { useGameController } from "./useGameController";
 import { playMoveSound } from '../audio/sfx';
@@ -7,9 +7,46 @@ import { playMoveSound } from '../audio/sfx';
 vi.mock("../audio/sfx", () => ({ playMoveSound: vi.fn() }));
 
 describe("game controller", () => {
+  afterEach(() => {
+    vi.restoreAllMocks();
+  });
+
   beforeEach(() => {
     localStorage.clear();
     vi.clearAllMocks();
+  });
+
+  it.each(["QuotaExceededError", "SecurityError"])(
+    "keeps settings usable when storage throws %s",
+    (errorName) => {
+      const { result } = renderHook(() => useGameController());
+      vi.spyOn(Storage.prototype, "setItem").mockImplementation(() => {
+        throw new DOMException("Storage unavailable", errorName);
+      });
+
+      act(() => result.current.updateSettings({ sound: false }));
+      expect(result.current.settings.sound).toBe(false);
+
+      act(() => result.current.updateSettings({ quality: "low" }));
+      expect(result.current.settings).toEqual({
+        sound: false,
+        quality: "low",
+        effects: "full",
+        cameraShake: true,
+      });
+      act(() => result.current.clickPosition({ file: 4, rank: 6 }));
+      expect(result.current.selected).toEqual({ file: 4, rank: 6 });
+    },
+  );
+
+  it("persists settings for the next controller", () => {
+    const { result, unmount } = renderHook(() => useGameController());
+    act(() => result.current.updateSettings({ sound: false, quality: "low" }));
+    const settings = result.current.settings;
+    unmount();
+
+    const restored = renderHook(() => useGameController());
+    expect(restored.result.current.settings).toEqual(settings);
   });
 
   it("locks input during animation and restores a move with undo", () => {
