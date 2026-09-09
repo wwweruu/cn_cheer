@@ -66,7 +66,7 @@ export function useGameController() {
 
   const clickPosition = useCallback(
     (position: Position) => {
-      if (animation || game.winner) return;
+      if (animation || game.winner || game.isDraw) return;
       const clickedPiece = getPieceAt(game, position);
 
       if (!selected) {

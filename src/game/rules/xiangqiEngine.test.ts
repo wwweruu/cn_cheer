@@ -15,11 +15,43 @@ describe("xiangqi rules adapter", () => {
     expect(state.pieces).toHaveLength(32);
     expect(state.inCheck).toBe(false);
     expect(state.winner).toBeNull();
+    expect(state.isDraw).toBe(false);
 
     const moveCount = state.pieces
       .filter((piece) => piece.camp === "red")
       .reduce((total, piece) => total + getLegalMoves(state, piece.position).length, 0);
     expect(moveCount).toBe(44);
+  });
+
+  it.each([
+    "3k5/9/9/9/9/9/9/9/9/4K4 w - - 0 1",
+    "rnbakabnr/9/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/9/RNBAKABNR w - - 50 26",
+  ])("stops play when the engine declares a draw: %s", (fen) => {
+    const state = createGameStateFromFen(fen);
+    expect(state.winner).toBeNull();
+    expect(state.isDraw).toBe(true);
+    for (const piece of state.pieces.filter((piece) => piece.camp === state.turn)) {
+      expect(getLegalMoves(state, piece.position)).toEqual([]);
+    }
+    expect(tryMove(state, { file: 4, rank: 9 }, { file: 4, rank: 8 }, 1)).toBeNull();
+  });
+
+  it("recognizes a draw reached by capturing the last attacking piece", () => {
+    const state = createGameStateFromFen("3k5/9/9/9/9/9/9/9/4p4/4K4 w - - 0 1");
+    expect(state.isDraw).toBe(false);
+    const result = tryMove(state, { file: 4, rank: 9 }, { file: 4, rank: 8 }, 1);
+    expect(result?.move.captured?.type).toBe("soldier");
+    expect(result?.state.isDraw).toBe(true);
+    expect(result?.state.winner).toBeNull();
+  });
+
+  it("recognizes the existing engine's no-capture draw threshold after a move", () => {
+    const fen = createInitialGameState().fen.replace(/0 1$/, "49 25");
+    const state = createGameStateFromFen(fen);
+    expect(state.isDraw).toBe(false);
+    const result = tryMove(state, { file: 1, rank: 9 }, { file: 2, rank: 7 }, 1);
+    expect(result?.state.isDraw).toBe(true);
+    expect(result?.state.winner).toBeNull();
   });
 
   it("applies horse-leg, pawn-river and cannon-screen rules", () => {
@@ -101,6 +133,7 @@ describe("xiangqi rules adapter", () => {
     );
     expect(state.inCheck).toBe(true);
     expect(state.winner).toBe("red");
+    expect(state.isDraw).toBe(false);
   });
 
   it("reports a stalemate as a win without check", () => {
@@ -109,5 +142,6 @@ describe("xiangqi rules adapter", () => {
     );
     expect(state.inCheck).toBe(false);
     expect(state.winner).toBe("red");
+    expect(state.isDraw).toBe(false);
   });
 });
