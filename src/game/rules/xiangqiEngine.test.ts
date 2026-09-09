@@ -95,6 +95,31 @@ describe("xiangqi rules adapter", () => {
     expect(getPieceAt(result!.state, { file: 0, rank: 6 })).toBeNull();
   });
 
+  it("tags 前中后 when identical pieces share the origin file", () => {
+    const state = createGameStateFromFen(
+      "rnbakabnr/9/1c5c1/p1p1p1p1p/9/9/PCP1P1P1P/1C7/9/RNBAKABNR w - - 0 1",
+    );
+    // Red cannons stacked on file 1: rank 6 is the front (closest to black).
+    const front = tryMove(state, { file: 1, rank: 6 }, { file: 1, rank: 5 }, 1);
+    expect(front?.move.disambiguation).toBe("front");
+    const back = tryMove(state, { file: 1, rank: 7 }, { file: 1, rank: 8 }, 2);
+    expect(back?.move.disambiguation).toBe("back");
+
+    // Black stacks the same way but its front is the higher rank.
+    const blackState = createGameStateFromFen(
+      "rnbakabnr/9/1c7/pcp1p1p1p/9/9/P1P1P1P1P/1C5C1/9/RNBAKABNR b - - 0 1",
+    );
+    const blackFront = tryMove(blackState, { file: 1, rank: 3 }, { file: 1, rank: 4 }, 1);
+    expect(blackFront?.move.disambiguation).toBe("front");
+    const blackBack = tryMove(blackState, { file: 1, rank: 2 }, { file: 1, rank: 1 }, 2);
+    expect(blackBack?.move.disambiguation).toBe("back");
+
+    // A lone piece on its file stays untagged.
+    const initial = createInitialGameState();
+    const lone = tryMove(initial, { file: 7, rank: 7 }, { file: 4, rank: 7 }, 1);
+    expect(lone?.move.disambiguation).toBeUndefined();
+  });
+
   it("reports a known checkmate position", () => {
     const state = createGameStateFromFen(
       "1nbakabn1/r7r/1c7/p1p1C1p1p/4C2c1/9/P1P1P1P1P/9/9/RNBAKABNR b - - 4 4",

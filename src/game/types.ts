@@ -29,6 +29,9 @@ export interface GameState {
   winner: Camp | null;
 }
 
+/** Position of an identical piece sharing the origin file (前/中/后 disambiguation). */
+export type MoveDisambiguation = "front" | "middle" | "back";
+
 export interface MoveRecord {
   id: number;
   from: Position;
@@ -37,6 +40,8 @@ export interface MoveRecord {
   captured: Piece | null;
   givesCheck: boolean;
   winner: Camp | null;
+  /** Set when identical pieces of the same camp share the origin file (e.g. 前炮进二). */
+  disambiguation?: MoveDisambiguation;
 }
 
 /** Monotonic playback identity survives undo/restart and LOD changes. */
