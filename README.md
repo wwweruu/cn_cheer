@@ -62,7 +62,7 @@ npm run test:e2e
 ## 架构
 
 - `src/game/rules`：`elephantops` 的项目适配层，负责合法着法、将军、胜负与同线同种棋子的前/中/后着法消歧。
-- `src/game/gameRecord.ts`：对局 localStorage 存档——校验、保存与从初始局面重放着法以还原悔棋历史。
+- `src/game/gameRecord.ts`：对局 localStorage 存档——保存起始 FEN，从该局面重放着法以校验存档并还原悔棋历史（包括导入局面后的对局）。
 - `src/game/useGameController.ts`：回合状态、选择、动画锁、历史、设置、存档恢复与 FEN 导入。
 - `src/scene`：棋盘、GLB 棋子与备用造型、镜头、灯光、环境和战斗特效。
 - `src/assets`：生产路径、KTX2/WebP 解码回退、共享缓存、加载队列和距离画质切换。

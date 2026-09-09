@@ -1,6 +1,38 @@
 import { expect, test } from "@playwright/test";
 import { PNG } from "pngjs";
 
+test("preserves an imported origin through a move, reload and undo", async ({ page }, testInfo) => {
+  test.skip(testInfo.project.name !== "mobile-chromium");
+  await page.goto("/");
+  const imported = "rnbakabnr/9/1c5c1/p1p1p1p1p/9/9/PCP1P1P1P/1C7/9/RNBAKABNR w - - 0 1";
+  await page.getByRole("button", { name: "打开设置" }).click();
+  await page.getByRole("button", { name: "导入 FEN" }).click();
+  await page.getByLabel("FEN 局面串").fill(imported);
+  await page.getByRole("button", { name: "载入局面" }).click();
+  await page.getByRole("button", { name: "关闭设置" }).click();
+  await page.waitForTimeout(1600);
+
+  const box = (await page.locator("canvas").boundingBox())!;
+  const x = box.x + box.width / 2;
+  await page.mouse.click(x, box.y + box.height * 0.588);
+  await page.waitForTimeout(120);
+  await page.mouse.click(x, box.y + box.height * 0.531);
+  await expect(page.getByText("兵五进1")).toBeVisible();
+  await expect(page.getByLabel("悔棋")).toBeEnabled();
+  const savedFen = await page.evaluate(() => JSON.parse(localStorage.getItem("xuanjia-xiangqi-game")!).fen);
+
+  await page.reload();
+  await expect(page.getByText("兵五进1")).toBeVisible();
+  await expect(page.getByLabel("悔棋")).toBeEnabled();
+  expect(await page.evaluate(() => JSON.parse(localStorage.getItem("xuanjia-xiangqi-game")!).fen)).toBe(savedFen);
+  await page.getByLabel("悔棋").click();
+  await expect(page.getByLabel("悔棋")).toBeDisabled();
+  await page.reload();
+  await page.getByRole("button", { name: "打开设置" }).click();
+  await page.getByRole("button", { name: "导入 FEN" }).click();
+  await expect(page.getByLabel("FEN 局面串")).toHaveValue(imported);
+});
+
 async function canvasHasRenderedPixels(page: import("@playwright/test").Page) {
   const screenshot = await page.locator("canvas").screenshot({ animations: "disabled" });
   const { data, width, height } = PNG.sync.read(screenshot);

@@ -84,6 +84,7 @@ function renderHud(overrides: Partial<GameHudProps> = {}) {
     turn: "red",
     inCheck: false,
     winner: null,
+    isDraw: false,
     moves: [],
     fen: "rnbakabnr/9/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/9/RNBAKABNR w - - 0 1",
     canUndo: false,
@@ -132,6 +133,22 @@ describe("game record tools", () => {
     fireEvent.click(screen.getByRole("button", { name: "打开设置" }));
     expect(screen.getByRole("button", { name: "复制棋谱" })).toBeDisabled();
     expect(screen.getByRole("button", { name: "复制 FEN" })).toBeEnabled();
+  });
+
+  it.each([
+    { winner: null, isDraw: true, result: "和棋" },
+    { winner: "red" as const, isDraw: false, result: "赤军胜" },
+    { winner: "black" as const, isDraw: false, result: "玄军胜" },
+  ])("appends $result when copying a finished game", async ({ winner, isDraw, result }) => {
+    renderHud({
+      winner,
+      isDraw,
+      moves: [move("red", "cannon", { file: 7, rank: 7 }, { file: 4, rank: 7 })],
+    });
+    fireEvent.click(screen.getByRole("button", { name: "打开设置" }));
+    fireEvent.click(screen.getByRole("button", { name: "复制棋谱" }));
+    await screen.findByRole("button", { name: "已复制" });
+    expect(navigator.clipboard.writeText).toHaveBeenCalledWith(`1. 炮二平五\n\n${result}`);
   });
 
   it("imports a FEN through the dialog and reports rejected input", () => {

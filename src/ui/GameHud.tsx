@@ -38,9 +38,10 @@ function PlayerRow({ camp, active, inCheck }: { camp: Camp; active: boolean; inC
   );
 }
 
-function formatGameRecord(moves: MoveRecord[], winner: Camp | null): string {
+function formatGameRecord(moves: MoveRecord[], winner: Camp | null, isDraw: boolean): string {
   const lines = moves.map((move, index) => `${index + 1}. ${formatMoveLabel(move)}`);
   if (winner) lines.push("", winner === "red" ? "赤军胜" : "玄军胜");
+  else if (isDraw) lines.push("", "和棋");
   return lines.join("\n");
 }
 
@@ -269,7 +270,7 @@ export function GameHud({
                 type="button"
                 className="button-secondary"
                 disabled={moves.length === 0}
-                onClick={() => copyGameText("棋谱", formatGameRecord(moves, winner))}
+                onClick={() => copyGameText("棋谱", formatGameRecord(moves, winner, isDraw))}
               >
                 {copiedLabel === "棋谱" ? "已复制" : "复制棋谱"}
               </button>

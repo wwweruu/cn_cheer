@@ -44,6 +44,7 @@ function loadSettings(): GameSettings {
 }
 
 interface BootGame {
+  startFen: string;
   game: GameState;
   moves: MoveRecord[];
   history: GameState[];
@@ -56,11 +57,13 @@ function bootstrapGame(): BootGame {
     if (restored) return restored;
     clearSavedGame();
   }
-  return { game: createInitialGameState(), moves: [], history: [] };
+  const game = createInitialGameState();
+  return { startFen: game.fen, game, moves: [], history: [] };
 }
 
 export function useGameController() {
   const [boot] = useState(bootstrapGame);
+  const [startFen, setStartFen] = useState(boot.startFen);
   const [game, setGame] = useState<GameState>(boot.game);
   const [selected, setSelected] = useState<Position | null>(null);
   const [legalMoves, setLegalMoves] = useState<Position[]>([]);
@@ -83,9 +86,9 @@ export function useGameController() {
   // Persist the committed game so a refresh can resume it. A pristine board
   // (fresh start or every move undone) clears the save instead.
   useEffect(() => {
-    if (moves.length > 0 || game.fen !== initialFen) saveGame(game, moves);
+    if (moves.length > 0 || game.fen !== initialFen) saveGame(game, moves, startFen);
     else clearSavedGame();
-  }, [game, moves, initialFen]);
+  }, [game, moves, initialFen, startFen]);
 
   const select = useCallback(
     (position: Position) => {
@@ -155,7 +158,9 @@ export function useGameController() {
 
   const restart = useCallback(() => {
     ++playbackSequence.current;
-    setGame(createInitialGameState());
+    const next = createInitialGameState();
+    setGame(next);
+    setStartFen(next.fen);
     setHistory([]);
     setMoves([]);
     setSelected(null);
@@ -174,6 +179,7 @@ export function useGameController() {
     }
     ++playbackSequence.current;
     setGame(next);
+    setStartFen(next.fen);
     setHistory([]);
     setMoves([]);
     setSelected(null);

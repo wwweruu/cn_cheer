@@ -7,7 +7,7 @@ import type { Camp, GameState, MoveRecord, Piece, PieceType } from "./types";
 
 export const GAME_STORAGE_KEY = "xuanjia-xiangqi-game";
 
-const SAVE_VERSION = 1;
+const SAVE_VERSION = 2;
 
 const camps: readonly Camp[] = ["red", "black"];
 const pieceTypes: readonly PieceType[] = [
@@ -22,11 +22,13 @@ const pieceTypes: readonly PieceType[] = [
 
 export interface SavedGame {
   version: number;
+  startFen: string;
   fen: string;
   moves: MoveRecord[];
 }
 
 export interface RestoredGame {
+  startFen: string;
   game: GameState;
   moves: MoveRecord[];
   history: GameState[];
@@ -72,11 +74,11 @@ function isMoveRecord(value: unknown): value is MoveRecord {
   );
 }
 
-export function saveGame(state: GameState, moves: MoveRecord[]): void {
+export function saveGame(state: GameState, moves: MoveRecord[], startFen: string): void {
   try {
     localStorage.setItem(
       GAME_STORAGE_KEY,
-      JSON.stringify({ version: SAVE_VERSION, fen: state.fen, moves }),
+      JSON.stringify({ version: SAVE_VERSION, startFen, fen: state.fen, moves }),
     );
   } catch {
     // Storage can be unavailable (private mode, quota); keep playing without persistence.
@@ -97,37 +99,41 @@ export function loadSavedGame(): SavedGame | null {
     if (!raw) return null;
     const parsed: unknown = JSON.parse(raw);
     if (typeof parsed !== "object" || parsed === null) return null;
-    const candidate = parsed as { version?: unknown; fen?: unknown; moves?: unknown };
+    const candidate = parsed as { version?: unknown; startFen?: unknown; fen?: unknown; moves?: unknown };
     if (
-      candidate.version !== SAVE_VERSION ||
+      (candidate.version !== SAVE_VERSION && candidate.version !== 1) ||
+      (candidate.version === SAVE_VERSION && typeof candidate.startFen !== "string") ||
       typeof candidate.fen !== "string" ||
       !Array.isArray(candidate.moves) ||
       !candidate.moves.every(isMoveRecord)
     ) {
       return null;
     }
-    return { version: SAVE_VERSION, fen: candidate.fen, moves: candidate.moves };
+    // Version 1 did not store the origin: only standard games and untouched
+    // imported positions can be recovered without guessing missing history.
+    const startFen = candidate.version === 1
+      ? (candidate.moves.length ? createInitialGameState().fen : candidate.fen)
+      : candidate.startFen as string;
+    return { version: SAVE_VERSION, startFen, fen: candidate.fen, moves: candidate.moves };
   } catch {
     return null;
   }
 }
 
 /**
- * Rebuilds a resumable game from a save. Moves are replayed from the initial
+ * Rebuilds a resumable game from a save. Moves are replayed from the saved starting
  * position so undo history and derived flags (check, winner, captures) are
  * recomputed instead of trusted from storage. Any inconsistency discards the
  * save and lets the caller fall back to a fresh game.
  */
 export function restoreSavedGame(saved: SavedGame): RestoredGame | null {
-  if (saved.moves.length === 0) {
-    try {
-      return { game: createGameStateFromFen(saved.fen), moves: [], history: [] };
-    } catch {
-      return null;
-    }
+  let game: GameState;
+  try {
+    game = createGameStateFromFen(saved.startFen);
+  } catch {
+    return null;
   }
-
-  let game = createInitialGameState();
+  const startFen = game.fen;
   const history: GameState[] = [];
   const moves: MoveRecord[] = [];
 
@@ -146,5 +152,5 @@ export function restoreSavedGame(saved: SavedGame): RestoredGame | null {
   }
 
   if (game.fen !== saved.fen) return null;
-  return { game, moves, history };
+  return { startFen, game, moves, history };
 }
