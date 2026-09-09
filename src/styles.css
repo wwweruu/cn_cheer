@@ -461,6 +461,43 @@ button:active:not(:disabled) {
   background: rgba(189, 85, 72, 0.2);
 }
 
+.record-actions {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.record-actions .button-secondary {
+  min-height: 38px;
+  padding: 0 6px;
+  font-size: 12px;
+}
+
+.record-actions .button-secondary:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.fen-input {
+  width: 100%;
+  margin-top: 16px;
+  padding: 10px 12px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  background: #131817;
+  color: #dfe5e1;
+  font-family: Consolas, "SFMono-Regular", monospace;
+  font-size: 12px;
+  line-height: 1.5;
+  resize: vertical;
+}
+
+.fen-error {
+  margin: 8px 0 0;
+  color: #e08a7d;
+  font-size: 12px;
+}
+
 .switch-row {
   width: 100%;
   min-height: 46px;

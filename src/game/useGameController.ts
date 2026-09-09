@@ -1,7 +1,14 @@
-import { useCallback, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { playMoveSound } from "../audio/sfx";
 import { positionKey, samePosition } from "./coordinates";
 import {
+  clearSavedGame,
+  loadSavedGame,
+  restoreSavedGame,
+  saveGame,
+} from "./gameRecord";
+import {
+  createGameStateFromFen,
   createInitialGameState,
   getLegalMoves,
   getPieceAt,
@@ -36,12 +43,29 @@ function loadSettings(): GameSettings {
   }
 }
 
+interface BootGame {
+  game: GameState;
+  moves: MoveRecord[];
+  history: GameState[];
+}
+
+function bootstrapGame(): BootGame {
+  const saved = loadSavedGame();
+  if (saved) {
+    const restored = restoreSavedGame(saved);
+    if (restored) return restored;
+    clearSavedGame();
+  }
+  return { game: createInitialGameState(), moves: [], history: [] };
+}
+
 export function useGameController() {
-  const [game, setGame] = useState(createInitialGameState);
+  const [boot] = useState(bootstrapGame);
+  const [game, setGame] = useState<GameState>(boot.game);
   const [selected, setSelected] = useState<Position | null>(null);
   const [legalMoves, setLegalMoves] = useState<Position[]>([]);
-  const [history, setHistory] = useState<GameState[]>([]);
-  const [moves, setMoves] = useState<MoveRecord[]>([]);
+  const [history, setHistory] = useState<GameState[]>(boot.history);
+  const [moves, setMoves] = useState<MoveRecord[]>(boot.moves);
   const [animation, setAnimation] = useState<MovePlayback | null>(null);
   const playbackSequence = useRef(0);
   const sounded = useRef(0);
@@ -53,6 +77,15 @@ export function useGameController() {
     () => new Set(legalMoves.map(positionKey)),
     [legalMoves],
   );
+
+  const initialFen = useMemo(() => createInitialGameState().fen, []);
+
+  // Persist the committed game so a refresh can resume it. A pristine board
+  // (fresh start or every move undone) clears the save instead.
+  useEffect(() => {
+    if (moves.length > 0 || game.fen !== initialFen) saveGame(game, moves);
+    else clearSavedGame();
+  }, [game, moves, initialFen]);
 
   const select = useCallback(
     (position: Position) => {
@@ -130,6 +163,25 @@ export function useGameController() {
     setAnimation(null);
   }, []);
 
+  const importFen = useCallback((fen: string): boolean => {
+    const trimmed = fen.trim();
+    if (!trimmed) return false;
+    let next: GameState;
+    try {
+      next = createGameStateFromFen(trimmed);
+    } catch {
+      return false;
+    }
+    ++playbackSequence.current;
+    setGame(next);
+    setHistory([]);
+    setMoves([]);
+    setSelected(null);
+    setLegalMoves([]);
+    setAnimation(null);
+    return true;
+  }, []);
+
   const updateSettings = useCallback((next: Partial<GameSettings>) => {
     setSettingsState((current) => {
       const value = { ...current, ...next };
@@ -153,6 +205,7 @@ export function useGameController() {
     contactAnimation,
     undo,
     restart,
+    importFen,
     updateSettings,
     setCameraMode,
     resetCamera: () => setCameraReset((value) => value + 1),

@@ -92,3 +92,32 @@ test("plays, undoes and restarts a move through the mobile 3D board", async (
   await expect(page.getByLabel("悔棋")).toBeDisabled();
   await expect(page.getByText("兵五进1")).toHaveCount(0);
 });
+
+test("resumes the current game after a page reload", async ({ page }, testInfo) => {
+  test.skip(testInfo.project.name !== "mobile-chromium");
+  await page.goto("/");
+  await page.waitForTimeout(1600);
+  await expect(page.getByRole("switch", { name: "关闭镜头震动" })).toBeVisible();
+
+  const canvasBox = await page.locator("canvas").boundingBox();
+  expect(canvasBox).not.toBeNull();
+  const x = canvasBox!.x + canvasBox!.width / 2;
+  const selectY = canvasBox!.y + canvasBox!.height * 0.588;
+  const targetY = canvasBox!.y + canvasBox!.height * 0.531;
+
+  await page.mouse.click(x, selectY);
+  await page.waitForTimeout(120);
+  await page.mouse.click(x, targetY);
+  await expect(page.getByText("兵五进1")).toBeVisible();
+  await expect(page.getByLabel("悔棋")).toBeEnabled();
+
+  await page.reload();
+  await page.waitForTimeout(1600);
+  await expect(page.getByRole("heading", { name: "阵中对弈" })).toBeVisible();
+  await expect(page.getByText("兵五进1")).toBeVisible();
+  await expect(page.getByLabel("悔棋")).toBeEnabled();
+
+  await page.getByLabel("悔棋").click();
+  await expect(page.getByLabel("悔棋")).toBeDisabled();
+  await expect(page.getByText("兵五进1")).toHaveCount(0);
+});

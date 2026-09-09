@@ -19,6 +19,7 @@ import type {
   GameSettings,
   MoveRecord,
 } from "../game/types";
+import { copyToClipboard } from "./clipboard";
 import { formatMoveLabel } from "./moveNotation";
 
 function PlayerRow({ camp, active, inCheck }: { camp: Camp; active: boolean; inCheck: boolean }) {
@@ -37,16 +38,24 @@ function PlayerRow({ camp, active, inCheck }: { camp: Camp; active: boolean; inC
   );
 }
 
-interface GameHudProps {
+function formatGameRecord(moves: MoveRecord[], winner: Camp | null): string {
+  const lines = moves.map((move, index) => `${index + 1}. ${formatMoveLabel(move)}`);
+  if (winner) lines.push("", winner === "red" ? "赤军胜" : "玄军胜");
+  return lines.join("\n");
+}
+
+export interface GameHudProps {
   turn: Camp;
   inCheck: boolean;
   winner: Camp | null;
   moves: MoveRecord[];
+  fen: string;
   canUndo: boolean;
   settings: GameSettings;
   cameraMode: CameraMode;
   onUndo: () => void;
   onRestart: () => void;
+  onImportFen: (fen: string) => boolean;
   onResetCamera: () => void;
   onCameraModeChange: (mode: CameraMode) => void;
   onSettingsChange: (settings: Partial<GameSettings>) => void;
@@ -57,19 +66,46 @@ export function GameHud({
   inCheck,
   winner,
   moves,
+  fen,
   canUndo,
   settings,
   cameraMode,
   onUndo,
   onRestart,
+  onImportFen,
   onResetCamera,
   onCameraModeChange,
   onSettingsChange,
 }: GameHudProps) {
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [confirmRestart, setConfirmRestart] = useState(false);
+  const [fenDialogOpen, setFenDialogOpen] = useState(false);
+  const [fenDraft, setFenDraft] = useState("");
+  const [fenError, setFenError] = useState<string | null>(null);
+  const [copiedLabel, setCopiedLabel] = useState<string | null>(null);
   const capturedRed = moves.filter((move) => move.captured?.camp === "red").length;
   const capturedBlack = moves.filter((move) => move.captured?.camp === "black").length;
+
+  const copyGameText = async (label: string, text: string) => {
+    if (await copyToClipboard(text)) {
+      setCopiedLabel(label);
+      window.setTimeout(() => setCopiedLabel(null), 1600);
+    }
+  };
+
+  const openFenDialog = () => {
+    setFenDraft(fen);
+    setFenError(null);
+    setFenDialogOpen(true);
+  };
+
+  const submitFen = () => {
+    if (onImportFen(fenDraft)) {
+      setFenDialogOpen(false);
+      return;
+    }
+    setFenError("FEN 无效或局面不合法，请检查后重试。");
+  };
 
   return (
     <aside className="game-hud" aria-label="对局信息与控制">
@@ -214,6 +250,29 @@ export function GameHud({
               ))}
             </div>
           </fieldset>
+          <fieldset>
+            <legend>棋局</legend>
+            <div className="record-actions">
+              <button
+                type="button"
+                className="button-secondary"
+                onClick={() => copyGameText("FEN", fen)}
+              >
+                {copiedLabel === "FEN" ? "已复制" : "复制 FEN"}
+              </button>
+              <button type="button" className="button-secondary" onClick={openFenDialog}>
+                导入 FEN
+              </button>
+              <button
+                type="button"
+                className="button-secondary"
+                disabled={moves.length === 0}
+                onClick={() => copyGameText("棋谱", formatGameRecord(moves, winner))}
+              >
+                {copiedLabel === "棋谱" ? "已复制" : "复制棋谱"}
+              </button>
+            </div>
+          </fieldset>
           <button
             className="switch-row"
             type="button"
@@ -261,6 +320,44 @@ export function GameHud({
         <span>本地双人</span>
         <span>{cameraMode === "top" ? "顶视" : "斜视"}</span>
       </footer>
+
+      {fenDialogOpen && (
+        <div className="dialog-backdrop" role="presentation" onMouseDown={() => setFenDialogOpen(false)}>
+          <section
+            className="confirm-dialog"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="fen-import-title"
+            onMouseDown={(event) => event.stopPropagation()}
+          >
+            <h2 id="fen-import-title">导入局面</h2>
+            <p>粘贴 FEN 局面串，从该局面继续对弈。导入后着法记录与悔棋历史将清空。</p>
+            <textarea
+              className="fen-input"
+              value={fenDraft}
+              rows={3}
+              aria-label="FEN 局面串"
+              onChange={(event) => {
+                setFenDraft(event.target.value);
+                setFenError(null);
+              }}
+            />
+            {fenError && (
+              <p className="fen-error" role="alert">
+                {fenError}
+              </p>
+            )}
+            <div>
+              <button type="button" className="button-secondary" onClick={() => setFenDialogOpen(false)}>
+                取消
+              </button>
+              <button type="button" className="button-primary" onClick={submitFen}>
+                载入局面
+              </button>
+            </div>
+          </section>
+        </div>
+      )}
 
       {confirmRestart && (
         <div className="dialog-backdrop" role="presentation" onMouseDown={() => setConfirmRestart(false)}>
