@@ -41,6 +41,7 @@ interface GameHudProps {
   turn: Camp;
   inCheck: boolean;
   winner: Camp | null;
+  isDraw: boolean;
   moves: MoveRecord[];
   canUndo: boolean;
   settings: GameSettings;
@@ -56,6 +57,7 @@ export function GameHud({
   turn,
   inCheck,
   winner,
+  isDraw,
   moves,
   canUndo,
   settings,
@@ -76,7 +78,7 @@ export function GameHud({
       <header className="hud-header">
         <div>
           <p>玄甲棋局</p>
-          <h1>{winner ? `${winner === "red" ? "赤军" : "玄军"}胜` : inCheck ? "将军" : "阵中对弈"}</h1>
+          <h1>{winner ? `${winner === "red" ? "赤军" : "玄军"}胜` : isDraw ? "和棋" : inCheck ? "将军" : "阵中对弈"}</h1>
         </div>
         <button
           className={`icon-button${settingsOpen ? " is-active" : ""}`}
@@ -90,13 +92,13 @@ export function GameHud({
       </header>
 
       <section className="player-stack" aria-label="双方状态">
-        <PlayerRow camp="black" active={!winner && turn === "black"} inCheck={inCheck} />
+        <PlayerRow camp="black" active={!winner && !isDraw && turn === "black"} inCheck={inCheck} />
         <div className="battle-count" aria-label="已损失棋子">
           <span>玄军折损 {capturedBlack}</span>
           <Sword size={17} aria-hidden="true" />
           <span>赤军折损 {capturedRed}</span>
         </div>
-        <PlayerRow camp="red" active={!winner && turn === "red"} inCheck={inCheck} />
+        <PlayerRow camp="red" active={!winner && !isDraw && turn === "red"} inCheck={inCheck} />
       </section>
 
       <div className="tool-row" aria-label="棋局操作">

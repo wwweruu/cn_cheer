@@ -27,6 +27,7 @@ export interface GameState {
   turn: Camp;
   inCheck: boolean;
   winner: Camp | null;
+  isDraw: boolean;
 }
 
 export interface MoveRecord {
